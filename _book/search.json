@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "LANDFIRE-Powered Landscape Assessments",
+    "section": "",
+    "text": "Background\nLANDFIRE products are extremely useful for natural resource managers, allowing users to complete many tasks, including these that are featured in this website:\nWhile useful, effectively working with LANDFIRE products can be intimidating due to terminology, GIS processing and data wrangling often required.\nAdditionally, the “fire-hose” of information can pose a problem. Where is a user to start?"
+  },
+  {
+    "objectID": "index.html#goals",
+    "href": "index.html#goals",
+    "title": "LANDFIRE-Powered Landscape Assessments",
+    "section": "Goals",
+    "text": "Goals\nOften a good way to start learning something is to jump in and take on a meaningful project. Here we show you how to take a shapefile of your area of interest, then:\n\nDownload and process multiple LANDFIRE datasets\nBring LANDFIRE data into ArcGIS pro, explore ways to make maps that follow Universal Design principles (i.e., easier for everyone to read)\nQuantify and make charts of attributes of interest\nUnderstand the basics of Biophysical Settings and Models"
+  },
+  {
+    "objectID": "index.html#prerequsites",
+    "href": "index.html#prerequsites",
+    "title": "LANDFIRE-Powered Landscape Assessments",
+    "section": "Prerequsites",
+    "text": "Prerequsites\n\nThe following software\n\nArcGIS pro, and basic abilities (e.g., starting a project, bringing in data)\nMicrosoft Excel (or similar) and/or R and R-Studio\nSyncroSim\nMicrosoft word (or similar)\n\n\n\nOther\n\nA shapefile of your area of interest\nInternet access\nSpace to store data\nX# hours"
+  },
+  {
+    "objectID": "bps-description.html",
+    "href": "bps-description.html",
+    "title": "1  BpS Descriptions",
+    "section": "",
+    "text": "2 Biophysical Settings Descriptions\nRandy’s thoughts\n\ngoing over a BpS document is a great way to not only help people understand BpS, but also to introduce spatial datasets:\n\nBpS\nEVT though s-class rule table (where we get lifeform)\nEVC and EVH-rule table\nS-class–look at succession class descriptions to understand what “A” means in an additional way (in addition to s-class table)\n\ndemo downloading BpS descriptions\ndescribe key features/sections of document\nlink to Blankenship et al 2021"
+  },
+  {
+    "objectID": "bps-model.html",
+    "href": "bps-model.html",
+    "title": "2  BpS Models",
+    "section": "",
+    "text": "3 Biophysical Settings Models\nRandy’s thoughts\nSet people up to use SyncroSim:\n\nlink to veg modeling site\nshow how to use LF package\nquick tour of how model connects to description"
+  },
+  {
+    "objectID": "gis-explore.html",
+    "href": "gis-explore.html",
+    "title": "3  Explore the spatial data",
+    "section": "",
+    "text": "4 Explore LF spatial data with ArcGIS Pro\nRandy’s thoughts\n\nexplore attribute tables of each dataset\ndiscuss different attributes of EVT and BpS\nlimitations of sclass data"
+  },
+  {
+    "objectID": "gis-map.html",
+    "href": "gis-map.html",
+    "title": "4  LANDFIRE Powered Assessments",
+    "section": "",
+    "text": "5 Make a map with LANDFIRE data"
+  },
+  {
+    "objectID": "gis-map.html#accessibility",
+    "href": "gis-map.html#accessibility",
+    "title": "4  LANDFIRE Powered Assessments",
+    "section": "5.1 accessibility",
+    "text": "5.1 accessibility\n\nlink to Sarah’s videos\nhighlight challenges"
+  },
+  {
+    "objectID": "gis-map.html#different-maps",
+    "href": "gis-map.html#different-maps",
+    "title": "4  LANDFIRE Powered Assessments",
+    "section": "5.2 different maps",
+    "text": "5.2 different maps\n\nEVT\nEVC or EVH"
+  }
+]

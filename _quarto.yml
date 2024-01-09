@@ -1,0 +1,25 @@
+project:
+  type: book
+
+
+book:
+  title: "LANDFIRE-Powered Landscape Assessments"
+  author: "The Nature Conservancy's LANDFIRE team"
+  date: "1/9/2024"
+  chapters:
+    - index.qmd
+    - bps-description.qmd
+    - bps-model.qmd
+    - gis-explore.qmd
+    - gis-map.qmd
+
+
+
+format:
+  html:
+    css: style.css
+  pdf:
+    documentclass: scrreprt
+
+
+
