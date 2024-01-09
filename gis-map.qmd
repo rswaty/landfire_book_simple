@@ -1,5 +1,5 @@
 ---
-title: "LANDFIRE Powered Assessments"
+title: "Make a map with LANDFIRE data"
 author: "Randy Swaty"
 date: "2024-01-03"
 output: html_document
