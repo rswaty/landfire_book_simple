@@ -21,11 +21,25 @@
     "text": "Prerequsites\n\nThe following software\n\n\nArcGIS pro, and basic abilities (e.g., starting a project, bringing in data)\nMicrosoft Excel (or similar) and/or R and R-Studio\nSyncroSim\nMicrosoft word (or similar)\n\n\n\nOther\n\nA shapefile of your area of interest\nInternet access\nSpace to store data\nX# hours"
   },
   {
-    "objectID": "bps-description.html",
-    "href": "bps-description.html",
+    "objectID": "bps-description.html#what-you-will-learn-here",
+    "href": "bps-description.html#what-you-will-learn-here",
     "title": "1  BpS Descriptions",
-    "section": "",
-    "text": "2 Biophysical Settings Descriptions\nRandy’s thoughts\n\ngoing over a BpS document is a great way to not only help people understand BpS, but also to introduce spatial datasets:\n\nBpS\nEVT though s-class rule table (where we get lifeform)\nEVC and EVH-rule table\nS-class–look at succession class descriptions to understand what “A” means in an additional way (in addition to s-class table)\n\ndemo downloading BpS descriptions\ndescribe key features/sections of document\nlink to Blankenship et al 2021"
+    "section": "1.1 What you will learn here",
+    "text": "1.1 What you will learn here\nA foundational LANDFIRE product are the Biophysical Settings (BpS) Descriptions and Models. They set the stage for development of many LANDFIRE products such as the Biophysical Settings and Succession Class spatial datasets. On this page we will:\n\nLearn how to download all of the BpS Descriptions\nLearn how to download one or a set of BpS Descriptions\nBecome familiar with:\n\nThe concept of BpS and succession class\nHow LANDFIRE documented ‘reference conditions’ (i.e., how our BpSs looked and functioned prior to European colonization)\nWhat is contained in the BpS descriptions\n\nShare links for further learning about BpSs and related topics"
+  },
+  {
+    "objectID": "bps-description.html#downloading-all-of-the-bps-descriptions",
+    "href": "bps-description.html#downloading-all-of-the-bps-descriptions",
+    "title": "1  BpS Descriptions",
+    "section": "1.2 Downloading all of the BpS descriptions",
+    "text": "1.2 Downloading all of the BpS descriptions\nWhile we typically work with one or a small set of BpSs, there are times when downloading the entire set developed for the lower 48 states plus Hawaii and Alaska is most efficient.\nTo download all BpS descriptions:\n\nNavigate to LANDFIRE’s BpS Description and Quantitative Models Webpage\nScroll down to Download BpS Models and Descriptions Section (see below).\nClick on the “BpS Descriptions” which will trigger downloading of a .zip file named “LANDFIRE_CONUS-HI_BpS_Descriptions_Jan2023.zip” that has 819 Word Documents. This file will most likely land in your “Downloads” directory.\nUse your extraction tool of choice to unzip and explore. One possible way if you are using Windows is to:\n\nright click the file\nselect ‘Extract all’ to access the Windows extraction tool (see below).\n\n\n\nWhere to click to download all BpS descriptions.\n\n\n\n\n\n\n\nWindows extraction tool being used to unzip all BpS descriptions file."
+  },
+  {
+    "objectID": "bps-description.html#downloading-one-or-a-set-of-bps-documents",
+    "href": "bps-description.html#downloading-one-or-a-set-of-bps-documents",
+    "title": "1  BpS Descriptions",
+    "section": "1.3 Downloading one or a set of BpS documents",
+    "text": "1.3 Downloading one or a set of BpS documents\nIn support of a BpS review process we completed recently, we created a BpS Models and Descriptions Support website, which has a page that allows for searching for, and downloading a single or a set of BpS Descriptions.\nRandy’s thoughts\n\ngoing over a BpS document is a great way to not only help people understand BpS, but also to introduce spatial datasets:\n\nBpS\nEVT though s-class rule table (where we get lifeform)\nEVC and EVH-rule table\nS-class–look at succession class descriptions to understand what “A” means in an additional way (in addition to s-class table)\n\ndemo downloading BpS descriptions\ndescribe key features/sections of document\nlink to Blankenship et al 2021"
   },
   {
     "objectID": "bps-model.html",

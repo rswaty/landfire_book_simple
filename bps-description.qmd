@@ -5,17 +5,67 @@ date: "2024-01-03"
 output: html_document
 ---
 
+## What you will learn here
 
-# Biophysical Settings Descriptions
+A foundational LANDFIRE product are the Biophysical Settings (BpS) Descriptions and Models. They set the stage for development of many LANDFIRE products such as the Biophysical Settings and Succession Class spatial datasets. On this page we will:
+
+1.  Learn how to download all of the BpS Descriptions
+2.  Learn how to download one or a set of BpS Descriptions
+3.  Become familiar with:
+    -   The concept of BpS and succession class
+    -   How LANDFIRE documented 'reference conditions' (i.e., how our BpSs looked and functioned prior to European colonization)
+    -   What is contained in the BpS descriptions
+4.  Share links for further learning about BpSs and related topics
+
+## Downloading all of the BpS descriptions
+
+While we typically work with one or a small set of BpSs, there are times when downloading the entire set developed for the lower 48 states plus Hawaii and Alaska is most efficient. 
+
+**To download all BpS descriptions:**
+
+1.  Navigate to [LANDFIRE's BpS Description and Quantitative Models Webpage](shttps://landfire.gov/bps-models.php){target='blank'}
+2.  Scroll down to Download BpS Models and Descriptions Section (see below).
+3.  Click on the "BpS Descriptions" which will trigger downloading of a .zip file named "LANDFIRE_CONUS-HI_BpS_Descriptions_Jan2023.zip" that has 819 Word Documents.  This file will most likely land in your "Downloads" directory.
+4. Use your extraction tool of choice to unzip and explore.  One possible way if you are using Windows is to:
+    * right click the file
+    * select 'Extract all' to access the Windows extraction tool (see below).
+
+<br>
+
+*Where to click to download all BpS descriptions.*
+
+------------------------------------------------------------------------
+
+[![](images/bps_descriptions/download_descriptions_all.png){fig-alt="\"Screenshot of where on https://landfire.gov/bps-models.php you click to download all of the BpS descriptions."}](https://landfire.gov/bps-models.php)
+
+------------------------------------------------------------------------
+
+
+*Windows extraction tool being used to unzip all BpS descriptions file.*
+
+------------------------------------------------------------------------
+
+[![](images/bps_descriptions/zip_click.png){fig-alt="Windows extraction tool being used to unzip all BpS descriptions file."}](https://landfire.gov/bps-models.php)
+
+------------------------------------------------------------------------
+
+<br>
+
+## Downloading one or a set of BpS documents
+
+In support of a BpS review process we completed recently, we created a [BpS Models and Descriptions Support](https://landfirereview.org/){target='blank'} website, which has a page that allows for searching for, and downloading a single or a set of BpS Descriptions.
+
+
+
 
 
 **Randy's thoughts**
 
-* going over a BpS document is a great way to not only help people understand BpS, but also to introduce spatial datasets:
-    * BpS 
-    * EVT though s-class rule table (where we get lifeform)
-    * EVC and EVH-rule table
-    * S-class--look at succession class descriptions to understand what "A" means in an additional way (in addition to s-class table)
-* demo downloading BpS descriptions
-* describe key features/sections of document
-* link to Blankenship et al 2021
+-   going over a BpS document is a great way to not only help people understand BpS, but also to introduce spatial datasets:
+    -   BpS
+    -   EVT though s-class rule table (where we get lifeform)
+    -   EVC and EVH-rule table
+    -   S-class--look at succession class descriptions to understand what "A" means in an additional way (in addition to s-class table)
+-   demo downloading BpS descriptions
+-   describe key features/sections of document
+-   link to Blankenship et al 2021
