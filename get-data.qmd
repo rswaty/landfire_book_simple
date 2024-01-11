@@ -1,0 +1,18 @@
+---
+title: "Get LANDFIRE data"
+---
+
+## Getting LANDFIRE Data from the LANDFIRE Map Viewer (LFMV)
+
+MEGAN does this page.
+
+## Randy's ideas
+
+* Outline that there are multiple ways (LFMV, streaming, CONUS tifs, rlandfire package), and that this page will focus on the LFMV
+* Share Jim's videos, noting that things are changing and may look a bit different than in the video
+* Have directions and screenshots
+    * turning off the EVT data on the initial opening page so it's easier to navigate
+    * drawing a rectangle
+    * how to select multiple datasets (with links to version description page)
+    * reminding users to type in email, then to wait (I sometimes forget this)
+    * etc. 

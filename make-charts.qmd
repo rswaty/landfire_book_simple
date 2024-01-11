@@ -1,0 +1,21 @@
+---
+title: "Make charts with attribute data"
+---
+
+## Need and approach
+
+In addition to the beautiful and useful maps we can make with spatial data such as delivered by LANDFIRE, it is also useful to summarize the data.  One way to do that is with charts.  
+
+Below we will take two approaches: 1) making charts with Datawrapper.de as it may be new to people, is free and makes nice charts and 2) with R as it too is free, is easy to replicate and can make nice charts.  
+
+## Using Datawrapper.de
+
+## In R
+
+### simple bar chart of BpS/EVT
+
+### bar chart of EVC with custom colors (though may not match with Sarah's)
+
+### Grouped bar of succession classes
+
+### Late Succession

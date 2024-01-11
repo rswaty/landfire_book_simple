@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Randy Swaty">
-<meta name="dcterms.date" content="2024-01-03">
 
-<title>LANDFIRE-Powered Landscape Assessments - 2&nbsp; BpS Models</title>
+<title>LANDFIRE-Powered Landscape Assessments - 3&nbsp; Get LANDFIRE data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./get-data.html" rel="next">
-<link href="./bps-description.html" rel="prev">
+<link href="./gis-explore.html" rel="next">
+<link href="./bps-model.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -76,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./bps-model.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">BpS Models</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./get-data.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Get LANDFIRE data</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -115,13 +113,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bps-model.html" class="sidebar-item-text sidebar-link active">
+  <a href="./bps-model.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">BpS Models</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./get-data.html" class="sidebar-item-text sidebar-link">
+  <a href="./get-data.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Get LANDFIRE data</span></span></a>
   </div>
 </li>
@@ -153,7 +151,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#biophysical-settings-models" id="toc-biophysical-settings-models" class="nav-link active" data-scroll-target="#biophysical-settings-models"><span class="header-section-number">3</span> Biophysical Settings Models</a></li>
+  <li><a href="#getting-landfire-data-from-the-landfire-map-viewer-lfmv" id="toc-getting-landfire-data-from-the-landfire-map-viewer-lfmv" class="nav-link active" data-scroll-target="#getting-landfire-data-from-the-landfire-map-viewer-lfmv"><span class="header-section-number">3.1</span> Getting LANDFIRE Data from the LANDFIRE Map Viewer (LFMV)</a></li>
+  <li><a href="#randys-ideas" id="toc-randys-ideas" class="nav-link" data-scroll-target="#randys-ideas"><span class="header-section-number">3.2</span> Randy’s ideas</a></li>
   </ul>
 </nav>
     </div>
@@ -162,26 +161,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">BpS Models</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Get LANDFIRE data</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Randy Swaty </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 3, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -189,14 +176,23 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="biophysical-settings-models" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Biophysical Settings Models</h1>
-<p><strong>Randy’s thoughts</strong></p>
-<p>Set people up to use SyncroSim:</p>
+<section id="getting-landfire-data-from-the-landfire-map-viewer-lfmv" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="getting-landfire-data-from-the-landfire-map-viewer-lfmv"><span class="header-section-number">3.1</span> Getting LANDFIRE Data from the LANDFIRE Map Viewer (LFMV)</h2>
+<p>MEGAN does this page.</p>
+</section>
+<section id="randys-ideas" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="randys-ideas"><span class="header-section-number">3.2</span> Randy’s ideas</h2>
 <ul>
-<li>link to veg modeling site</li>
-<li>show how to use LF package</li>
-<li>quick tour of how model connects to description</li>
+<li>Outline that there are multiple ways (LFMV, streaming, CONUS tifs, rlandfire package), and that this page will focus on the LFMV</li>
+<li>Share Jim’s videos, noting that things are changing and may look a bit different than in the video</li>
+<li>Have directions and screenshots
+<ul>
+<li>turning off the EVT data on the initial opening page so it’s easier to navigate</li>
+<li>drawing a rectangle</li>
+<li>how to select multiple datasets (with links to version description page)</li>
+<li>reminding users to type in email, then to wait (I sometimes forget this)</li>
+<li>etc.</li>
+</ul></li>
 </ul>
 
 
@@ -438,13 +434,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./bps-description.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">BpS Descriptions</span></span>
+      <a href="./bps-model.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">BpS Models</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./get-data.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Get LANDFIRE data</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./gis-explore.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Explore the spatial data</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -11,8 +11,10 @@ book:
     - index.qmd
     - bps-description.qmd
     - bps-model.qmd
+    - get-data.qmd
     - gis-explore.qmd
     - gis-map.qmd
+    - make-charts.qmd
 
 
 

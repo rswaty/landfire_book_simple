@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Randy Swaty">
-<meta name="dcterms.date" content="2024-01-03">
 
-<title>LANDFIRE-Powered Landscape Assessments - 2&nbsp; BpS Models</title>
+<title>LANDFIRE-Powered Landscape Assessments - 6&nbsp; Make charts with attribute data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,8 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./get-data.html" rel="next">
-<link href="./bps-description.html" rel="prev">
+<link href="./gis-map.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -76,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./bps-model.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">BpS Models</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./make-charts.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Make charts with attribute data</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -115,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bps-model.html" class="sidebar-item-text sidebar-link active">
+  <a href="./bps-model.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">BpS Models</span></span></a>
   </div>
 </li>
@@ -139,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./make-charts.html" class="sidebar-item-text sidebar-link">
+  <a href="./make-charts.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Make charts with attribute data</span></span></a>
   </div>
 </li>
@@ -153,7 +150,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#biophysical-settings-models" id="toc-biophysical-settings-models" class="nav-link active" data-scroll-target="#biophysical-settings-models"><span class="header-section-number">3</span> Biophysical Settings Models</a></li>
+  <li><a href="#need-and-approach" id="toc-need-and-approach" class="nav-link active" data-scroll-target="#need-and-approach"><span class="header-section-number">6.1</span> Need and approach</a></li>
+  <li><a href="#using-datawrapper.de" id="toc-using-datawrapper.de" class="nav-link" data-scroll-target="#using-datawrapper.de"><span class="header-section-number">6.2</span> Using Datawrapper.de</a></li>
+  <li><a href="#in-r" id="toc-in-r" class="nav-link" data-scroll-target="#in-r"><span class="header-section-number">6.3</span> In R</a>
+  <ul class="collapse">
+  <li><a href="#simple-bar-chart-of-bpsevt" id="toc-simple-bar-chart-of-bpsevt" class="nav-link" data-scroll-target="#simple-bar-chart-of-bpsevt"><span class="header-section-number">6.3.1</span> simple bar chart of BpS/EVT</a></li>
+  <li><a href="#bar-chart-of-evc-with-custom-colors-though-may-not-match-with-sarahs" id="toc-bar-chart-of-evc-with-custom-colors-though-may-not-match-with-sarahs" class="nav-link" data-scroll-target="#bar-chart-of-evc-with-custom-colors-though-may-not-match-with-sarahs"><span class="header-section-number">6.3.2</span> bar chart of EVC with custom colors (though may not match with Sarah’s)</a></li>
+  <li><a href="#grouped-bar-of-succession-classes" id="toc-grouped-bar-of-succession-classes" class="nav-link" data-scroll-target="#grouped-bar-of-succession-classes"><span class="header-section-number">6.3.3</span> Grouped bar of succession classes</a></li>
+  <li><a href="#late-succession" id="toc-late-succession" class="nav-link" data-scroll-target="#late-succession"><span class="header-section-number">6.3.4</span> Late Succession</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -162,26 +167,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">BpS Models</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Make charts with attribute data</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Randy Swaty </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 3, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -189,17 +182,30 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="biophysical-settings-models" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Biophysical Settings Models</h1>
-<p><strong>Randy’s thoughts</strong></p>
-<p>Set people up to use SyncroSim:</p>
-<ul>
-<li>link to veg modeling site</li>
-<li>show how to use LF package</li>
-<li>quick tour of how model connects to description</li>
-</ul>
+<section id="need-and-approach" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="need-and-approach"><span class="header-section-number">6.1</span> Need and approach</h2>
+<p>In addition to the beautiful and useful maps we can make with spatial data such as delivered by LANDFIRE, it is also useful to summarize the data. One way to do that is with charts.</p>
+<p>Below we will take two approaches: 1) making charts with Datawrapper.de as it may be new to people, is free and makes nice charts and 2) with R as it too is free, is easy to replicate and can make nice charts.</p>
+</section>
+<section id="using-datawrapper.de" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="using-datawrapper.de"><span class="header-section-number">6.2</span> Using Datawrapper.de</h2>
+</section>
+<section id="in-r" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="in-r"><span class="header-section-number">6.3</span> In R</h2>
+<section id="simple-bar-chart-of-bpsevt" class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="simple-bar-chart-of-bpsevt"><span class="header-section-number">6.3.1</span> simple bar chart of BpS/EVT</h3>
+</section>
+<section id="bar-chart-of-evc-with-custom-colors-though-may-not-match-with-sarahs" class="level3" data-number="6.3.2">
+<h3 data-number="6.3.2" class="anchored" data-anchor-id="bar-chart-of-evc-with-custom-colors-though-may-not-match-with-sarahs"><span class="header-section-number">6.3.2</span> bar chart of EVC with custom colors (though may not match with Sarah’s)</h3>
+</section>
+<section id="grouped-bar-of-succession-classes" class="level3" data-number="6.3.3">
+<h3 data-number="6.3.3" class="anchored" data-anchor-id="grouped-bar-of-succession-classes"><span class="header-section-number">6.3.3</span> Grouped bar of succession classes</h3>
+</section>
+<section id="late-succession" class="level3" data-number="6.3.4">
+<h3 data-number="6.3.4" class="anchored" data-anchor-id="late-succession"><span class="header-section-number">6.3.4</span> Late Succession</h3>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -438,14 +444,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./bps-description.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">BpS Descriptions</span></span>
+      <a href="./gis-map.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Make a map with LANDFIRE data</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./get-data.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Get LANDFIRE data</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

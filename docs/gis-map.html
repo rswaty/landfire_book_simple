@@ -9,7 +9,7 @@
 <meta name="author" content="Randy Swaty">
 <meta name="dcterms.date" content="2024-01-03">
 
-<title>LANDFIRE-Powered Landscape Assessments - 4&nbsp; Make a map with LANDFIRE data</title>
+<title>LANDFIRE-Powered Landscape Assessments - 5&nbsp; Make a map with LANDFIRE data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./make-charts.html" rel="next">
 <link href="./gis-explore.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -75,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./gis-map.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Make a map with LANDFIRE data</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./gis-map.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Make a map with LANDFIRE data</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -120,14 +121,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./get-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Get LANDFIRE data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./gis-explore.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Explore the spatial data</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Explore the spatial data</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./gis-map.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Make a map with LANDFIRE data</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Make a map with LANDFIRE data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./make-charts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Make charts with attribute data</span></span></a>
   </div>
 </li>
     </ul>
@@ -140,10 +153,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#make-a-map-with-landfire-data" id="toc-make-a-map-with-landfire-data" class="nav-link active" data-scroll-target="#make-a-map-with-landfire-data"><span class="header-section-number">5</span> Make a map with LANDFIRE data</a>
+  <li><a href="#make-a-map-with-landfire-data" id="toc-make-a-map-with-landfire-data" class="nav-link active" data-scroll-target="#make-a-map-with-landfire-data"><span class="header-section-number">6</span> Make a map with LANDFIRE data</a>
   <ul class="collapse">
-  <li><a href="#accessibility" id="toc-accessibility" class="nav-link" data-scroll-target="#accessibility"><span class="header-section-number">5.1</span> accessibility</a></li>
-  <li><a href="#different-maps" id="toc-different-maps" class="nav-link" data-scroll-target="#different-maps"><span class="header-section-number">5.2</span> different maps</a></li>
+  <li><a href="#accessibility" id="toc-accessibility" class="nav-link" data-scroll-target="#accessibility"><span class="header-section-number">6.1</span> accessibility</a></li>
+  <li><a href="#different-maps" id="toc-different-maps" class="nav-link" data-scroll-target="#different-maps"><span class="header-section-number">6.2</span> different maps</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -153,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Make a map with LANDFIRE data</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Make a map with LANDFIRE data</span></h1>
 </div>
 
 
@@ -180,17 +193,17 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="make-a-map-with-landfire-data" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Make a map with LANDFIRE data</h1>
-<section id="accessibility" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="accessibility"><span class="header-section-number">5.1</span> accessibility</h2>
+<section id="make-a-map-with-landfire-data" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Make a map with LANDFIRE data</h1>
+<section id="accessibility" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="accessibility"><span class="header-section-number">6.1</span> accessibility</h2>
 <ul>
 <li>link to Sarah’s videos</li>
 <li>highlight challenges</li>
 </ul>
 </section>
-<section id="different-maps" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="different-maps"><span class="header-section-number">5.2</span> different maps</h2>
+<section id="different-maps" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="different-maps"><span class="header-section-number">6.2</span> different maps</h2>
 <ul>
 <li>EVT</li>
 <li>EVC or EVH</li>
@@ -437,10 +450,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./gis-explore.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Explore the spatial data</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Explore the spatial data</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./make-charts.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Make charts with attribute data</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

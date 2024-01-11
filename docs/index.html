@@ -120,14 +120,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./get-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Get LANDFIRE data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./gis-explore.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Explore the spatial data</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Explore the spatial data</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./gis-map.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Make a map with LANDFIRE data</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Make a map with LANDFIRE data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./make-charts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Make charts with attribute data</span></span></a>
   </div>
 </li>
     </ul>
@@ -187,9 +199,9 @@ ul.task-list li input[type="checkbox"] {
 <section id="background" class="level1 unnumbered">
 <h1 class="unnumbered">Background</h1>
 <p><a href="https://landfire.gov/index.php">LANDFIRE</a> products are extremely useful for natural resource managers, allowing users to complete many tasks, including these that are featured in this website:</p>
-<div class="quarto-figure quarto-figure-right" style="float:right; margin-left: 25px;">
+<div class="quarto-figure quarto-figure-center" style="float:right; margin-left: 5%; fig-align:right; width:25%;">
 <figure class="figure">
-<p><img src="images/bps.jpg" class="img-fluid figure-img" alt="&quot;Historical ecosystems map of a large region in the western United States." width="250"></p>
+<p><img src="images/bps.jpg" class="img-fluid figure-img" alt="&quot;Historical ecosystems map of a large region in the western United States."></p>
 <figcaption class="figure-caption">Historical ecosystems map.</figcaption>
 </figure>
 </div>
@@ -202,6 +214,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Additionally, the “fire-hose” of information can pose a problem. Where is a user to start?</p>
 <section id="goals" class="level2">
 <h2 class="anchored" data-anchor-id="goals">Goals</h2>
+<!--SH comment: It would be good if the goals flowed in the order of the workbook pages as in Happy Git with R. We can adjust that as the website structure takes place-->
 <p>Often a good way to start learning something is to jump in and take on a meaningful project. Here we show you how to take a shapefile of your area of interest, then:</p>
 <ul>
 <li>Download and process multiple LANDFIRE datasets</li>
@@ -214,6 +227,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="prerequsites">Prerequsites</h2>
 <section id="the-following-software" class="level3">
 <h3 class="anchored" data-anchor-id="the-following-software">The following software</h3>
+<!--SH suggests creating a subpage on "Stuff that can go wrong when installing SyncroSim" or something like that-->
 <ul>
 <li>ArcGIS pro, and basic abilities (e.g., starting a project, bringing in data)</li>
 <li>Microsoft Excel (or similar) and/or <a href="https://cran.rstudio.com/">R</a> and <a href="https://posit.co/download/rstudio-desktop/">R-Studio</a></li>

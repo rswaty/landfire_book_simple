@@ -11,14 +11,14 @@
     "href": "index.html#goals",
     "title": "LANDFIRE-Powered Landscape Assessments",
     "section": "Goals",
-    "text": "Goals\nOften a good way to start learning something is to jump in and take on a meaningful project. Here we show you how to take a shapefile of your area of interest, then:\n\nDownload and process multiple LANDFIRE datasets\nBring LANDFIRE data into ArcGIS pro, explore ways to make maps that follow Universal Design principles (i.e., easier for everyone to read)\nQuantify and make charts of attributes of interest\nUnderstand the basics of Biophysical Settings and Models"
+    "text": "Goals\n\nOften a good way to start learning something is to jump in and take on a meaningful project. Here we show you how to take a shapefile of your area of interest, then:\n\nDownload and process multiple LANDFIRE datasets\nBring LANDFIRE data into ArcGIS pro, explore ways to make maps that follow Universal Design principles (i.e., easier for everyone to read)\nQuantify and make charts of attributes of interest\nUnderstand the basics of Biophysical Settings and Models"
   },
   {
     "objectID": "index.html#prerequsites",
     "href": "index.html#prerequsites",
     "title": "LANDFIRE-Powered Landscape Assessments",
     "section": "Prerequsites",
-    "text": "Prerequsites\n\nThe following software\n\nArcGIS pro, and basic abilities (e.g., starting a project, bringing in data)\nMicrosoft Excel (or similar) and/or R and R-Studio\nSyncroSim\nMicrosoft word (or similar)\n\n\n\nOther\n\nA shapefile of your area of interest\nInternet access\nSpace to store data\nX# hours"
+    "text": "Prerequsites\n\nThe following software\n\n\nArcGIS pro, and basic abilities (e.g., starting a project, bringing in data)\nMicrosoft Excel (or similar) and/or R and R-Studio\nSyncroSim\nMicrosoft word (or similar)\n\n\n\nOther\n\nA shapefile of your area of interest\nInternet access\nSpace to store data\nX# hours"
   },
   {
     "objectID": "bps-description.html",
@@ -35,31 +35,66 @@
     "text": "3 Biophysical Settings Models\nRandy’s thoughts\nSet people up to use SyncroSim:\n\nlink to veg modeling site\nshow how to use LF package\nquick tour of how model connects to description"
   },
   {
+    "objectID": "get-data.html#getting-landfire-data-from-the-landfire-map-viewer-lfmv",
+    "href": "get-data.html#getting-landfire-data-from-the-landfire-map-viewer-lfmv",
+    "title": "3  Get LANDFIRE data",
+    "section": "3.1 Getting LANDFIRE Data from the LANDFIRE Map Viewer (LFMV)",
+    "text": "3.1 Getting LANDFIRE Data from the LANDFIRE Map Viewer (LFMV)\nMEGAN does this page."
+  },
+  {
+    "objectID": "get-data.html#randys-ideas",
+    "href": "get-data.html#randys-ideas",
+    "title": "3  Get LANDFIRE data",
+    "section": "3.2 Randy’s ideas",
+    "text": "3.2 Randy’s ideas\n\nOutline that there are multiple ways (LFMV, streaming, CONUS tifs, rlandfire package), and that this page will focus on the LFMV\nShare Jim’s videos, noting that things are changing and may look a bit different than in the video\nHave directions and screenshots\n\nturning off the EVT data on the initial opening page so it’s easier to navigate\ndrawing a rectangle\nhow to select multiple datasets (with links to version description page)\nreminding users to type in email, then to wait (I sometimes forget this)\netc."
+  },
+  {
     "objectID": "gis-explore.html",
     "href": "gis-explore.html",
-    "title": "3  Explore the spatial data",
+    "title": "4  Explore the spatial data",
     "section": "",
-    "text": "4 Explore LF spatial data with ArcGIS Pro\nRandy’s thoughts\n\nexplore attribute tables of each dataset\ndiscuss different attributes of EVT and BpS\nlimitations of sclass data"
+    "text": "5 Explore LF spatial data with ArcGIS Pro\nRandy’s thoughts\n\nexplore attribute tables of each dataset\ndiscuss different attributes of EVT and BpS\nlimitations of sclass data"
   },
   {
     "objectID": "gis-map.html",
     "href": "gis-map.html",
-    "title": "4  Make a map with LANDFIRE data",
+    "title": "5  Make a map with LANDFIRE data",
     "section": "",
-    "text": "5 Make a map with LANDFIRE data"
+    "text": "6 Make a map with LANDFIRE data"
   },
   {
     "objectID": "gis-map.html#accessibility",
     "href": "gis-map.html#accessibility",
-    "title": "4  Make a map with LANDFIRE data",
-    "section": "5.1 accessibility",
-    "text": "5.1 accessibility\n\nlink to Sarah’s videos\nhighlight challenges"
+    "title": "5  Make a map with LANDFIRE data",
+    "section": "6.1 accessibility",
+    "text": "6.1 accessibility\n\nlink to Sarah’s videos\nhighlight challenges"
   },
   {
     "objectID": "gis-map.html#different-maps",
     "href": "gis-map.html#different-maps",
-    "title": "4  Make a map with LANDFIRE data",
-    "section": "5.2 different maps",
-    "text": "5.2 different maps\n\nEVT\nEVC or EVH"
+    "title": "5  Make a map with LANDFIRE data",
+    "section": "6.2 different maps",
+    "text": "6.2 different maps\n\nEVT\nEVC or EVH"
+  },
+  {
+    "objectID": "make-charts.html#need-and-approach",
+    "href": "make-charts.html#need-and-approach",
+    "title": "6  Make charts with attribute data",
+    "section": "6.1 Need and approach",
+    "text": "6.1 Need and approach\nIn addition to the beautiful and useful maps we can make with spatial data such as delivered by LANDFIRE, it is also useful to summarize the data. One way to do that is with charts.\nBelow we will take two approaches: 1) making charts with Datawrapper.de as it may be new to people, is free and makes nice charts and 2) with R as it too is free, is easy to replicate and can make nice charts."
+  },
+  {
+    "objectID": "make-charts.html#using-datawrapper.de",
+    "href": "make-charts.html#using-datawrapper.de",
+    "title": "6  Make charts with attribute data",
+    "section": "6.2 Using Datawrapper.de",
+    "text": "6.2 Using Datawrapper.de"
+  },
+  {
+    "objectID": "make-charts.html#in-r",
+    "href": "make-charts.html#in-r",
+    "title": "6  Make charts with attribute data",
+    "section": "6.3 In R",
+    "text": "6.3 In R\n\n6.3.1 simple bar chart of BpS/EVT\n\n\n6.3.2 bar chart of EVC with custom colors (though may not match with Sarah’s)\n\n\n6.3.3 Grouped bar of succession classes\n\n\n6.3.4 Late Succession"
   }
 ]
