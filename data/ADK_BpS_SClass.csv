@@ -1,0 +1,255 @@
+﻿OID_,Value,Count,BpS_ADK,SClass_ADK,BPS_CODE,ZONE,BPS_MODEL,BPS_NAME,GROUPVEG,FRI_REPLAC,FRI_MIXED,FRI_SURFAC,FRI_ALLFIR,PRC_REPLAC,PRC_MIXED,PRC_SURFAC,FRG_NEW,LABEL,DESCRIPTIO
+1,1,4330398.000000000000000,1947,4,13660,64,13660_51_63_64_65_66,Laurentian-Acadian Pine-Hemlock-Hardwood Forest,Hardwood-Conifer,482,998,289,153,32,15,53,III-B,D,Succession Class D
+2,2,532460.000000000000000,1957,3,14720,64,14720_64_65_66,Central Interior and Appalachian Riparian Systems,Riparian,984,NA,198,165,17,NA,83,III-B,C,Succession Class C
+3,3,5715771.000000000000000,1943,5,13020,64,13020_64,Laurentian-Acadian Northern Hardwoods Forest,Hardwood,2108,NA,NA,2108,100,NA,NA,V-B,E,Succession Class E
+4,4,853840.000000000000000,1957,2,14720,64,14720_64_65_66,Central Interior and Appalachian Riparian Systems,Riparian,984,NA,198,165,17,NA,83,III-B,B,Succession Class B
+5,5,227777.000000000000000,1947,120,13660,64,13660_51_63_64_65_66,Laurentian-Acadian Pine-Hemlock-Hardwood Forest,Hardwood-Conifer,482,998,289,153,32,15,53,III-B,Developed,Developed
+6,6,224398.000000000000000,1943,120,13020,64,13020_64,Laurentian-Acadian Northern Hardwoods Forest,Hardwood,2108,NA,NA,2108,100,NA,NA,V-B,Developed,Developed
+7,7,340434.000000000000000,1943,7,13020,64,13020_64,Laurentian-Acadian Northern Hardwoods Forest,Hardwood,2108,NA,NA,2108,100,NA,NA,V-B,UE,Uncharacteristic Exotic Vegetation
+8,8,6236.000000000000000,1948,180,13690,64,13690_60_61_63_64_65_66,Central Appalachian Dry Oak-Pine Forest,Hardwood-Conifer,182,463,15,14,8,3,89,I-B,Agriculture,Agriculture
+9,9,131769.000000000000000,1947,180,13660,64,13660_51_63_64_65_66,Laurentian-Acadian Pine-Hemlock-Hardwood Forest,Hardwood-Conifer,482,998,289,153,32,15,53,III-B,Agriculture,Agriculture
+10,10,325487.000000000000000,1947,7,13660,64,13660_51_63_64_65_66,Laurentian-Acadian Pine-Hemlock-Hardwood Forest,Hardwood-Conifer,482,998,289,153,32,15,53,III-B,UE,Uncharacteristic Exotic Vegetation
+11,11,14954.000000000000000,1948,120,13690,64,13690_60_61_63_64_65_66,Central Appalachian Dry Oak-Pine Forest,Hardwood-Conifer,182,463,15,14,8,3,89,I-B,Developed,Developed
+12,12,277638.000000000000000,1943,180,13020,64,13020_64,Laurentian-Acadian Northern Hardwoods Forest,Hardwood,2108,NA,NA,2108,100,NA,NA,V-B,Agriculture,Agriculture
+13,13,54512.000000000000000,1957,120,14720,64,14720_64_65_66,Central Interior and Appalachian Riparian Systems,Riparian,984,NA,198,165,17,NA,83,III-B,Developed,Developed
+14,14,36453.000000000000000,1957,180,14720,64,14720_64_65_66,Central Interior and Appalachian Riparian Systems,Riparian,984,NA,198,165,17,NA,83,III-B,Agriculture,Agriculture
+15,15,103168.000000000000000,1957,7,14720,64,14720_64_65_66,Central Interior and Appalachian Riparian Systems,Riparian,984,NA,198,165,17,NA,83,III-B,UE,Uncharacteristic Exotic Vegetation
+16,16,89151.000000000000000,1946,180,13620,64,13620_51_63_64_65_66,Laurentian-Acadian Northern Pine(-Oak) Forest,Hardwood-Conifer,309,447,65,48,16,11,73,III-A,Agriculture,Agriculture
+17,17,71063.000000000000000,1947,2,13660,64,13660_51_63_64_65_66,Laurentian-Acadian Pine-Hemlock-Hardwood Forest,Hardwood-Conifer,482,998,289,153,32,15,53,III-B,B,Succession Class B
+18,18,997409.000000000000000,1946,2,13620,64,13620_51_63_64_65_66,Laurentian-Acadian Northern Pine(-Oak) Forest,Hardwood-Conifer,309,447,65,48,16,11,73,III-A,B,Succession Class B
+19,19,53352.000000000000000,1946,3,13620,64,13620_51_63_64_65_66,Laurentian-Acadian Northern Pine(-Oak) Forest,Hardwood-Conifer,309,447,65,48,16,11,73,III-A,C,Succession Class C
+20,20,120357.000000000000000,1946,120,13620,64,13620_51_63_64_65_66,Laurentian-Acadian Northern Pine(-Oak) Forest,Hardwood-Conifer,309,447,65,48,16,11,73,III-A,Developed,Developed
+21,21,49998.000000000000000,1948,3,13690,64,13690_60_61_63_64_65_66,Central Appalachian Dry Oak-Pine Forest,Hardwood-Conifer,182,463,15,14,8,3,89,I-B,C,Succession Class C
+22,22,6207.000000000000000,1948,7,13690,64,13690_60_61_63_64_65_66,Central Appalachian Dry Oak-Pine Forest,Hardwood-Conifer,182,463,15,14,8,3,89,I-B,UE,Uncharacteristic Exotic Vegetation
+23,23,36643.000000000000000,1963,180,15180,64,15180_43_47_49_52_62_63_64_65,North-Central Interior Wet Flatwoods,Hardwood,993,NA,NA,993,100,NA,NA,V-B,Agriculture,Agriculture
+24,24,48902.000000000000000,1964,3,15260,64,15260_64_65_66,Laurentian-Acadian Swamp Systems,Riparian,1011,NA,NA,1011,100,NA,NA,V-B,C,Succession Class C
+25,25,563606.000000000000000,1958,6,14750,64,14750_41_50_51_63_64_65_66,Laurentian-Acadian Floodplain Systems,Riparian,NA,435,68,59,NA,14,86,III-A,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+26,26,891217.000000000000000,1958,3,14750,64,14750_41_50_51_63_64_65_66,Laurentian-Acadian Floodplain Systems,Riparian,NA,435,68,59,NA,14,86,III-A,C,Succession Class C
+27,27,1853.000000000000000,1948,1,13690,64,13690_60_61_63_64_65_66,Central Appalachian Dry Oak-Pine Forest,Hardwood-Conifer,182,463,15,14,8,3,89,I-B,A,Succession Class A
+28,28,33289.000000000000000,1958,180,14750,64,14750_41_50_51_63_64_65_66,Laurentian-Acadian Floodplain Systems,Riparian,NA,435,68,59,NA,14,86,III-A,Agriculture,Agriculture
+29,29,151065.000000000000000,1958,2,14750,64,14750_41_50_51_63_64_65_66,Laurentian-Acadian Floodplain Systems,Riparian,NA,435,68,59,NA,14,86,III-A,B,Succession Class B
+30,30,186339.000000000000000,1957,1,14720,64,14720_64_65_66,Central Interior and Appalachian Riparian Systems,Riparian,984,NA,198,165,17,NA,83,III-B,A,Succession Class A
+31,31,1701181.000000000000000,1943,6,13020,64,13020_64,Laurentian-Acadian Northern Hardwoods Forest,Hardwood,2108,NA,NA,2108,100,NA,NA,V-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+32,32,116513.000000000000000,1958,7,14750,64,14750_41_50_51_63_64_65_66,Laurentian-Acadian Floodplain Systems,Riparian,NA,435,68,59,NA,14,86,III-A,UE,Uncharacteristic Exotic Vegetation
+33,33,169886.000000000000000,1950,3,13730,64,13730_63_64,Acadian Low-Elevation Spruce-Fir-Hardwood Forest,Hardwood-Conifer,1053,NA,NA,1053,100,NA,NA,V-B,C,Succession Class C
+34,34,170786.000000000000000,1963,2,15180,64,15180_43_47_49_52_62_63_64_65,North-Central Interior Wet Flatwoods,Hardwood,993,NA,NA,993,100,NA,NA,V-B,B,Succession Class B
+35,35,205405.000000000000000,1943,2,13020,64,13020_64,Laurentian-Acadian Northern Hardwoods Forest,Hardwood,2108,NA,NA,2108,100,NA,NA,V-B,B,Succession Class B
+36,36,329932.000000000000000,1950,2,13730,64,13730_63_64,Acadian Low-Elevation Spruce-Fir-Hardwood Forest,Hardwood-Conifer,1053,NA,NA,1053,100,NA,NA,V-B,B,Succession Class B
+37,37,79311.000000000000000,1950,7,13730,64,13730_63_64,Acadian Low-Elevation Spruce-Fir-Hardwood Forest,Hardwood-Conifer,1053,NA,NA,1053,100,NA,NA,V-B,UE,Uncharacteristic Exotic Vegetation
+38,38,13321.000000000000000,1963,7,15180,64,15180_43_47_49_52_62_63_64_65,North-Central Interior Wet Flatwoods,Hardwood,993,NA,NA,993,100,NA,NA,V-B,UE,Uncharacteristic Exotic Vegetation
+39,39,66529.000000000000000,1958,120,14750,64,14750_41_50_51_63_64_65_66,Laurentian-Acadian Floodplain Systems,Riparian,NA,435,68,59,NA,14,86,III-A,Developed,Developed
+40,40,21790.000000000000000,1950,1,13730,64,13730_63_64,Acadian Low-Elevation Spruce-Fir-Hardwood Forest,Hardwood-Conifer,1053,NA,NA,1053,100,NA,NA,V-B,A,Succession Class A
+41,41,10483.000000000000000,1963,6,15180,64,15180_43_47_49_52_62_63_64_65,North-Central Interior Wet Flatwoods,Hardwood,993,NA,NA,993,100,NA,NA,V-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+42,42,2657054.000000000000000,1943,3,13020,64,13020_64,Laurentian-Acadian Northern Hardwoods Forest,Hardwood,2108,NA,NA,2108,100,NA,NA,V-B,C,Succession Class C
+43,43,3750.000000000000000,1963,1,15180,64,15180_43_47_49_52_62_63_64_65,North-Central Interior Wet Flatwoods,Hardwood,993,NA,NA,993,100,NA,NA,V-B,A,Succession Class A
+44,44,9773.000000000000000,1943,1,13020,64,13020_64,Laurentian-Acadian Northern Hardwoods Forest,Hardwood,2108,NA,NA,2108,100,NA,NA,V-B,A,Succession Class A
+45,45,4523.000000000000000,1950,180,13730,64,13730_63_64,Acadian Low-Elevation Spruce-Fir-Hardwood Forest,Hardwood-Conifer,1053,NA,NA,1053,100,NA,NA,V-B,Agriculture,Agriculture
+46,46,15704.000000000000000,1947,3,13660,64,13660_51_63_64_65_66,Laurentian-Acadian Pine-Hemlock-Hardwood Forest,Hardwood-Conifer,482,998,289,153,32,15,53,III-B,C,Succession Class C
+47,47,82658.000000000000000,1946,7,13620,64,13620_51_63_64_65_66,Laurentian-Acadian Northern Pine(-Oak) Forest,Hardwood-Conifer,309,447,65,48,16,11,73,III-A,UE,Uncharacteristic Exotic Vegetation
+48,48,6164.000000000000000,1950,6,13730,64,13730_63_64,Acadian Low-Elevation Spruce-Fir-Hardwood Forest,Hardwood-Conifer,1053,NA,NA,1053,100,NA,NA,V-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+49,49,2019.000000000000000,1956,6,14710,64,14710_64_65,Central Interior and Appalachian Floodplain Systems,Riparian,603,392,120,80,14,20,66,III-A,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+50,50,11246.000000000000000,1963,120,15180,64,15180_43_47_49_52_62_63_64_65,North-Central Interior Wet Flatwoods,Hardwood,993,NA,NA,993,100,NA,NA,V-B,Developed,Developed
+51,51,24292.000000000000000,1947,1,13660,64,13660_51_63_64_65_66,Laurentian-Acadian Pine-Hemlock-Hardwood Forest,Hardwood-Conifer,482,998,289,153,32,15,53,III-B,A,Succession Class A
+52,52,13655.000000000000000,1964,7,15260,64,15260_64_65_66,Laurentian-Acadian Swamp Systems,Riparian,1011,NA,NA,1011,100,NA,NA,V-B,UE,Uncharacteristic Exotic Vegetation
+53,53,28815.000000000000000,1964,6,15260,64,15260_64_65_66,Laurentian-Acadian Swamp Systems,Riparian,1011,NA,NA,1011,100,NA,NA,V-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+54,54,1046530.000000000000000,11,111,11,na,na,Open Water,Open Water,NA,NA,NA,NA,NA,NA,NA,NA,Water,Water
+55,55,8691.000000000000000,1946,1,13620,64,13620_51_63_64_65_66,Laurentian-Acadian Northern Pine(-Oak) Forest,Hardwood-Conifer,309,447,65,48,16,11,73,III-A,A,Succession Class A
+56,56,23275.000000000000000,1950,120,13730,64,13730_63_64,Acadian Low-Elevation Spruce-Fir-Hardwood Forest,Hardwood-Conifer,1053,NA,NA,1053,100,NA,NA,V-B,Developed,Developed
+57,57,889.000000000000000,1959,180,14770,64,14770_63_64_65_66,Boreal Acidic Peatland Systems,Riparian,935,NA,170,144,15,NA,85,III-B,Agriculture,Agriculture
+58,58,51410.000000000000000,1948,2,13690,64,13690_60_61_63_64_65_66,Central Appalachian Dry Oak-Pine Forest,Hardwood-Conifer,182,463,15,14,8,3,89,I-B,B,Succession Class B
+59,59,107099.000000000000000,1959,4,14770,64,14770_63_64_65_66,Boreal Acidic Peatland Systems,Riparian,935,NA,170,144,15,NA,85,III-B,D,Succession Class D
+60,60,13863.000000000000000,1959,7,14770,64,14770_63_64_65_66,Boreal Acidic Peatland Systems,Riparian,935,NA,170,144,15,NA,85,III-B,UE,Uncharacteristic Exotic Vegetation
+61,61,6114.000000000000000,1959,120,14770,64,14770_63_64_65_66,Boreal Acidic Peatland Systems,Riparian,935,NA,170,144,15,NA,85,III-B,Developed,Developed
+62,62,24404.000000000000000,1959,3,14770,64,14770_63_64_65_66,Boreal Acidic Peatland Systems,Riparian,935,NA,170,144,15,NA,85,III-B,C,Succession Class C
+63,63,929.000000000000000,1964,180,15260,64,15260_64_65_66,Laurentian-Acadian Swamp Systems,Riparian,1011,NA,NA,1011,100,NA,NA,V-B,Agriculture,Agriculture
+64,64,3916.000000000000000,1964,2,15260,64,15260_64_65_66,Laurentian-Acadian Swamp Systems,Riparian,1011,NA,NA,1011,100,NA,NA,V-B,B,Succession Class B
+65,65,615.000000000000000,1962,6,14940,64,14940_64,Laurentian-Acadian Shrub-Herbaceous Wetland Systems,Riparian,794,NA,NA,794,100,NA,NA,V-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+66,66,569.000000000000000,1962,4,14940,64,14940_64,Laurentian-Acadian Shrub-Herbaceous Wetland Systems,Riparian,794,NA,NA,794,100,NA,NA,V-B,D,Succession Class D
+67,67,614.000000000000000,1962,180,14940,64,14940_64,Laurentian-Acadian Shrub-Herbaceous Wetland Systems,Riparian,794,NA,NA,794,100,NA,NA,V-B,Agriculture,Agriculture
+68,68,3658.000000000000000,1959,2,14770,64,14770_63_64_65_66,Boreal Acidic Peatland Systems,Riparian,935,NA,170,144,15,NA,85,III-B,B,Succession Class B
+69,69,68222.000000000000000,1959,6,14770,64,14770_63_64_65_66,Boreal Acidic Peatland Systems,Riparian,935,NA,170,144,15,NA,85,III-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+70,70,301.000000000000000,1962,7,14940,64,14940_64,Laurentian-Acadian Shrub-Herbaceous Wetland Systems,Riparian,794,NA,NA,794,100,NA,NA,V-B,UE,Uncharacteristic Exotic Vegetation
+71,71,8926.000000000000000,1959,1,14770,64,14770_63_64_65_66,Boreal Acidic Peatland Systems,Riparian,935,NA,170,144,15,NA,85,III-B,A,Succession Class A
+72,72,1811.000000000000000,1964,1,15260,64,15260_64_65_66,Laurentian-Acadian Swamp Systems,Riparian,1011,NA,NA,1011,100,NA,NA,V-B,A,Succession Class A
+73,73,20778.000000000000000,1951,180,13740,64,13740_64_65_66,Acadian-Appalachian Montane Spruce-Fir Forest,Hardwood-Conifer,580,NA,NA,580,100,NA,NA,V-B,Agriculture,Agriculture
+74,74,2941773.000000000000000,1951,3,13740,64,13740_64_65_66,Acadian-Appalachian Montane Spruce-Fir Forest,Hardwood-Conifer,580,NA,NA,580,100,NA,NA,V-B,C,Succession Class C
+75,75,126894.000000000000000,1951,120,13740,64,13740_64_65_66,Acadian-Appalachian Montane Spruce-Fir Forest,Hardwood-Conifer,580,NA,NA,580,100,NA,NA,V-B,Developed,Developed
+76,76,99426.000000000000000,1951,1,13740,64,13740_64_65_66,Acadian-Appalachian Montane Spruce-Fir Forest,Hardwood-Conifer,580,NA,NA,580,100,NA,NA,V-B,A,Succession Class A
+77,77,114929.000000000000000,1951,7,13740,64,13740_64_65_66,Acadian-Appalachian Montane Spruce-Fir Forest,Hardwood-Conifer,580,NA,NA,580,100,NA,NA,V-B,UE,Uncharacteristic Exotic Vegetation
+78,78,119024.000000000000000,1951,6,13740,64,13740_64_65_66,Acadian-Appalachian Montane Spruce-Fir Forest,Hardwood-Conifer,580,NA,NA,580,100,NA,NA,V-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+79,79,2121009.000000000000000,1951,2,13740,64,13740_64_65_66,Acadian-Appalachian Montane Spruce-Fir Forest,Hardwood-Conifer,580,NA,NA,580,100,NA,NA,V-B,B,Succession Class B
+80,80,618.000000000000000,1962,120,14940,64,14940_64,Laurentian-Acadian Shrub-Herbaceous Wetland Systems,Riparian,794,NA,NA,794,100,NA,NA,V-B,Developed,Developed
+81,81,5717.000000000000000,1964,120,15260,64,15260_64_65_66,Laurentian-Acadian Swamp Systems,Riparian,1011,NA,NA,1011,100,NA,NA,V-B,Developed,Developed
+82,82,2750.000000000000000,1956,3,14710,64,14710_64_65,Central Interior and Appalachian Floodplain Systems,Riparian,603,392,120,80,14,20,66,III-A,C,Succession Class C
+83,83,2108.000000000000000,1956,2,14710,64,14710_64_65,Central Interior and Appalachian Floodplain Systems,Riparian,603,392,120,80,14,20,66,III-A,B,Succession Class B
+84,84,2854.000000000000000,1956,7,14710,64,14710_64_65,Central Interior and Appalachian Floodplain Systems,Riparian,603,392,120,80,14,20,66,III-A,UE,Uncharacteristic Exotic Vegetation
+85,85,565.000000000000000,1948,6,13690,64,13690_60_61_63_64_65_66,Central Appalachian Dry Oak-Pine Forest,Hardwood-Conifer,182,463,15,14,8,3,89,I-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+86,86,349.000000000000000,1956,120,14710,64,14710_64_65,Central Interior and Appalachian Floodplain Systems,Riparian,603,392,120,80,14,20,66,III-A,Developed,Developed
+87,87,24719.000000000000000,1945,5,13540,64,13540_64_66,Northeastern Interior Pine Barrens,Conifer,77,31,12,8,10,24,66,I-B,E,Succession Class E
+88,88,6103.000000000000000,1945,4,13540,64,13540_64_66,Northeastern Interior Pine Barrens,Conifer,77,31,12,8,10,24,66,I-B,D,Succession Class D
+89,89,4854.000000000000000,1945,7,13540,64,13540_64_66,Northeastern Interior Pine Barrens,Conifer,77,31,12,8,10,24,66,I-B,UE,Uncharacteristic Exotic Vegetation
+90,90,7.000000000000000,1962,3,14940,64,14940_64,Laurentian-Acadian Shrub-Herbaceous Wetland Systems,Riparian,794,NA,NA,794,100,NA,NA,V-B,C,Succession Class C
+91,91,135.000000000000000,1962,2,14940,64,14940_64,Laurentian-Acadian Shrub-Herbaceous Wetland Systems,Riparian,794,NA,NA,794,100,NA,NA,V-B,B,Succession Class B
+92,92,1301.000000000000000,1945,3,13540,64,13540_64_66,Northeastern Interior Pine Barrens,Conifer,77,31,12,8,10,24,66,I-B,C,Succession Class C
+93,93,19089.000000000000000,1952,3,13770,64,13770_60_61_63_64_65_66,Central Appalachian Pine-Oak Rocky Woodland,Hardwood-Conifer,412,384,4645,190,46,50,4,III-B,C,Succession Class C
+94,94,2782.000000000000000,1952,4,13770,64,13770_60_61_63_64_65_66,Central Appalachian Pine-Oak Rocky Woodland,Hardwood-Conifer,412,384,4645,190,46,50,4,III-B,D,Succession Class D
+95,95,9563.000000000000000,1952,6,13770,64,13770_60_61_63_64_65_66,Central Appalachian Pine-Oak Rocky Woodland,Hardwood-Conifer,412,384,4645,190,46,50,4,III-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+96,96,702.000000000000000,1960,7,14790,64,14790_60_61_63_64_65_66,Central Interior and Appalachian Swamp Systems,Riparian,1011,NA,1353,578,57,NA,43,V-B,UE,Uncharacteristic Exotic Vegetation
+97,97,3175.000000000000000,1960,3,14790,64,14790_60_61_63_64_65_66,Central Interior and Appalachian Swamp Systems,Riparian,1011,NA,1353,578,57,NA,43,V-B,C,Succession Class C
+98,98,9212.000000000000000,1945,120,13540,64,13540_64_66,Northeastern Interior Pine Barrens,Conifer,77,31,12,8,10,24,66,I-B,Developed,Developed
+99,99,85136.000000000000000,1949,2,13700,64,13700_60_63_64_65_66,Appalachian (Hemlock-)Northern Hardwood Forest,Hardwood,1010,1122,NA,531,53,47,NA,V-B,B,Succession Class B
+100,100,28092.000000000000000,1949,3,13700,64,13700_60_63_64_65_66,Appalachian (Hemlock-)Northern Hardwood Forest,Hardwood,1010,1122,NA,531,53,47,NA,V-B,C,Succession Class C
+101,101,319.000000000000000,1945,6,13540,64,13540_64_66,Northeastern Interior Pine Barrens,Conifer,77,31,12,8,10,24,66,I-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+102,102,213974.000000000000000,1953,6,13890,64,13890_64_66,Acadian-Appalachian Subalpine Woodland and Heath-Krummholz,Shrubland,3351,1795,4331,916,27,51,22,V-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+103,103,2907.000000000000000,1953,7,13890,64,13890_64_66,Acadian-Appalachian Subalpine Woodland and Heath-Krummholz,Shrubland,3351,1795,4331,916,27,51,22,V-B,UE,Uncharacteristic Exotic Vegetation
+104,104,622.000000000000000,1953,180,13890,64,13890_64_66,Acadian-Appalachian Subalpine Woodland and Heath-Krummholz,Shrubland,3351,1795,4331,916,27,51,22,V-B,Agriculture,Agriculture
+105,105,690.000000000000000,1953,120,13890,64,13890_64_66,Acadian-Appalachian Subalpine Woodland and Heath-Krummholz,Shrubland,3351,1795,4331,916,27,51,22,V-B,Developed,Developed
+106,106,6189.000000000000000,1945,180,13540,64,13540_64_66,Northeastern Interior Pine Barrens,Conifer,77,31,12,8,10,24,66,I-B,Agriculture,Agriculture
+107,107,540.000000000000000,1952,2,13770,64,13770_60_61_63_64_65_66,Central Appalachian Pine-Oak Rocky Woodland,Hardwood-Conifer,412,384,4645,190,46,50,4,III-B,B,Succession Class B
+108,108,34.000000000000000,1945,2,13540,64,13540_64_66,Northeastern Interior Pine Barrens,Conifer,77,31,12,8,10,24,66,I-B,B,Succession Class B
+109,109,618.000000000000000,1960,120,14790,64,14790_60_61_63_64_65_66,Central Interior and Appalachian Swamp Systems,Riparian,1011,NA,1353,578,57,NA,43,V-B,Developed,Developed
+110,110,315.000000000000000,1960,2,14790,64,14790_60_61_63_64_65_66,Central Interior and Appalachian Swamp Systems,Riparian,1011,NA,1353,578,57,NA,43,V-B,B,Succession Class B
+111,111,503.000000000000000,31,132,31,na,na,Barren-Rock/Sand/Clay,Barren-Rock/Sand/Clay,NA,NA,NA,NA,NA,NA,NA,NA,Barren or Sparse,Barren or Sparse
+112,112,3.000000000000000,1959,5,14770,64,14770_63_64_65_66,Boreal Acidic Peatland Systems,Riparian,935,NA,170,144,15,NA,85,III-B,E,Succession Class E
+113,113,185.000000000000000,1952,120,13770,64,13770_60_61_63_64_65_66,Central Appalachian Pine-Oak Rocky Woodland,Hardwood-Conifer,412,384,4645,190,46,50,4,III-B,Developed,Developed
+114,114,409.000000000000000,1952,180,13770,64,13770_60_61_63_64_65_66,Central Appalachian Pine-Oak Rocky Woodland,Hardwood-Conifer,412,384,4645,190,46,50,4,III-B,Agriculture,Agriculture
+115,115,768.000000000000000,1956,1,14710,64,14710_64_65,Central Interior and Appalachian Floodplain Systems,Riparian,603,392,120,80,14,20,66,III-A,A,Succession Class A
+116,116,264.000000000000000,1956,180,14710,64,14710_64_65,Central Interior and Appalachian Floodplain Systems,Riparian,603,392,120,80,14,20,66,III-A,Agriculture,Agriculture
+117,117,4.000000000000000,1946,4,13620,64,13620_51_63_64_65_66,Laurentian-Acadian Northern Pine(-Oak) Forest,Hardwood-Conifer,309,447,65,48,16,11,73,III-A,D,Succession Class D
+118,118,3.000000000000000,1963,3,15180,64,15180_43_47_49_52_62_63_64_65,North-Central Interior Wet Flatwoods,Hardwood,993,NA,NA,993,100,NA,NA,V-B,C,Succession Class C
+119,119,123.000000000000000,1960,180,14790,64,14790_60_61_63_64_65_66,Central Interior and Appalachian Swamp Systems,Riparian,1011,NA,1353,578,57,NA,43,V-B,Agriculture,Agriculture
+120,120,1510.000000000000000,1952,7,13770,64,13770_60_61_63_64_65_66,Central Appalachian Pine-Oak Rocky Woodland,Hardwood-Conifer,412,384,4645,190,46,50,4,III-B,UE,Uncharacteristic Exotic Vegetation
+121,121,27.000000000000000,1953,4,13890,64,13890_64_66,Acadian-Appalachian Subalpine Woodland and Heath-Krummholz,Shrubland,3351,1795,4331,916,27,51,22,V-B,D,Succession Class D
+122,122,8.000000000000000,1945,1,13540,64,13540_64_66,Northeastern Interior Pine Barrens,Conifer,77,31,12,8,10,24,66,I-B,A,Succession Class A
+123,123,2.000000000000000,1953,3,13890,64,13890_64_66,Acadian-Appalachian Subalpine Woodland and Heath-Krummholz,Shrubland,3351,1795,4331,916,27,51,22,V-B,C,Succession Class C
+124,124,282.000000000000000,1960,6,14790,64,14790_60_61_63_64_65_66,Central Interior and Appalachian Swamp Systems,Riparian,1011,NA,1353,578,57,NA,43,V-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+125,125,46.000000000000000,1958,1,14750,64,14750_41_50_51_63_64_65_66,Laurentian-Acadian Floodplain Systems,Riparian,NA,435,68,59,NA,14,86,III-A,A,Succession Class A
+126,126,1.000000000000000,1951,4,13740,64,13740_64_65_66,Acadian-Appalachian Montane Spruce-Fir Forest,Hardwood-Conifer,580,NA,NA,580,100,NA,NA,V-B,D,Succession Class D
+127,127,1.000000000000000,1951,5,13740,64,13740_64_65_66,Acadian-Appalachian Montane Spruce-Fir Forest,Hardwood-Conifer,580,NA,NA,580,100,NA,NA,V-B,E,Succession Class E
+128,128,9.000000000000000,1943,4,13020,64,13020_64,Laurentian-Acadian Northern Hardwoods Forest,Hardwood,2108,NA,NA,2108,100,NA,NA,V-B,D,Succession Class D
+129,129,421.000000000000000,1924,7,13620,65,13620_51_63_64_65_66,Laurentian-Acadian Northern Pine(-Oak) Forest,Hardwood-Conifer,309,447,65,48,16,11,73,III-A,UE,Uncharacteristic Exotic Vegetation
+130,130,181.000000000000000,1935,120,14750,65,14750_41_50_51_63_64_65_66,Laurentian-Acadian Floodplain Systems,Riparian,NA,435,68,59,NA,14,86,III-A,Developed,Developed
+131,131,901.000000000000000,1924,120,13620,65,13620_51_63_64_65_66,Laurentian-Acadian Northern Pine(-Oak) Forest,Hardwood-Conifer,309,447,65,48,16,11,73,III-A,Developed,Developed
+132,132,120.000000000000000,1924,1,13620,65,13620_51_63_64_65_66,Laurentian-Acadian Northern Pine(-Oak) Forest,Hardwood-Conifer,309,447,65,48,16,11,73,III-A,A,Succession Class A
+133,133,30470.000000000000000,1924,2,13620,65,13620_51_63_64_65_66,Laurentian-Acadian Northern Pine(-Oak) Forest,Hardwood-Conifer,309,447,65,48,16,11,73,III-A,B,Succession Class B
+134,134,28734.000000000000000,1926,2,13690,65,13690_60_61_63_64_65_66,Central Appalachian Dry Oak-Pine Forest,Hardwood-Conifer,182,463,15,14,8,3,89,I-B,B,Succession Class B
+135,135,3452.000000000000000,1926,120,13690,65,13690_60_61_63_64_65_66,Central Appalachian Dry Oak-Pine Forest,Hardwood-Conifer,182,463,15,14,8,3,89,I-B,Developed,Developed
+136,136,26509.000000000000000,1926,3,13690,65,13690_60_61_63_64_65_66,Central Appalachian Dry Oak-Pine Forest,Hardwood-Conifer,182,463,15,14,8,3,89,I-B,C,Succession Class C
+137,137,58346.000000000000000,1920,5,13020,65,13020_65_66,Laurentian-Acadian Northern Hardwoods Forest,Hardwood,983,NA,NA,983,100,NA,NA,V-B,E,Succession Class E
+138,138,82949.000000000000000,1925,4,13660,65,13660_51_63_64_65_66,Laurentian-Acadian Pine-Hemlock-Hardwood Forest,Hardwood-Conifer,482,998,289,153,32,15,53,III-B,D,Succession Class D
+139,139,9902.000000000000000,1927,2,13700,65,13700_60_63_64_65_66,Appalachian (Hemlock-)Northern Hardwood Forest,Hardwood,1010,1122,NA,531,53,47,NA,V-B,B,Succession Class B
+140,140,1237.000000000000000,1926,7,13690,65,13690_60_61_63_64_65_66,Central Appalachian Dry Oak-Pine Forest,Hardwood-Conifer,182,463,15,14,8,3,89,I-B,UE,Uncharacteristic Exotic Vegetation
+141,141,3125.000000000000000,1925,7,13660,65,13660_51_63_64_65_66,Laurentian-Acadian Pine-Hemlock-Hardwood Forest,Hardwood-Conifer,482,998,289,153,32,15,53,III-B,UE,Uncharacteristic Exotic Vegetation
+142,142,66300.000000000000000,1920,3,13020,65,13020_65_66,Laurentian-Acadian Northern Hardwoods Forest,Hardwood,983,NA,NA,983,100,NA,NA,V-B,C,Succession Class C
+143,143,687.000000000000000,1926,1,13690,65,13690_60_61_63_64_65_66,Central Appalachian Dry Oak-Pine Forest,Hardwood-Conifer,182,463,15,14,8,3,89,I-B,A,Succession Class A
+144,144,295.000000000000000,1926,6,13690,65,13690_60_61_63_64_65_66,Central Appalachian Dry Oak-Pine Forest,Hardwood-Conifer,182,463,15,14,8,3,89,I-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+145,145,534.000000000000000,1924,3,13620,65,13620_51_63_64_65_66,Laurentian-Acadian Northern Pine(-Oak) Forest,Hardwood-Conifer,309,447,65,48,16,11,73,III-A,C,Succession Class C
+146,146,1039.000000000000000,1920,2,13020,65,13020_65_66,Laurentian-Acadian Northern Hardwoods Forest,Hardwood,983,NA,NA,983,100,NA,NA,V-B,B,Succession Class B
+147,147,261.000000000000000,1924,180,13620,65,13620_51_63_64_65_66,Laurentian-Acadian Northern Pine(-Oak) Forest,Hardwood-Conifer,309,447,65,48,16,11,73,III-A,Agriculture,Agriculture
+148,148,222.000000000000000,1930,4,13770,65,13770_60_61_63_64_65_66,Central Appalachian Pine-Oak Rocky Woodland,Hardwood-Conifer,412,384,4645,190,46,50,4,III-B,D,Succession Class D
+149,149,429.000000000000000,1930,3,13770,65,13770_60_61_63_64_65_66,Central Appalachian Pine-Oak Rocky Woodland,Hardwood-Conifer,412,384,4645,190,46,50,4,III-B,C,Succession Class C
+150,150,9546.000000000000000,1920,6,13020,65,13020_65_66,Laurentian-Acadian Northern Hardwoods Forest,Hardwood,983,NA,NA,983,100,NA,NA,V-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+151,151,2417.000000000000000,1926,180,13690,65,13690_60_61_63_64_65_66,Central Appalachian Dry Oak-Pine Forest,Hardwood-Conifer,182,463,15,14,8,3,89,I-B,Agriculture,Agriculture
+152,152,4783.000000000000000,1942,6,15260,65,15260_64_65_66,Laurentian-Acadian Swamp Systems,Riparian,1011,NA,NA,1011,100,NA,NA,V-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+153,153,218.000000000000000,1935,6,14750,65,14750_41_50_51_63_64_65_66,Laurentian-Acadian Floodplain Systems,Riparian,NA,435,68,59,NA,14,86,III-A,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+154,154,65.000000000000000,1935,7,14750,65,14750_41_50_51_63_64_65_66,Laurentian-Acadian Floodplain Systems,Riparian,NA,435,68,59,NA,14,86,III-A,UE,Uncharacteristic Exotic Vegetation
+155,155,906.000000000000000,1935,3,14750,65,14750_41_50_51_63_64_65_66,Laurentian-Acadian Floodplain Systems,Riparian,NA,435,68,59,NA,14,86,III-A,C,Succession Class C
+156,156,12707.000000000000000,1942,3,15260,65,15260_64_65_66,Laurentian-Acadian Swamp Systems,Riparian,1011,NA,NA,1011,100,NA,NA,V-B,C,Succession Class C
+157,157,1818.000000000000000,1925,120,13660,65,13660_51_63_64_65_66,Laurentian-Acadian Pine-Hemlock-Hardwood Forest,Hardwood-Conifer,482,998,289,153,32,15,53,III-B,Developed,Developed
+158,158,85.000000000000000,1935,180,14750,65,14750_41_50_51_63_64_65_66,Laurentian-Acadian Floodplain Systems,Riparian,NA,435,68,59,NA,14,86,III-A,Agriculture,Agriculture
+159,159,3144.000000000000000,1934,2,14720,65,14720_64_65_66,Central Interior and Appalachian Riparian Systems,Riparian,984,NA,198,165,17,NA,83,III-B,B,Succession Class B
+160,160,1032.000000000000000,1942,120,15260,65,15260_64_65_66,Laurentian-Acadian Swamp Systems,Riparian,1011,NA,NA,1011,100,NA,NA,V-B,Developed,Developed
+161,161,1025.000000000000000,1942,7,15260,65,15260_64_65_66,Laurentian-Acadian Swamp Systems,Riparian,1011,NA,NA,1011,100,NA,NA,V-B,UE,Uncharacteristic Exotic Vegetation
+162,162,737.000000000000000,1942,180,15260,65,15260_64_65_66,Laurentian-Acadian Swamp Systems,Riparian,1011,NA,NA,1011,100,NA,NA,V-B,Agriculture,Agriculture
+163,163,338.000000000000000,1937,180,14790,65,14790_60_61_63_64_65_66,Central Interior and Appalachian Swamp Systems,Riparian,1011,NA,1353,578,57,NA,43,V-B,Agriculture,Agriculture
+164,164,71.000000000000000,1940,120,14940,65,14940_63_65_66,Laurentian-Acadian Shrub-Herbaceous Wetland Systems,Riparian,792,NA,NA,792,100,NA,NA,V-B,Developed,Developed
+165,165,242.000000000000000,1937,120,14790,65,14790_60_61_63_64_65_66,Central Interior and Appalachian Swamp Systems,Riparian,1011,NA,1353,578,57,NA,43,V-B,Developed,Developed
+166,166,1410.000000000000000,1927,3,13700,65,13700_60_63_64_65_66,Appalachian (Hemlock-)Northern Hardwood Forest,Hardwood,1010,1122,NA,531,53,47,NA,V-B,C,Succession Class C
+167,167,133.000000000000000,1940,4,14940,65,14940_63_65_66,Laurentian-Acadian Shrub-Herbaceous Wetland Systems,Riparian,792,NA,NA,792,100,NA,NA,V-B,D,Succession Class D
+168,168,191.000000000000000,1934,120,14720,65,14720_64_65_66,Central Interior and Appalachian Riparian Systems,Riparian,984,NA,198,165,17,NA,83,III-B,Developed,Developed
+169,169,698.000000000000000,1940,6,14940,65,14940_63_65_66,Laurentian-Acadian Shrub-Herbaceous Wetland Systems,Riparian,792,NA,NA,792,100,NA,NA,V-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+170,170,123.000000000000000,1935,2,14750,65,14750_41_50_51_63_64_65_66,Laurentian-Acadian Floodplain Systems,Riparian,NA,435,68,59,NA,14,86,III-A,B,Succession Class B
+171,171,215.000000000000000,1942,1,15260,65,15260_64_65_66,Laurentian-Acadian Swamp Systems,Riparian,1011,NA,NA,1011,100,NA,NA,V-B,A,Succession Class A
+172,172,627.000000000000000,1942,2,15260,65,15260_64_65_66,Laurentian-Acadian Swamp Systems,Riparian,1011,NA,NA,1011,100,NA,NA,V-B,B,Succession Class B
+173,173,1109.000000000000000,1940,2,14940,65,14940_63_65_66,Laurentian-Acadian Shrub-Herbaceous Wetland Systems,Riparian,792,NA,NA,792,100,NA,NA,V-B,B,Succession Class B
+174,174,283.000000000000000,1930,6,13770,65,13770_60_61_63_64_65_66,Central Appalachian Pine-Oak Rocky Woodland,Hardwood-Conifer,412,384,4645,190,46,50,4,III-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+175,175,98.000000000000000,1934,1,14720,65,14720_64_65_66,Central Interior and Appalachian Riparian Systems,Riparian,984,NA,198,165,17,NA,83,III-B,A,Succession Class A
+176,176,466.000000000000000,1934,3,14720,65,14720_64_65_66,Central Interior and Appalachian Riparian Systems,Riparian,984,NA,198,165,17,NA,83,III-B,C,Succession Class C
+177,177,140.000000000000000,1940,7,14940,65,14940_63_65_66,Laurentian-Acadian Shrub-Herbaceous Wetland Systems,Riparian,792,NA,NA,792,100,NA,NA,V-B,UE,Uncharacteristic Exotic Vegetation
+178,178,369.000000000000000,1927,7,13700,65,13700_60_63_64_65_66,Appalachian (Hemlock-)Northern Hardwood Forest,Hardwood,1010,1122,NA,531,53,47,NA,V-B,UE,Uncharacteristic Exotic Vegetation
+179,179,579.000000000000000,1927,120,13700,65,13700_60_63_64_65_66,Appalachian (Hemlock-)Northern Hardwood Forest,Hardwood,1010,1122,NA,531,53,47,NA,V-B,Developed,Developed
+180,180,271.000000000000000,1927,6,13700,65,13700_60_63_64_65_66,Appalachian (Hemlock-)Northern Hardwood Forest,Hardwood,1010,1122,NA,531,53,47,NA,V-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+181,181,4378.000000000000000,1920,120,13020,65,13020_65_66,Laurentian-Acadian Northern Hardwoods Forest,Hardwood,983,NA,NA,983,100,NA,NA,V-B,Developed,Developed
+182,182,1884.000000000000000,1920,7,13020,65,13020_65_66,Laurentian-Acadian Northern Hardwoods Forest,Hardwood,983,NA,NA,983,100,NA,NA,V-B,UE,Uncharacteristic Exotic Vegetation
+183,183,403.000000000000000,1925,2,13660,65,13660_51_63_64_65_66,Laurentian-Acadian Pine-Hemlock-Hardwood Forest,Hardwood-Conifer,482,998,289,153,32,15,53,III-B,B,Succession Class B
+184,184,3604.000000000000000,1920,180,13020,65,13020_65_66,Laurentian-Acadian Northern Hardwoods Forest,Hardwood,983,NA,NA,983,100,NA,NA,V-B,Agriculture,Agriculture
+185,185,1596.000000000000000,1925,180,13660,65,13660_51_63_64_65_66,Laurentian-Acadian Pine-Hemlock-Hardwood Forest,Hardwood-Conifer,482,998,289,153,32,15,53,III-B,Agriculture,Agriculture
+186,186,74.000000000000000,1927,180,13700,65,13700_60_63_64_65_66,Appalachian (Hemlock-)Northern Hardwood Forest,Hardwood,1010,1122,NA,531,53,47,NA,V-B,Agriculture,Agriculture
+187,187,153.000000000000000,1933,2,14710,65,14710_64_65,Central Interior and Appalachian Floodplain Systems,Riparian,603,392,120,80,14,20,66,III-A,B,Succession Class B
+188,188,147.000000000000000,1933,3,14710,65,14710_64_65,Central Interior and Appalachian Floodplain Systems,Riparian,603,392,120,80,14,20,66,III-A,C,Succession Class C
+189,189,146.000000000000000,1936,120,14770,65,14770_63_64_65_66,Boreal Acidic Peatland Systems,Riparian,935,NA,170,144,15,NA,85,III-B,Developed,Developed
+190,190,145.000000000000000,1940,180,14940,65,14940_63_65_66,Laurentian-Acadian Shrub-Herbaceous Wetland Systems,Riparian,792,NA,NA,792,100,NA,NA,V-B,Agriculture,Agriculture
+191,191,1006.000000000000000,1937,3,14790,65,14790_60_61_63_64_65_66,Central Interior and Appalachian Swamp Systems,Riparian,1011,NA,1353,578,57,NA,43,V-B,C,Succession Class C
+192,192,296.000000000000000,1925,1,13660,65,13660_51_63_64_65_66,Laurentian-Acadian Pine-Hemlock-Hardwood Forest,Hardwood-Conifer,482,998,289,153,32,15,53,III-B,A,Succession Class A
+193,193,22.000000000000000,1941,180,15180,65,15180_43_47_49_52_62_63_64_65,North-Central Interior Wet Flatwoods,Hardwood,993,NA,NA,993,100,NA,NA,V-B,Agriculture,Agriculture
+194,194,324.000000000000000,1937,6,14790,65,14790_60_61_63_64_65_66,Central Interior and Appalachian Swamp Systems,Riparian,1011,NA,1353,578,57,NA,43,V-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+195,195,310.000000000000000,1937,2,14790,65,14790_60_61_63_64_65_66,Central Interior and Appalachian Swamp Systems,Riparian,1011,NA,1353,578,57,NA,43,V-B,B,Succession Class B
+196,196,1.000000000000000,1939,6,14900,65,14900_65_66,Gulf and Atlantic Coastal Plain Tidal Marsh Systems,Riparian,508,NA,NA,508,100,NA,NA,V-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+197,197,42.000000000000000,1936,2,14770,65,14770_63_64_65_66,Boreal Acidic Peatland Systems,Riparian,935,NA,170,144,15,NA,85,III-B,B,Succession Class B
+198,198,77.000000000000000,1930,2,13770,65,13770_60_61_63_64_65_66,Central Appalachian Pine-Oak Rocky Woodland,Hardwood-Conifer,412,384,4645,190,46,50,4,III-B,B,Succession Class B
+199,199,246.000000000000000,1937,7,14790,65,14790_60_61_63_64_65_66,Central Interior and Appalachian Swamp Systems,Riparian,1011,NA,1353,578,57,NA,43,V-B,UE,Uncharacteristic Exotic Vegetation
+200,200,65.000000000000000,1936,180,14770,65,14770_63_64_65_66,Boreal Acidic Peatland Systems,Riparian,935,NA,170,144,15,NA,85,III-B,Agriculture,Agriculture
+201,201,85.000000000000000,1930,180,13770,65,13770_60_61_63_64_65_66,Central Appalachian Pine-Oak Rocky Woodland,Hardwood-Conifer,412,384,4645,190,46,50,4,III-B,Agriculture,Agriculture
+202,202,8.000000000000000,1941,7,15180,65,15180_43_47_49_52_62_63_64_65,North-Central Interior Wet Flatwoods,Hardwood,993,NA,NA,993,100,NA,NA,V-B,UE,Uncharacteristic Exotic Vegetation
+203,203,44.000000000000000,1941,120,15180,65,15180_43_47_49_52_62_63_64_65,North-Central Interior Wet Flatwoods,Hardwood,993,NA,NA,993,100,NA,NA,V-B,Developed,Developed
+204,204,60.000000000000000,1920,1,13020,65,13020_65_66,Laurentian-Acadian Northern Hardwoods Forest,Hardwood,983,NA,NA,983,100,NA,NA,V-B,A,Succession Class A
+205,205,3.000000000000000,1941,1,15180,65,15180_43_47_49_52_62_63_64_65,North-Central Interior Wet Flatwoods,Hardwood,993,NA,NA,993,100,NA,NA,V-B,A,Succession Class A
+206,206,172.000000000000000,1934,7,14720,65,14720_64_65_66,Central Interior and Appalachian Riparian Systems,Riparian,984,NA,198,165,17,NA,83,III-B,UE,Uncharacteristic Exotic Vegetation
+207,207,114.000000000000000,1925,3,13660,65,13660_51_63_64_65_66,Laurentian-Acadian Pine-Hemlock-Hardwood Forest,Hardwood-Conifer,482,998,289,153,32,15,53,III-B,C,Succession Class C
+208,208,38.000000000000000,1941,6,15180,65,15180_43_47_49_52_62_63_64_65,North-Central Interior Wet Flatwoods,Hardwood,993,NA,NA,993,100,NA,NA,V-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+209,209,51.000000000000000,1930,7,13770,65,13770_60_61_63_64_65_66,Central Appalachian Pine-Oak Rocky Woodland,Hardwood-Conifer,412,384,4645,190,46,50,4,III-B,UE,Uncharacteristic Exotic Vegetation
+210,210,55.000000000000000,1933,1,14710,65,14710_64_65,Central Interior and Appalachian Floodplain Systems,Riparian,603,392,120,80,14,20,66,III-A,A,Succession Class A
+211,211,29.000000000000000,1932,180,14360,65,14360_65_66,Northern Atlantic Coastal Plain Dune and Swale,Grassland,10,17,NA,6,62,38,NA,I-B,Agriculture,Agriculture
+212,212,252.000000000000000,1933,6,14710,65,14710_64_65,Central Interior and Appalachian Floodplain Systems,Riparian,603,392,120,80,14,20,66,III-A,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+213,213,11.000000000000000,1941,2,15180,65,15180_43_47_49_52_62_63_64_65,North-Central Interior Wet Flatwoods,Hardwood,993,NA,NA,993,100,NA,NA,V-B,B,Succession Class B
+214,214,240.000000000000000,1932,6,14360,65,14360_65_66,Northern Atlantic Coastal Plain Dune and Swale,Grassland,10,17,NA,6,62,38,NA,I-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+215,215,27.000000000000000,1932,3,14360,65,14360_65_66,Northern Atlantic Coastal Plain Dune and Swale,Grassland,10,17,NA,6,62,38,NA,I-B,C,Succession Class C
+216,216,38.000000000000000,1933,120,14710,65,14710_64_65,Central Interior and Appalachian Floodplain Systems,Riparian,603,392,120,80,14,20,66,III-A,Developed,Developed
+217,217,43.000000000000000,1936,6,14770,65,14770_63_64_65_66,Boreal Acidic Peatland Systems,Riparian,935,NA,170,144,15,NA,85,III-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+218,218,86.000000000000000,1932,120,14360,65,14360_65_66,Northern Atlantic Coastal Plain Dune and Swale,Grassland,10,17,NA,6,62,38,NA,I-B,Developed,Developed
+219,219,2.000000000000000,1922,3,13240,65,13240_60_65_66,Northern Atlantic Coastal Plain Hardwood Forest,Hardwood,48,44,4,4,8,8,84,I-A,C,Succession Class C
+220,220,70.000000000000000,1930,120,13770,65,13770_60_61_63_64_65_66,Central Appalachian Pine-Oak Rocky Woodland,Hardwood-Conifer,412,384,4645,190,46,50,4,III-B,Developed,Developed
+221,221,35.000000000000000,1936,7,14770,65,14770_63_64_65_66,Boreal Acidic Peatland Systems,Riparian,935,NA,170,144,15,NA,85,III-B,UE,Uncharacteristic Exotic Vegetation
+222,222,13.000000000000000,1934,180,14720,65,14720_64_65_66,Central Interior and Appalachian Riparian Systems,Riparian,984,NA,198,165,17,NA,83,III-B,Agriculture,Agriculture
+223,223,78.000000000000000,1936,3,14770,65,14770_63_64_65_66,Boreal Acidic Peatland Systems,Riparian,935,NA,170,144,15,NA,85,III-B,C,Succession Class C
+224,224,5.000000000000000,1928,2,13730,65,13730_65_66,Acadian Low-Elevation Spruce-Fir-Hardwood Forest,Hardwood-Conifer,1127,NA,NA,1127,100,NA,NA,V-B,B,Succession Class B
+225,225,48.000000000000000,1936,4,14770,65,14770_63_64_65_66,Boreal Acidic Peatland Systems,Riparian,935,NA,170,144,15,NA,85,III-B,D,Succession Class D
+226,226,59.000000000000000,1933,7,14710,65,14710_64_65,Central Interior and Appalachian Floodplain Systems,Riparian,603,392,120,80,14,20,66,III-A,UE,Uncharacteristic Exotic Vegetation
+227,227,12.000000000000000,1932,7,14360,65,14360_65_66,Northern Atlantic Coastal Plain Dune and Swale,Grassland,10,17,NA,6,62,38,NA,I-B,UE,Uncharacteristic Exotic Vegetation
+228,228,46.000000000000000,1936,1,14770,65,14770_63_64_65_66,Boreal Acidic Peatland Systems,Riparian,935,NA,170,144,15,NA,85,III-B,A,Succession Class A
+229,229,11.000000000000000,1933,180,14710,65,14710_64_65,Central Interior and Appalachian Floodplain Systems,Riparian,603,392,120,80,14,20,66,III-A,Agriculture,Agriculture
+230,230,1393.000000000000000,1929,3,13740,65,13740_64_65_66,Acadian-Appalachian Montane Spruce-Fir Forest,Hardwood-Conifer,580,NA,NA,580,100,NA,NA,V-B,C,Succession Class C
+231,231,54.000000000000000,1929,6,13740,65,13740_64_65_66,Acadian-Appalachian Montane Spruce-Fir Forest,Hardwood-Conifer,580,NA,NA,580,100,NA,NA,V-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+232,232,1112.000000000000000,1929,2,13740,65,13740_64_65_66,Acadian-Appalachian Montane Spruce-Fir Forest,Hardwood-Conifer,580,NA,NA,580,100,NA,NA,V-B,B,Succession Class B
+233,233,2.000000000000000,1928,3,13730,65,13730_65_66,Acadian Low-Elevation Spruce-Fir-Hardwood Forest,Hardwood-Conifer,1127,NA,NA,1127,100,NA,NA,V-B,C,Succession Class C
+234,234,1.000000000000000,1932,1,14360,65,14360_65_66,Northern Atlantic Coastal Plain Dune and Swale,Grassland,10,17,NA,6,62,38,NA,I-B,A,Succession Class A
+235,235,1.000000000000000,1928,1,13730,65,13730_65_66,Acadian Low-Elevation Spruce-Fir-Hardwood Forest,Hardwood-Conifer,1127,NA,NA,1127,100,NA,NA,V-B,A,Succession Class A
+236,236,7.000000000000000,1940,3,14940,65,14940_63_65_66,Laurentian-Acadian Shrub-Herbaceous Wetland Systems,Riparian,792,NA,NA,792,100,NA,NA,V-B,C,Succession Class C
+237,237,26.000000000000000,1929,1,13740,65,13740_64_65_66,Acadian-Appalachian Montane Spruce-Fir Forest,Hardwood-Conifer,580,NA,NA,580,100,NA,NA,V-B,A,Succession Class A
+238,238,19.000000000000000,1929,7,13740,65,13740_64_65_66,Acadian-Appalachian Montane Spruce-Fir Forest,Hardwood-Conifer,580,NA,NA,580,100,NA,NA,V-B,UE,Uncharacteristic Exotic Vegetation
+239,239,1.000000000000000,1927,1,13700,65,13700_60_63_64_65_66,Appalachian (Hemlock-)Northern Hardwood Forest,Hardwood,1010,1122,NA,531,53,47,NA,V-B,A,Succession Class A
+240,240,7.000000000000000,1944,5,13030,64,13030_61_63_64_65_66,Northeastern Interior Dry-Mesic Oak Forest,Hardwood,39,24,9,6,14,23,63,I-B,E,Succession Class E
+241,241,11.000000000000000,1944,4,13030,64,13030_61_63_64_65_66,Northeastern Interior Dry-Mesic Oak Forest,Hardwood,39,24,9,6,14,23,63,I-B,D,Succession Class D
+242,242,23357.000000000000000,1949,120,13700,64,13700_60_63_64_65_66,Appalachian (Hemlock-)Northern Hardwood Forest,Hardwood,1010,1122,NA,531,53,47,NA,V-B,Developed,Developed
+243,243,1.000000000000000,1929,180,13740,65,13740_64_65_66,Acadian-Appalachian Montane Spruce-Fir Forest,Hardwood-Conifer,580,NA,NA,580,100,NA,NA,V-B,Agriculture,Agriculture
+244,244,7556.000000000000000,1949,6,13700,64,13700_60_63_64_65_66,Appalachian (Hemlock-)Northern Hardwood Forest,Hardwood,1010,1122,NA,531,53,47,NA,V-B,UN,Uncharacteristic Native Vegetation Cover/Structure/Composition
+245,245,42023.000000000000000,1949,180,13700,64,13700_60_63_64_65_66,Appalachian (Hemlock-)Northern Hardwood Forest,Hardwood,1010,1122,NA,531,53,47,NA,V-B,Agriculture,Agriculture
+246,246,49544.000000000000000,1949,7,13700,64,13700_60_63_64_65_66,Appalachian (Hemlock-)Northern Hardwood Forest,Hardwood,1010,1122,NA,531,53,47,NA,V-B,UE,Uncharacteristic Exotic Vegetation
+247,247,1.000000000000000,1929,120,13740,65,13740_64_65_66,Acadian-Appalachian Montane Spruce-Fir Forest,Hardwood-Conifer,580,NA,NA,580,100,NA,NA,V-B,Developed,Developed
+248,248,1.000000000000000,1928,180,13730,65,13730_65_66,Acadian Low-Elevation Spruce-Fir-Hardwood Forest,Hardwood-Conifer,1127,NA,NA,1127,100,NA,NA,V-B,Agriculture,Agriculture
+249,249,1.000000000000000,1956,4,14710,64,14710_64_65,Central Interior and Appalachian Floodplain Systems,Riparian,603,392,120,80,14,20,66,III-A,D,Succession Class D
+250,250,2.000000000000000,1957,5,14720,64,14720_64_65_66,Central Interior and Appalachian Riparian Systems,Riparian,984,NA,198,165,17,NA,83,III-B,E,Succession Class E
+251,251,2.000000000000000,1949,4,13700,64,13700_60_63_64_65_66,Appalachian (Hemlock-)Northern Hardwood Forest,Hardwood,1010,1122,NA,531,53,47,NA,V-B,D,Succession Class D
+252,252,4.000000000000000,1958,4,14750,64,14750_41_50_51_63_64_65_66,Laurentian-Acadian Floodplain Systems,Riparian,NA,435,68,59,NA,14,86,III-A,D,Succession Class D
+253,253,11.000000000000000,1949,1,13700,64,13700_60_63_64_65_66,Appalachian (Hemlock-)Northern Hardwood Forest,Hardwood,1010,1122,NA,531,53,47,NA,V-B,A,Succession Class A
+254,254,1.000000000000000,1944,3,13030,64,13030_61_63_64_65_66,Northeastern Interior Dry-Mesic Oak Forest,Hardwood,39,24,9,6,14,23,63,I-B,C,Succession Class C

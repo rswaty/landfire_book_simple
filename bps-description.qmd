@@ -19,33 +19,36 @@ A foundational LANDFIRE product are the Biophysical Settings (BpS) Descriptions 
 
 ## Downloading all of the BpS descriptions
 
-While we typically work with one or a small set of BpSs, there are times when downloading the entire set developed for the lower 48 states plus Hawaii and Alaska is most efficient. 
+While we typically work with one or a small set of BpSs, there are times when downloading the entire set developed for the lower 48 states plus Hawaii and Alaska is most efficient.
 
 **To download all BpS descriptions:**
 
-1.  Navigate to [LANDFIRE's BpS Description and Quantitative Models Webpage](shttps://landfire.gov/bps-models.php){target='blank'}
+1.  Navigate to [LANDFIRE's BpS Description and Quantitative Models Webpage](shttps://landfire.gov/bps-models.php){target="blank"}
 2.  Scroll down to Download BpS Models and Descriptions Section (see below).
-3.  Click on the "BpS Descriptions" which will trigger downloading of a .zip file named "LANDFIRE_CONUS-HI_BpS_Descriptions_Jan2023.zip" that has 819 Word Documents.  This file will most likely land in your "Downloads" directory.
-4. Use your extraction tool of choice to unzip and explore.  One possible way if you are using Windows is to:
-    * right click the file
-    * select 'Extract all' to access the Windows extraction tool (see below).
+3.  Click on the "BpS Descriptions" which will trigger downloading of a .zip file named "LANDFIRE_CONUS-HI_BpS_Descriptions_Jan2023.zip" that has 819 Word Documents. This file will most likely land in your "Downloads" directory.
+4.  Use your extraction tool of choice to unzip and explore. One possible way if you are using Windows is to:
+    -   right click the file
+    -   select 'Extract all' to access the Windows extraction tool (see below).
 
 <br>
 
+***
+
+#### Screenshots for downloading and unzipping all BpS descriptions
+
 *Where to click to download all BpS descriptions.*
 
+
+
+![](images/bps_descriptions/download_descriptions_all.png){fig-alt="\"Screenshot of where on https://landfire.gov/bps-models.php you click to download all of the BpS descriptions."}
+
 ------------------------------------------------------------------------
-
-[![](images/bps_descriptions/download_descriptions_all.png){fig-alt="\"Screenshot of where on https://landfire.gov/bps-models.php you click to download all of the BpS descriptions."}](https://landfire.gov/bps-models.php)
-
-------------------------------------------------------------------------
-
 
 *Windows extraction tool being used to unzip all BpS descriptions file.*
 
-------------------------------------------------------------------------
 
-[![](images/bps_descriptions/zip_click.png){fig-alt="Windows extraction tool being used to unzip all BpS descriptions file."}](https://landfire.gov/bps-models.php)
+
+![](images/bps_descriptions/zip_click.png){fig-alt="Windows extraction tool being used to unzip all BpS descriptions file."}
 
 ------------------------------------------------------------------------
 
@@ -53,19 +56,96 @@ While we typically work with one or a small set of BpSs, there are times when do
 
 ## Downloading one or a set of BpS documents
 
-In support of a BpS review process we completed recently, we created a [BpS Models and Descriptions Support](https://landfirereview.org/){target='blank'} website, which has a page that allows for searching for, and downloading a single or a set of BpS Descriptions.
+In support of a BpS review process we completed recently, we created a [BpS Models and Descriptions Support](https://landfirereview.org/){target="blank"} website, which has a page that allows for searching for, and downloading a single or a set of BpS Descriptions.
+
+### Select your BpSs of interest
+
+1.  Go to [this page](https://landfirereview.org/search.php){target="blank"} of our website.
+
+2.  There are multiple ways to select BpS documents to download, including:
+
+    -   Get all BpS documents by one or more broad Vegetation Types (#1 on 'Ways to select' screenshot below)
+    -   Get all BpS documents by one or more LANDFIRE Map Zones (#2 on 'Ways to select' screenshot below). To get a Map Zone map you can click the "View map of LANDFIRE Map Zones" text (highlighted with blue arrow on 'Ways to download' screenshot below), or click [https://landfirereview.org/IMG/USmapzones-v1_July2015.jpg](here.){target="blank"}
+
+<br>
+
+```{=html}
+<style>
+div.blue {background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+```
+::: blue
+Checking boxes will select the 'Vegetation Types' and/or 'Map Zones' and/or specific BpSs for filtering or downloading purposes.
+:::
+
+<br>
+
+Additionally, you can search for a BpS of interest by typing in the 'Search...' box(#3 on 'Ways to select' screenshot below). A few things to keep in mind when searching:
+
+-   Genus and/or species, common or Latin (e.g., 'Fraxinus', or 'White Ash' )
+-   Most text terms will work, numbers will not. For example, 'hurricane' will work return BpSs, '1362' (an actual BpS number) will not.
+-   You can first filter by 'Vegetation Types' and/or 'Map Zones', then search to narrow results.
+
+### Download documents of interest
+
+Once you have selected the BpSs you want to get descriptions for you can take one more step to get your documents:
+
+1.  If you want all of the BpSs for selected 'Vegetation Types' and/or 'Map Zones' you will click the 'Download All Search Results Documents' button (indicated with arrow on 'Download all' screenshot below).
+2.  If you have checked specific BpSs for download, you will click the 'Download All Selected Documents' button (inidcated with an arrow on 'Download selected' screenshot below).
+
+*Clicking either of the 'Download' buttons will initiate download of a .zip file that will most likely land in your 'Downloads' folder. See 'Windows extraction tool being used to unzip all BpS descriptions file' screenshot above for an example of how to unzip.*
+
+<br>
+
+```{=html}
+<style>
+div.yellow {background-color:#fbff87; border-radius: 5px; padding: 20px;}
+</style>
+```
+::: yellow
+Beware when clicking the 'Download All Search Results Documents' button. If not careful you will end up with a huge download of many more documents than you want! Make sure to filter by 'Vegetation Types' and/or 'Map Zones' first.
+:::
+
+<br>
+
+<br>
+
+***
+
+#### Screenshots of selecting and downloading BpSs
+
+<br>
+
+*Ways to select your BpS(s) of interest.*
 
 
 
+![](images/bps_descriptions/ways_to_select.png){fig-alt="\"Ways to select your BpSs of interest on https://landfirereview.org/search.php"}
+
+------------------------------------------------------------------------
+
+<br>
+
+*Downloading all BpSs from filtering by 'Vegetation Types' and/or 'Map Zones'*
 
 
-**Randy's thoughts**
 
--   going over a BpS document is a great way to not only help people understand BpS, but also to introduce spatial datasets:
-    -   BpS
-    -   EVT though s-class rule table (where we get lifeform)
-    -   EVC and EVH-rule table
-    -   S-class--look at succession class descriptions to understand what "A" means in an additional way (in addition to s-class table)
--   demo downloading BpS descriptions
--   describe key features/sections of document
--   link to Blankenship et al 2021
+![](images/bps_descriptions/download_all.png){fig-alt="How to go about downloading all BpSs after filtering by 'Vegetation Types' and/or 'Map Zones' "}
+
+
+
+<br>
+
+*Downloading selected BpSs*
+
+
+
+![](images/bps_descriptions/download_selected.png){fig-alt="How to go about downloading selected BpSs after filtering by 'Vegetation Types' and/or 'Map Zones, then clicking specific BpSs' "}
+
+------------------------------------------------------------------------
+
+<br>
+
+## What's in a BpS document
+
+## Additional resources
