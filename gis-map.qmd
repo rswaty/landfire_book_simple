@@ -1,19 +1,100 @@
 ---
 title: "Make a map with LANDFIRE data"
-author: "Randy Swaty"
+author: "Randy Swaty, Sarah Hagen"
 date: "2024-01-03"
 output: html_document
 ---
 
-
 # Make a map with LANDFIRE data
 
-## accessibility
+## Universal Design and Accessibility
 
-* link to Sarah's videos
-* highlight challenges
+When it comes to maps and visuals, it is important to pay attention to details such as font, font size, color contrast, map colors, and layout. These elements play a crucial role in ensuring the best experience for everyone. This concept is known as [Universal Design.](https://www.section508.gov/develop/universal-design/)
 
-## different maps
+By law, anything created with Federal funds is required to be accessible to all users. However, Universal Design goes beyond compliance. It emphasizes creating spaces, products, and visuals that are accessible and user-friendly for everyone, regardless of their abilities.
 
-* EVT
-* EVC or EVH
+Implementing Universal Design concepts in map design, cartography, and presenting complex information can be challenging. For example, map data is often complex and uses a large number of colors that can make it difficult to understand. The LANDFIRE Biophysical Settings color ramp has over 400 unique values, making it especially difficult for people with color vision differences to interpret. Additionally, many datasets have default color ramps that are not accessible or useful. This means that cartographers either have to spend time recoloring the datasets or deliver maps with inaccessible color displays, thus making their products inaccessible.
+
+The LANDFIRE team is still in the early stages of implementing Universal Design. We still have a lot to learn, but we are dedicated to doing what we can to get this right. To that end, we have created a series of videos and a collection of resources to help everyone get started. You can find these resources in the description boxes of each video.
+
+[View the Universal Design in Cartography playlist on our YouTube Channel](https://www.youtube.com/playlist?list=PLwRbAc4x5n94oDecKuYMZ87N0npAkAGLp)
+
+## Making a Map in ArcGIS Pro
+
+### What you will learn here
+
+1.  How to bring data into ArcGIS Pro
+2.  How to change the layer symbology
+3.  How to combine two raster datasets
+4.  How to export an attribute table
+
+### Adding data in ArcGIS Pro
+
+There are several ways you can add data in ArcGIS Pro: from a local file, from a url (using a WMS or REST service, for example), from ArcGIS Online, from ESRI's living atlas, and more. For this tutorial, we will focus on adding data from a local file on our machine.
+
+If you've been following along, you've already used the LANDFIRE Map Viewer to draw a rectangle around or upload your shapefile of interest then download the relevant LANDFIRE datasets. These should be saved to your computer. They may be stored as .zip files. You will need to unzip them before uploading to ArcGIS Pro.
+
+**To add your data to ArcGIS Pro**
+
+1.  Click on the 'Add Data' button (yellow rectangle with a plus sign) on the top ribbon bar. It's located under the 'Map' tab in the top menu.
+2.  Browse to the location of your spatial data layers. If your data are in more than one folder, you'll need to add each layer separately. If they are in the same folder, you can CTRL+click or SHIFT+click to add multiple datasets at once.
+3.  You may get a message asking if you want to build pyramids. Pyramids will help your map draw faster, but I don't recommend building pyramids on LANDFIRE data, as this can sometimes do wonky things with the display at smaller map scales. I generally click the 'No' box for these datasets.
+
+#### Screenshots for adding data to ArcGIS Pro
+
+------------------------------------------------------------------------
+
+*Where to click to add data.*
+
+![](images/gis_map/1_AddData.png){fig-alt="\"A screenshot demonstrating the process of adding data in ArcGIS Pro. The cursor is positioned over the 'Add Data' button, located on the top ribbon toolbar near the left side of the page. The button is outlined with a square."}
+
+------------------------------------------------------------------------
+
+*Browsing to your data. Note: You will use your own file path to wherever your data are saved*
+
+![](images/gis_map/2_SelectLayer.png){fig-alt="\"A screenshot illustrating the steps to browse for data in ArcGIS Pro's 'Add Data' dialog box. The dialog box is open, displaying file directories. The cursor is shown navigating through folders to locate and select the desired data file for addition to the ArcGIS Pro project."}
+
+------------------------------------------------------------------------
+
+*Build Pyramids options*
+
+![](images/gis_map/3_BuildPyramids.png){fig-alt="\" A screenshot featuring the 'Build Pyramids' dialog box in ArcGIS Pro. The dialog box displays options related to pyramid building. A rectangular highlight surrounds the 'No' button, indicating the user's choice. The 'No' button is the selected option within the dialogue box."}
+
+------------------------------------------------------------------------
+
+### Change the layer symbology
+
+When you add the LANDFIRE data to ArcGIS Pro, it often adds with either a greyscale color scheme or some other 'Stretch' color ramp that isn't useful for understanding or visualizing the data. In most cases, we will want to view our data by looking at the 'Unique Values' of a particular field within the attribute table. For this example, we'll be looking at the Existing Vegetation Type layer, choosing to symbolize on the EVT_Name field. The process is the same for any layer and any field, but the specific field may be different depending on what attributes you're interested in.
+
+**Changing the layer symbology**
+
+1. Right click on the layer name in the table of contents to open the layer properties menu, then browse to 'Symbology'. This option can be found about two-thirds of the way down the menu.
+2. This will open the 'Symbology' pane in the right sidebar. Here you can use the dropdown arrow under 'Primary Symbology' to change the symbology type from 'Stretch' to 'Unique Values'.
+3. The layer will symbolize using the unique values within a field in the table. By default, raster layers will choose to symbolize on the 'Value' field. In this case, we're interested in the Existing Vegetation Type names, so we'll use the 'Field 1' dropdown to select the EVT_NAME field instead.
+4. When you're done, you can choose to leave the symbology pane open, hide it using the pin icon found next to the x in the top right corner of the pane, or use the x to close it entirely. Remember that if you want to change the symbology, you'll need to start from step 1 to open the pane again.
+
+#### Screenshots for symbolizing EVT with Unique Values
+
+------------------------------------------------------------------------
+
+*Where to click to open the symbology pane.*
+
+![](images/gis_map/4_NavigateToSymbology.png){fig-alt="\"A screenshot demonstrating the process of opening the symbology pane in ArcGIS Pro. The cursor is positioned over the 'Symbology' tab in the layer properties dialogue panel. You can open this panel by right clicking on the layer name in the table of contents on the left. The tab is highlighted, ready to be clicked, revealing the symbology options for map layer customization."}
+
+------------------------------------------------------------------------
+
+*Selecting Unique Values as the Primary Symbology*
+
+![](images/gis_map/5_SelectUniqueValues.png){fig-alt="\"A screenshot illustrating the steps to change primary symbology from 'Stretch' to 'Unique Values' in ArcGIS Pro. The cursor is positioned over the symbology settings menu, displaying the options. A highlight surrounds the 'Unique Values' option, indicating the user's selection for modifying the primary symbology of the map layer."}
+
+------------------------------------------------------------------------
+
+*EVT layer displayed with Unique values. Note: This is using the LANDFIRE default color ramp and does not follow Universal Design best practices. Users with non-standard color vision may not be able to see the data patterns in this map*
+
+![](images/gis_map/6_UniqueValues.png){fig-alt="\"A screenshot of the ArcGIS Pro window. The Symbology is set to Unique Values with the Field set to EVT_Name. The map window shows the default EVT_Name color ramp for our chosen layer."}
+
+------------------------------------------------------------------------
+
+*BONUS ACTION: Closing or pinning the Symbology pane*
+
+![](images/gis_map/7_SymbologyPane.png){fig-alt="\"A screenshot showing a close up of the Symbology pane. In the top right corner there are three icons. An arrow, a pin, and an X. The pin will pin the pane to the sidebar of the map. The x will close the pane. The screenshot includes a drawn on box showing the location of the tools and a hand-drawn arrow showing where the pane will minimize to if the pin is selected."}
