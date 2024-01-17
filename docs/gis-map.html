@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Randy Swaty">
+<meta name="author" content="Randy Swaty, Sarah Hagen">
 <meta name="dcterms.date" content="2024-01-03">
 
 <title>LANDFIRE-Powered Landscape Assessments - 5&nbsp; Make a map with LANDFIRE data</title>
@@ -59,7 +59,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -79,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
       <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./gis-map.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Make a map with LANDFIRE data</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -155,8 +156,13 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#make-a-map-with-landfire-data" id="toc-make-a-map-with-landfire-data" class="nav-link active" data-scroll-target="#make-a-map-with-landfire-data"><span class="header-section-number">6</span> Make a map with LANDFIRE data</a>
   <ul class="collapse">
-  <li><a href="#accessibility" id="toc-accessibility" class="nav-link" data-scroll-target="#accessibility"><span class="header-section-number">6.1</span> accessibility</a></li>
-  <li><a href="#different-maps" id="toc-different-maps" class="nav-link" data-scroll-target="#different-maps"><span class="header-section-number">6.2</span> different maps</a></li>
+  <li><a href="#universal-design-and-accessibility" id="toc-universal-design-and-accessibility" class="nav-link" data-scroll-target="#universal-design-and-accessibility"><span class="header-section-number">6.1</span> Universal Design and Accessibility</a></li>
+  <li><a href="#making-a-map-in-arcgis-pro" id="toc-making-a-map-in-arcgis-pro" class="nav-link" data-scroll-target="#making-a-map-in-arcgis-pro"><span class="header-section-number">6.2</span> Making a Map in ArcGIS Pro</a>
+  <ul class="collapse">
+  <li><a href="#what-you-will-learn-here" id="toc-what-you-will-learn-here" class="nav-link" data-scroll-target="#what-you-will-learn-here"><span class="header-section-number">6.2.1</span> What you will learn here</a></li>
+  <li><a href="#adding-data-in-arcgis-pro" id="toc-adding-data-in-arcgis-pro" class="nav-link" data-scroll-target="#adding-data-in-arcgis-pro"><span class="header-section-number">6.2.2</span> Adding data in ArcGIS Pro</a></li>
+  <li><a href="#change-the-layer-symbology" id="toc-change-the-layer-symbology" class="nav-link" data-scroll-target="#change-the-layer-symbology"><span class="header-section-number">6.2.3</span> Change the layer symbology</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -176,7 +182,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Randy Swaty </p>
+             <p>Randy Swaty, Sarah Hagen </p>
           </div>
   </div>
     
@@ -195,21 +201,77 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="make-a-map-with-landfire-data" class="level1" data-number="6">
 <h1 data-number="6"><span class="header-section-number">6</span> Make a map with LANDFIRE data</h1>
-<section id="accessibility" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="accessibility"><span class="header-section-number">6.1</span> accessibility</h2>
-<ul>
-<li>link to Sarah’s videos</li>
-<li>highlight challenges</li>
-</ul>
+<section id="universal-design-and-accessibility" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="universal-design-and-accessibility"><span class="header-section-number">6.1</span> Universal Design and Accessibility</h2>
+<p>When it comes to maps and visuals, it is important to pay attention to details such as font, font size, color contrast, map colors, and layout. These elements play a crucial role in ensuring the best experience for everyone. This concept is known as <a href="https://www.section508.gov/develop/universal-design/">Universal Design.</a></p>
+<p>By law, anything created with Federal funds is required to be accessible to all users. However, Universal Design goes beyond compliance. It emphasizes creating spaces, products, and visuals that are accessible and user-friendly for everyone, regardless of their abilities.</p>
+<p>Implementing Universal Design concepts in map design, cartography, and presenting complex information can be challenging. For example, map data is often complex and uses a large number of colors that can make it difficult to understand. The LANDFIRE Biophysical Settings color ramp has over 400 unique values, making it especially difficult for people with color vision differences to interpret. Additionally, many datasets have default color ramps that are not accessible or useful. This means that cartographers either have to spend time recoloring the datasets or deliver maps with inaccessible color displays, thus making their products inaccessible.</p>
+<p>The LANDFIRE team is still in the early stages of implementing Universal Design. We still have a lot to learn, but we are dedicated to doing what we can to get this right. To that end, we have created a series of videos and a collection of resources to help everyone get started. You can find these resources in the description boxes of each video.</p>
+<p><a href="https://www.youtube.com/playlist?list=PLwRbAc4x5n94oDecKuYMZ87N0npAkAGLp">View the Universal Design in Cartography playlist on our YouTube Channel</a></p>
 </section>
-<section id="different-maps" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="different-maps"><span class="header-section-number">6.2</span> different maps</h2>
-<ul>
-<li>EVT</li>
-<li>EVC or EVH</li>
-</ul>
+<section id="making-a-map-in-arcgis-pro" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="making-a-map-in-arcgis-pro"><span class="header-section-number">6.2</span> Making a Map in ArcGIS Pro</h2>
+<section id="what-you-will-learn-here" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="what-you-will-learn-here"><span class="header-section-number">6.2.1</span> What you will learn here</h3>
+<ol type="1">
+<li>How to bring data into ArcGIS Pro</li>
+<li>How to change the layer symbology</li>
+<li>How to combine two raster datasets</li>
+<li>How to export an attribute table</li>
+</ol>
+</section>
+<section id="adding-data-in-arcgis-pro" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="adding-data-in-arcgis-pro"><span class="header-section-number">6.2.2</span> Adding data in ArcGIS Pro</h3>
+<p>There are several ways you can add data in ArcGIS Pro: from a local file, from a url (using a WMS or REST service, for example), from ArcGIS Online, from ESRI’s living atlas, and more. For this tutorial, we will focus on adding data from a local file on our machine.</p>
+<p>If you’ve been following along, you’ve already used the LANDFIRE Map Viewer to draw a rectangle around or upload your shapefile of interest then download the relevant LANDFIRE datasets. These should be saved to your computer. They may be stored as .zip files. You will need to unzip them before uploading to ArcGIS Pro.</p>
+<p><strong>To add your data to ArcGIS Pro</strong></p>
+<ol type="1">
+<li>Click on the ‘Add Data’ button (yellow rectangle with a plus sign) on the top ribbon bar. It’s located under the ‘Map’ tab in the top menu.</li>
+<li>Browse to the location of your spatial data layers. If your data are in more than one folder, you’ll need to add each layer separately. If they are in the same folder, you can CTRL+click or SHIFT+click to add multiple datasets at once.</li>
+<li>You may get a message asking if you want to build pyramids. Pyramids will help your map draw faster, but I don’t recommend building pyramids on LANDFIRE data, as this can sometimes do wonky things with the display at smaller map scales. I generally click the ‘No’ box for these datasets.</li>
+</ol>
+<section id="screenshots-for-adding-data-to-arcgis-pro" class="level4" data-number="6.2.2.1">
+<h4 data-number="6.2.2.1" class="anchored" data-anchor-id="screenshots-for-adding-data-to-arcgis-pro"><span class="header-section-number">6.2.2.1</span> Screenshots for adding data to ArcGIS Pro</h4>
+<hr>
+<p><em>Where to click to add data.</em></p>
+<p><img src="images/gis_map/1_AddData.png" class="img-fluid" alt="&quot;A screenshot demonstrating the process of adding data in ArcGIS Pro. The cursor is positioned over the 'Add Data' button, located on the top ribbon toolbar near the left side of the page. The button is outlined with a square."></p>
+<hr>
+<p><em>Browsing to your data. Note: You will use your own file path to wherever your data are saved</em></p>
+<p><img src="images/gis_map/2_SelectLayer.png" class="img-fluid" alt="&quot;A screenshot illustrating the steps to browse for data in ArcGIS Pro's 'Add Data' dialog box. The dialog box is open, displaying file directories. The cursor is shown navigating through folders to locate and select the desired data file for addition to the ArcGIS Pro project."></p>
+<hr>
+<p><em>Build Pyramids options</em></p>
+<p><img src="images/gis_map/3_BuildPyramids.png" class="img-fluid" alt="&quot; A screenshot featuring the 'Build Pyramids' dialog box in ArcGIS Pro. The dialog box displays options related to pyramid building. A rectangular highlight surrounds the 'No' button, indicating the user's choice. The 'No' button is the selected option within the dialogue box."></p>
+<hr>
+</section>
+</section>
+<section id="change-the-layer-symbology" class="level3" data-number="6.2.3">
+<h3 data-number="6.2.3" class="anchored" data-anchor-id="change-the-layer-symbology"><span class="header-section-number">6.2.3</span> Change the layer symbology</h3>
+<p>When you add the LANDFIRE data to ArcGIS Pro, it often adds with either a greyscale color scheme or some other ‘Stretch’ color ramp that isn’t useful for understanding or visualizing the data. In most cases, we will want to view our data by looking at the ‘Unique Values’ of a particular field within the attribute table. For this example, we’ll be looking at the Existing Vegetation Type layer, choosing to symbolize on the EVT_Name field. The process is the same for any layer and any field, but the specific field may be different depending on what attributes you’re interested in.</p>
+<p><strong>Changing the layer symbology</strong></p>
+<ol type="1">
+<li>Right click on the layer name in the table of contents to open the layer properties menu, then browse to ‘Symbology’. This option can be found about two-thirds of the way down the menu.</li>
+<li>This will open the ‘Symbology’ pane in the right sidebar. Here you can use the dropdown arrow under ‘Primary Symbology’ to change the symbology type from ‘Stretch’ to ‘Unique Values’.</li>
+<li>The layer will symbolize using the unique values within a field in the table. By default, raster layers will choose to symbolize on the ‘Value’ field. In this case, we’re interested in the Existing Vegetation Type names, so we’ll use the ‘Field 1’ dropdown to select the EVT_NAME field instead.</li>
+<li>When you’re done, you can choose to leave the symbology pane open, hide it using the pin icon found next to the x in the top right corner of the pane, or use the x to close it entirely. Remember that if you want to change the symbology, you’ll need to start from step 1 to open the pane again.</li>
+</ol>
+<section id="screenshots-for-symbolizing-evt-with-unique-values" class="level4" data-number="6.2.3.1">
+<h4 data-number="6.2.3.1" class="anchored" data-anchor-id="screenshots-for-symbolizing-evt-with-unique-values"><span class="header-section-number">6.2.3.1</span> Screenshots for symbolizing EVT with Unique Values</h4>
+<hr>
+<p><em>Where to click to open the symbology pane.</em></p>
+<p><img src="images/gis_map/4_NavigateToSymbology.png" class="img-fluid" alt="&quot;A screenshot demonstrating the process of opening the symbology pane in ArcGIS Pro. The cursor is positioned over the 'Symbology' tab in the layer properties dialogue panel. You can open this panel by right clicking on the layer name in the table of contents on the left. The tab is highlighted, ready to be clicked, revealing the symbology options for map layer customization."></p>
+<hr>
+<p><em>Selecting Unique Values as the Primary Symbology</em></p>
+<p><img src="images/gis_map/5_SelectUniqueValues.png" class="img-fluid" alt="&quot;A screenshot illustrating the steps to change primary symbology from 'Stretch' to 'Unique Values' in ArcGIS Pro. The cursor is positioned over the symbology settings menu, displaying the options. A highlight surrounds the 'Unique Values' option, indicating the user's selection for modifying the primary symbology of the map layer."></p>
+<hr>
+<p><em>EVT layer displayed with Unique values. Note: This is using the LANDFIRE default color ramp and does not follow Universal Design best practices. Users with non-standard color vision may not be able to see the data patterns in this map</em></p>
+<p><img src="images/gis_map/6_UniqueValues.png" class="img-fluid" alt="&quot;A screenshot of the ArcGIS Pro window. The Symbology is set to Unique Values with the Field set to EVT_Name. The map window shows the default EVT_Name color ramp for our chosen layer."></p>
+<hr>
+<p><em>BONUS ACTION: Closing or pinning the Symbology pane</em></p>
+<p><img src="images/gis_map/7_SymbologyPane.png" class="img-fluid" alt="&quot;A screenshot showing a close up of the Symbology pane. In the top right corner there are three icons. An arrow, a pin, and an X. The pin will pin the pane to the sidebar of the map. The x will close the pane. The screenshot includes a drawn on box showing the location of the tools and a hand-drawn arrow showing where the pane will minimize to if the pin is selected."></p>
 
 
+</section>
+</section>
 </section>
 </section>
 

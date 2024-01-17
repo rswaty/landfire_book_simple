@@ -148,4 +148,6 @@ Beware when clicking the 'Download All Search Results Documents' button. If not 
 
 ## What's in a BpS document
 
+Once you download and unzip your selected BpS documents, what do you actually have?  One or more Word documents that in very general terms describe how the ecosystems of the US 'looked and functioned' prior to European colonization. 
+
 ## Additional resources
