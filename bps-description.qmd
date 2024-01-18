@@ -148,6 +148,59 @@ Beware when clicking the 'Download All Search Results Documents' button. If not 
 
 ## What's in a BpS document
 
-Once you download and unzip your selected BpS documents, what do you actually have?  One or more Word documents that in very general terms describe how the ecosystems of the US 'looked and functioned' prior to European colonization. 
+Once you download and unzip your selected BpS documents, what do you actually have?  One or more Word documents that in very general terms describe how the ecosystems of the US 'looked and functioned' prior to European colonization. We hope the documents are largely self-explanatory.  That said, below we'll highlight a few important considerations when reading these documents.
+
+### File name, Map Zones and that number at the top
+
+The BpS documents were saved with a numeric code such as "13700_60_63_64_65_66.docx".  This number represents three things: 
+
+1. BpS code: this is the first 4 digits, e.g., "1370" in our example for the "Appalachian (Hemlock-)Northern Hardwood Forest". 
+2. BpS splits: this is the fifth digit, or "0" in our example.  Occasionally an original BpS would be 'split' into multiple.  For example, in the Great Lakes there is a "Boreal White Spruce-Fir-Hardwood Forest - Inland" (BpS code 13651), and a "Boreal White Spruce-Fir-Hardwood Forest - Coastal" (BpS code 13652), which have a "1" and a "2" in the file name, and BpS code.
+3. Map Zones: the string of numbers separated by an underscore represents the Map Zones that this particular document (and associated BpS state and transition model) apply to.
+
+### Fire Frequency Table
+
+The Fire Frequency Table can be confusing (see Fire Frequency Table screenshot below).  A few things to keep in mind when viewing this table include:
+
+* The Severity, Avg FI (FI - Fire Interval), and Percent of All Fires values are imported from the Syncro Sim model
+* The values in the Avg FI and Percent of All Fires columns are essentially a 'composite' across all succession classes, which may include classes which have very short FIs, and classes with very long FIs.
+* The Min FI and Max FI columns are user populated, and may not necessarily correspond to the aforementioned columns
+
+### Succession Classes Table
+
+LANDFIRE did not attempt to map where succession classes were prior to European colonization, as they would have moved around.  This table is used to map where succession classes are today.  For example, in the 'Succession Class Table' screenshot below we have highlighted combinations of Existing Height and Cover (and lifeform) that would be mapped as Successsion Class A.  
+
+
+### Model Parameters Table
+
+This table is essentially an 'export' of the SyncroSim model parameters.  In other words, experts entered in all of the natural disturbances they knew about into the modeling software, and this table has all of those disturbances, numbers and the 'results' of those disturbances.
+
+In the 'Model Parameters Table' screenshot below we have highlighted the top row that would read something like "the wind/weather/stress disturbance would impact the Early1:All succession class once every 1000 years on average (or 0.1% of the succession class yearly on average), and when that disturbance happened it would move the acre back to the beginning of the Early1: All succession class. "
+
+#### Screenshots of What's in a BpS document
+
+<br>
+
+*Fire Frequency Table.*
+
+![](images/bps_descriptions/fire_freq_table.png){fig-alt="\"An example Fire Frequency Table. "}
+
+<br>
+
+*Succession Classes Table*
+
+![](images/bps_descriptions/sclass_table.png){fig-alt="\"Succession Class Rules table with all combinations that equal succession class A circled in purple."}
+<br>
+
+![](images/bps_descriptions/model_parameters.png){fig-alt="\"Model Parameters Table with the top row highlighted in blue to correspond to page text. "}
+
+
+------------------------------------------------------------------------
+
+<br>
 
 ## Additional resources
+
+* Blankenship, K., Swaty, R., Hall, K.R., Hagen, S., Pohl, K., Shlisky Hunt, A., Patton, J., Frid, L. and Smith, J., 2021. Vegetation dynamics models: a comprehensive set for natural resource assessment and planning in the United States. Ecosphere, 12(4), p.e03484.  [Link to paper](https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ecs2.3484)
+* https://thenatureconservancy.github.io/landfiremodels/
+* Also see https://landfirereview.org/BpSProducts.html

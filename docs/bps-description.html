@@ -161,7 +161,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#select-your-bpss-of-interest" id="toc-select-your-bpss-of-interest" class="nav-link" data-scroll-target="#select-your-bpss-of-interest"><span class="header-section-number">1.3.1</span> Select your BpSs of interest</a></li>
   <li><a href="#download-documents-of-interest" id="toc-download-documents-of-interest" class="nav-link" data-scroll-target="#download-documents-of-interest"><span class="header-section-number">1.3.2</span> Download documents of interest</a></li>
   </ul></li>
-  <li><a href="#whats-in-a-bps-document" id="toc-whats-in-a-bps-document" class="nav-link" data-scroll-target="#whats-in-a-bps-document"><span class="header-section-number">1.4</span> What’s in a BpS document</a></li>
+  <li><a href="#whats-in-a-bps-document" id="toc-whats-in-a-bps-document" class="nav-link" data-scroll-target="#whats-in-a-bps-document"><span class="header-section-number">1.4</span> What’s in a BpS document</a>
+  <ul class="collapse">
+  <li><a href="#file-name-map-zones-and-that-number-at-the-top" id="toc-file-name-map-zones-and-that-number-at-the-top" class="nav-link" data-scroll-target="#file-name-map-zones-and-that-number-at-the-top"><span class="header-section-number">1.4.1</span> File name, Map Zones and that number at the top</a></li>
+  <li><a href="#fire-frequency-table" id="toc-fire-frequency-table" class="nav-link" data-scroll-target="#fire-frequency-table"><span class="header-section-number">1.4.2</span> Fire Frequency Table</a></li>
+  <li><a href="#succession-classes-table" id="toc-succession-classes-table" class="nav-link" data-scroll-target="#succession-classes-table"><span class="header-section-number">1.4.3</span> Succession Classes Table</a></li>
+  <li><a href="#model-parameters-table" id="toc-model-parameters-table" class="nav-link" data-scroll-target="#model-parameters-table"><span class="header-section-number">1.4.4</span> Model Parameters Table</a></li>
+  </ul></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources"><span class="header-section-number">1.5</span> Additional resources</a></li>
   </ul>
 </nav>
@@ -305,10 +311,54 @@ div.yellow {background-color:#fbff87; border-radius: 5px; padding: 20px;}
 </section>
 <section id="whats-in-a-bps-document" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="whats-in-a-bps-document"><span class="header-section-number">1.4</span> What’s in a BpS document</h2>
-<p>Once you download and unzip your selected BpS documents, what do you actually have? One or more Word documents that in very general terms describe how the ecosystems of the US ‘looked and functioned’ prior to European colonization.</p>
+<p>Once you download and unzip your selected BpS documents, what do you actually have? One or more Word documents that in very general terms describe how the ecosystems of the US ‘looked and functioned’ prior to European colonization. We hope the documents are largely self-explanatory. That said, below we’ll highlight a few important considerations when reading these documents.</p>
+<section id="file-name-map-zones-and-that-number-at-the-top" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="file-name-map-zones-and-that-number-at-the-top"><span class="header-section-number">1.4.1</span> File name, Map Zones and that number at the top</h3>
+<p>The BpS documents were saved with a numeric code such as “13700_60_63_64_65_66.docx”. This number represents three things:</p>
+<ol type="1">
+<li>BpS code: this is the first 4 digits, e.g., “1370” in our example for the “Appalachian (Hemlock-)Northern Hardwood Forest”.</li>
+<li>BpS splits: this is the fifth digit, or “0” in our example. Occasionally an original BpS would be ‘split’ into multiple. For example, in the Great Lakes there is a “Boreal White Spruce-Fir-Hardwood Forest - Inland” (BpS code 13651), and a “Boreal White Spruce-Fir-Hardwood Forest - Coastal” (BpS code 13652), which have a “1” and a “2” in the file name, and BpS code.</li>
+<li>Map Zones: the string of numbers separated by an underscore represents the Map Zones that this particular document (and associated BpS state and transition model) apply to.</li>
+</ol>
+</section>
+<section id="fire-frequency-table" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="fire-frequency-table"><span class="header-section-number">1.4.2</span> Fire Frequency Table</h3>
+<p>The Fire Frequency Table can be confusing (see Fire Frequency Table screenshot below). A few things to keep in mind when viewing this table include:</p>
+<ul>
+<li>The Severity, Avg FI (FI - Fire Interval), and Percent of All Fires values are imported from the Syncro Sim model</li>
+<li>The values in the Avg FI and Percent of All Fires columns are essentially a ‘composite’ across all succession classes, which may include classes which have very short FIs, and classes with very long FIs.</li>
+<li>The Min FI and Max FI columns are user populated, and may not necessarily correspond to the aforementioned columns</li>
+</ul>
+</section>
+<section id="succession-classes-table" class="level3" data-number="1.4.3">
+<h3 data-number="1.4.3" class="anchored" data-anchor-id="succession-classes-table"><span class="header-section-number">1.4.3</span> Succession Classes Table</h3>
+<p>LANDFIRE did not attempt to map where succession classes were prior to European colonization, as they would have moved around. This table is used to map where succession classes are today. For example, in the ‘Succession Class Table’ screenshot below we have highlighted combinations of Existing Height and Cover (and lifeform) that would be mapped as Successsion Class A.</p>
+</section>
+<section id="model-parameters-table" class="level3" data-number="1.4.4">
+<h3 data-number="1.4.4" class="anchored" data-anchor-id="model-parameters-table"><span class="header-section-number">1.4.4</span> Model Parameters Table</h3>
+<p>This table is essentially an ‘export’ of the SyncroSim model parameters. In other words, experts entered in all of the natural disturbances they knew about into the modeling software, and this table has all of those disturbances, numbers and the ‘results’ of those disturbances.</p>
+<p>In the ‘Model Parameters Table’ screenshot below we have highlighted the top row that would read something like “the wind/weather/stress disturbance would impact the Early1:All succession class once every 1000 years on average (or 0.1% of the succession class yearly on average), and when that disturbance happened it would move the acre back to the beginning of the Early1: All succession class.”</p>
+<section id="screenshots-of-whats-in-a-bps-document" class="level4" data-number="1.4.4.1">
+<h4 data-number="1.4.4.1" class="anchored" data-anchor-id="screenshots-of-whats-in-a-bps-document"><span class="header-section-number">1.4.4.1</span> Screenshots of What’s in a BpS document</h4>
+<p><br></p>
+<p><em>Fire Frequency Table.</em></p>
+<p><img src="images/bps_descriptions/fire_freq_table.png" class="img-fluid" alt="&quot;An example Fire Frequency Table. "></p>
+<p><br></p>
+<p><em>Succession Classes Table</em></p>
+<p><img src="images/bps_descriptions/sclass_table.png" class="img-fluid" alt="&quot;Succession Class Rules table with all combinations that equal succession class A circled in purple."> <br></p>
+<p><img src="images/bps_descriptions/model_parameters.png" class="img-fluid" alt="&quot;Model Parameters Table with the top row highlighted in blue to correspond to page text. "></p>
+<hr>
+<p><br></p>
+</section>
+</section>
 </section>
 <section id="additional-resources" class="level2" data-number="1.5">
 <h2 data-number="1.5" class="anchored" data-anchor-id="additional-resources"><span class="header-section-number">1.5</span> Additional resources</h2>
+<ul>
+<li>Blankenship, K., Swaty, R., Hall, K.R., Hagen, S., Pohl, K., Shlisky Hunt, A., Patton, J., Frid, L. and Smith, J., 2021. Vegetation dynamics models: a comprehensive set for natural resource assessment and planning in the United States. Ecosphere, 12(4), p.e03484. <a href="https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ecs2.3484">Link to paper</a></li>
+<li>https://thenatureconservancy.github.io/landfiremodels/</li>
+<li>Also see https://landfirereview.org/BpSProducts.html</li>
+</ul>
 
 
 </section>
