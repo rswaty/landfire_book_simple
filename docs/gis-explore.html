@@ -6,8 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Randy Swaty">
-<meta name="dcterms.date" content="2024-01-03">
+<meta name="author" content="Randy Swaty, Sarah Hagen">
+<meta name="dcterms.date" content="2024-01-18">
 
 <title>LANDFIRE-Powered Landscape Assessments - 4&nbsp; Explore the spatial data</title>
 <style>
@@ -154,7 +154,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#explore-lf-spatial-data-with-arcgis-pro" id="toc-explore-lf-spatial-data-with-arcgis-pro" class="nav-link active" data-scroll-target="#explore-lf-spatial-data-with-arcgis-pro"><span class="header-section-number">5</span> Explore LF spatial data with ArcGIS Pro</a></li>
+  <li><a href="#explore-landfire-spatial-data" id="toc-explore-landfire-spatial-data" class="nav-link active" data-scroll-target="#explore-landfire-spatial-data"><span class="header-section-number">5</span> Explore LANDFIRE spatial data</a>
+  <ul class="collapse">
+  <li><a href="#why-do-i-need-to-explore-the-attributes-of-landfire-data" id="toc-why-do-i-need-to-explore-the-attributes-of-landfire-data" class="nav-link" data-scroll-target="#why-do-i-need-to-explore-the-attributes-of-landfire-data"><span class="header-section-number">5.1</span> Why do I need to explore the attributes of LANDFIRE data?</a></li>
+  <li><a href="#what-you-will-learn-here" id="toc-what-you-will-learn-here" class="nav-link" data-scroll-target="#what-you-will-learn-here"><span class="header-section-number">5.2</span> What you will learn here</a></li>
+  <li><a href="#how-to-explore-the-attributes-of-landfire-datasets" id="toc-how-to-explore-the-attributes-of-landfire-datasets" class="nav-link" data-scroll-target="#how-to-explore-the-attributes-of-landfire-datasets"><span class="header-section-number">5.3</span> How to explore the attributes of LANDFIRE datasets</a>
+  <ul class="collapse">
+  <li><a href="#from-the-landfire-program-website" id="toc-from-the-landfire-program-website" class="nav-link" data-scroll-target="#from-the-landfire-program-website"><span class="header-section-number">5.3.1</span> From the LANDFIRE Program website</a></li>
+  <li><a href="#with-the-.csv-file-for-each-layer" id="toc-with-the-.csv-file-for-each-layer" class="nav-link" data-scroll-target="#with-the-.csv-file-for-each-layer"><span class="header-section-number">5.3.2</span> With the .csv file for each layer</a></li>
+  <li><a href="#within-arcgis-pro" id="toc-within-arcgis-pro" class="nav-link" data-scroll-target="#within-arcgis-pro"><span class="header-section-number">5.3.3</span> Within ArcGIS Pro</a></li>
+  </ul></li>
+  <li><a href="#key-attributes-of-four-landfire-datasets" id="toc-key-attributes-of-four-landfire-datasets" class="nav-link" data-scroll-target="#key-attributes-of-four-landfire-datasets"><span class="header-section-number">5.4</span> Key attributes of four LANDFIRE datasets</a>
+  <ul class="collapse">
+  <li><a href="#biophysical-settings" id="toc-biophysical-settings" class="nav-link" data-scroll-target="#biophysical-settings"><span class="header-section-number">5.4.1</span> Biophysical Settings</a></li>
+  <li><a href="#existing-vegetation-type" id="toc-existing-vegetation-type" class="nav-link" data-scroll-target="#existing-vegetation-type"><span class="header-section-number">5.4.2</span> Existing Vegetation Type</a></li>
+  <li><a href="#existing-vegetation-cover" id="toc-existing-vegetation-cover" class="nav-link" data-scroll-target="#existing-vegetation-cover"><span class="header-section-number">5.4.3</span> Existing Vegetation Cover</a></li>
+  <li><a href="#succession-classes" id="toc-succession-classes" class="nav-link" data-scroll-target="#succession-classes"><span class="header-section-number">5.4.4</span> Succession Classes</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -173,14 +190,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Randy Swaty </p>
+             <p>Randy Swaty, Sarah Hagen </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 3, 2024</p>
+      <p class="date">January 18, 2024</p>
     </div>
   </div>
   
@@ -190,16 +207,254 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="explore-lf-spatial-data-with-arcgis-pro" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Explore LF spatial data with ArcGIS Pro</h1>
-<p><strong>Randy’s thoughts</strong></p>
+<section id="explore-landfire-spatial-data" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Explore LANDFIRE spatial data</h1>
+<p>LANDFIRE, which stands for Landscape Fire and Resource Management Planning Tools, offers a wealth of spatial data tailored to enhance our understanding of ecosystems, land cover, and fire regimes. LANDFIRE data are a comprehensive resource that provide invaluable insights into the landscape and ecological characteristics of various regions.</p>
+<p>The robust suite of LANDFIRE data encompasses a wide range of information, including vegetation types, fuel conditions, and fire behavior characteristics. Whether you are a land manager, researcher, or environmental enthusiast, LANDFIRE spatial data serves as a powerful tool for assessing and managing landscapes, informing resource management strategies, and fostering a deeper comprehension of ecological dynamics.</p>
+<p>LANDFIRE products are designed to be used at a landscape-scale in support of strategic vegetation, fire, and fuels management planning to evaluate management alternatives across boundaries and facilitate national- and regional-level strategic planning and reporting of wildland fire management activities. LANDFIRE delivers geospatial data products for the entire nation. Methods are based on peer-reviewed science from multiple fields. LANDFIRE products are consistent, comprehensive, and standardized, resulting in multiple applications to fire, fuel, and natural resources.</p>
+<section id="why-do-i-need-to-explore-the-attributes-of-landfire-data" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="why-do-i-need-to-explore-the-attributes-of-landfire-data"><span class="header-section-number">5.1</span> Why do I need to explore the attributes of LANDFIRE data?</h2>
+<p>Exploring the attributes of any dataset is a fundamental step in the data analysis process. It lays the foundation for accurate analyses, informed decision-making, and successful outcomes in various fields, from scientific research to business intelligence.</p>
+<p>Although there are many reasons to explore the attributes of your data, we want to highlight three main reasons to understand the attributes of LANDFIRE data before any analysis in GIS or R:</p>
+<ol type="1">
+<li><p><strong>Data Familiarity</strong>: Exploring attributes provides a deep understanding of the dataset’s structure, format, and content. This familiarity is essential for making informed decisions about data manipulation, analysis, and visualization.</p></li>
+<li><p><strong>Understanding Data Quality</strong>: Examining data attributes helps assess the quality and reliability of the dataset. Identifying missing or inaccurate information early on can prevent errors in analyses and decision-making processes.</p></li>
+<li><p><strong>Effective Data Visualization</strong>: Exploring attributes aids in creating effective data visualizations. Understanding the range and distribution of variables helps you choose appropriate visualization techniques that convey the intended message and insights.</p></li>
+</ol>
+</section>
+<section id="what-you-will-learn-here" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="what-you-will-learn-here"><span class="header-section-number">5.2</span> What you will learn here</h2>
+<ol type="1">
+<li>How to explore the attribute tables of LANDFIRE datasets
 <ul>
-<li>explore attribute tables of each dataset</li>
-<li>discuss different attributes of EVT and BpS</li>
-<li>limitations of sclass data</li>
+<li>From the LANDFIRE Program website</li>
+<li>In the .csv files for each layer</li>
+<li>With ArcGIS Pro</li>
+</ul></li>
+<li>Key attributes of four datasets:
+<ul>
+<li>Biophysical Settings (BpS)</li>
+<li>Existing Vegetation Type (EVT)</li>
+<li>Existing Vegetation Cover (EVC)</li>
+<li>Succession Class (SClass)</li>
+</ul></li>
+<li>The limitations of Succession Class data</li>
+</ol>
+</section>
+<section id="how-to-explore-the-attributes-of-landfire-datasets" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="how-to-explore-the-attributes-of-landfire-datasets"><span class="header-section-number">5.3</span> How to explore the attributes of LANDFIRE datasets</h2>
+<p>There are a few ways you can view the attribute tables of any LANDFIRE dataset</p>
+<section id="from-the-landfire-program-website" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="from-the-landfire-program-website"><span class="header-section-number">5.3.1</span> From the <a href="https://www.landfire.gov">LANDFIRE Program website</a></h3>
+<p>The LANDFIRE program website is the most comprehensive resource for exploring and understanding the suite of LANDFIRE data. The website can be hard to navigate for some people, so we wanted to walk you through where to find the datasets we’ll be using in this exercise and how you can get more information about each of them.</p>
+<ol type="1">
+<li><p>Navigate to the <a href="https://www.landfire.gov">LANDFIRE Program website - www.landfire.gov</a></p></li>
+<li><p>You will find yourself on the main page, where you’ll see several icons across the top, as well as a sidebar of links to the right.</p>
+<ul>
+<li><p>One useful link for exploring the attributes of each dataset is the <a href="https://landfire.gov/documents/LF_Data_Dictionary.pdf">LANDFIRE Data Dictionary</a>, which you can find midway down the left sidebar. The data dictionary is a comprehensive look at LANDFIRE data and serves as a guide to direct users to information about products, attributes, and metadata. - Within the data dictionary table of contents, you can click the layer you’re interested in and jump to the section of the document that shows the attributes and descriptions of that layer</p></li>
+<li><p>Another way to explore datasets and their attributes is to navigate to the layer via the circular icons across the top of the page. Where the datasets are located within the broad categories is not always straightforward, however. Most of our datasets can be found underneath the Vegetation category, although Succession Class is under the Fire Regime Category. 1. Click the Vegetation icon 2. Below, you can click links for Existing Vegetation Cover, Existing Vegetation Type, Biophysical Settings, and others. 3. Click on the Biophysical Settings link to navigate to the <a href="https://landfire.gov/bps.php">Biophysical Settings description page</a>. - This page gives you an overview of the Biophysical Settings data, as well as a link to the BpS Attribute Data Dictionary and an image of key attributes in the BpS spatial data layer</p></li>
+</ul></li>
+<li><p>Explore the data attributes and description pages on your own for Existing Vegetation Type, Existing Vegetation Cover, and Succession Class.</p></li>
+</ol>
+<style>
+div.grey {background-color:#c9c9c9; border-radius: 5px; padding: 20px;}
+</style>
+<div class="grey">
+<p>Remember that Succession Class is under the Fire Regime icon at the top of the page</p>
+</div>
+</section>
+<section id="with-the-.csv-file-for-each-layer" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="with-the-.csv-file-for-each-layer"><span class="header-section-number">5.3.2</span> With the .csv file for each layer</h3>
+<p>Whenever you download a LANDFIRE dataset, it will be packaged in a .zip file that includes not only the spatial data in .tif format, but also general metadata, spatial metadata, and a .csv data file. .csv stands for ‘Comma Separated Values’ and is a convenient way to display and work with the attributes of a spatial data layer in a non-spatial way (R, Excel, etc.). This allows you to examine your data and understand trends on your landscape without even opening GIS software. It also helps you understand the attributes you may want to map and explore spatially.</p>
+<p><strong>Exploring the .csv files of a LANDFIRE spatial layer</strong></p>
+<ol type="1">
+<li>Navigate to the folder where your spatial dataset is stored.</li>
+</ol>
+<style>
+div.grey {background-color:#c9c9c9; border-radius: 5px; padding: 20px;}
+</style>
+<div class="grey">
+<p>Your data may be stored as a .zip file. You’ll need to unzip the files and store them in a meaningful location so you can find and access them throughout this tutorial</p>
+</div>
+<ol start="2" type="1">
+<li><p>Within the dataset folder or zip file, you should have a folder titled ‘CSV_Data’. Click on this folder to access the .csv file.</p></li>
+<li><p>Double click on the Microsoft Excel Comma Separated Values File to open it in Microsoft Excel.</p></li>
+</ol>
+<style>
+div.grey {background-color:#c9c9c9; border-radius: 5px; padding: 20px;}
+</style>
+<div class="grey">
+<p>If you don’t use Microsoft Excel or you aren’t working in a Microsoft Windows environment, this file may not default to opening in Excel. In that case, right click, navigate to ‘open with’, and choose the spreadsheet program of your choice to view the file.</p>
+</div>
+<ol start="4" type="1">
+<li>Here you can explore the attributes and values of the datasets. We recommend using the metadata and/or data dictionary as a guide to better understand what each of the field names means and what data are being reported under that field.</li>
+</ol>
+</section>
+<section id="within-arcgis-pro" class="level3" data-number="5.3.3">
+<h3 data-number="5.3.3" class="anchored" data-anchor-id="within-arcgis-pro"><span class="header-section-number">5.3.3</span> Within ArcGIS Pro</h3>
+<p>You can also use ArcGIS Pro to view the attribute tables of each dataset in tandem with the spatial data. This may provide additional benefit, as you can select attributes of interest (a particular vegetation type, for example) and ArcGIS Pro will highlight where that attribute appears in the landscape. You can also use ArcGIS Pro’s built-in tools to generate some basic summary statistics that will allow you to explore the data on a high level.</p>
+<p><strong>Exploring attribute tables in ArcGIS Pro</strong></p>
+<ol type="1">
+<li><p>Right click on the layer name in the table of contents to open the layer properties menu, then browse to ‘Attribute Table’. This option can be found near the top of the menu.</p></li>
+<li><p>This will open the attribute table for the layer. Here you can examine and edit the attributes of the layer.</p></li>
+<li><p>To explore where a particular attribute value occurs on the landscape, click on the corresponding row number in the attribute table and ArcGIS Pro will highlight those pixels in the map display.</p></li>
+</ol>
+<style>
+div.grey {background-color:#c9c9c9; border-radius: 5px; padding: 20px;}
+</style>
+<div class="grey">
+<p>Be sure to use the selection tools in the Map section at the top of the ribbon bar to unselect any rows before doing any data processing. By default, ArcGIS Pro will run all tools on only the selected data and you may end up needing to re-run tools or processes because they were only run on a subset of your full area of interest.</p>
+</div>
+<ol start="4" type="1">
+<li><p>To generate basic summary statistics and charts for your data, right click on the field you’re interested in, then navigate to ‘Statistics’ in the dropdown menu.</p>
+<ul>
+<li><p>This will open a sidebar dialogue with more options. These will change depending on the field type (text versus numeric), but will allow you to view basic summary statistics for numeric fields and format simple charts for all data types.</p></li>
+<li><p>ArcGIS Pro will also generate a default bar chart for your data. For a text field, this will examine data types by pixel count. For a numeric field, it will show a histogram of values. You can explore the chart options in the sidebar to set the data, the data series, the axes properties, and the format of the chart. These charts can be exported or added to the final map layout.</p></li>
+</ul></li>
+<li><p><em>Bonus Action</em>: Generate a table of summary statistics within ArcGIS Pro</p>
+<ul>
+<li><p>Right click on your layer of interest (in the example below we use BPS_NAME) and select ‘Summarize’ from the dropdown list.</p></li>
+<li><p>In the Summary Statistics dialogue box, the Input Table should be set to the attribute table you’re currently exploring. You should set the Output Table to a name and location that is meaningful to you.</p></li>
+<li><p>Examine the Statistics Fields properties</p>
+<ul>
+<li><p>The ‘Field’ will be the field you want to summarize. Use the dropdown arrow to select the field of interest from your table. Here, the question I’m trying to answer is “What is the total count of each BpS (regardless of map zone) in my landscape”, so I have selected COUNT, as I want to examine the total count per Bps Name.</p></li>
+<li><p>You will then set the statistics type you are interested in. Since I want to know the total count of each BpS, I have selected SUM.</p></li>
+<li><p>The Case Field is the field or fields in the input that will be used to calculate statistics separately for each unique attribute value. In this case, we’re selecting BPS_NAME, as we want to understand the count of each BpS type on the landscape. Essentially, sum the count by BpS Name.</p></li>
+</ul></li>
+<li><p>The tool will run and generate a table that will appear at the bottom of your table of contents. ArcGIS doesn’t give you any information about where that table is, so you’ll need to scroll to the bottom of the Table of Contents to the ‘Standalone Tables’ section in order to find it.</p></li>
+<li><p>Right click (don’t double click) on the table to open it and explore the summary statistics you just generated. In our case, we have each BpS Name, a frequency value for how often it occurs (my example crosses two Map Zones, so we can see whether a BpS occurs within just one of the Map Zones or both), and a Sum of the count field. This will allow us to easily see which BpS types are most and least prevalent on our landscape.</p></li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="key-attributes-of-four-landfire-datasets" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="key-attributes-of-four-landfire-datasets"><span class="header-section-number">5.4</span> Key attributes of four LANDFIRE datasets</h2>
+<p>As we mentioned above, you can easily view the key attributes of various LANDFIRE datasets and what those attributes mean on the <a href="https://www.landfire.gov">LANDFIRE Program website</a> by looking at the item page for each layer of interest. For this exercise, we are interested in four datasets: <a href="https://landfire.gov/bps.php">Biophysical Settings</a>, <a href="https://landfire.gov/evt.php">Existing Vegetation Type</a>, <a href="https://landfire.gov/evc.php">Existing Vegetation Cover</a>, and <a href="https://landfire.gov/sclass.php">Succession Class</a>.</p>
+<section id="biophysical-settings" class="level3" data-number="5.4.1">
+<h3 data-number="5.4.1" class="anchored" data-anchor-id="biophysical-settings"><span class="header-section-number">5.4.1</span> Biophysical Settings</h3>
+<p>LANDFIRE’s Biophysical Settings data, also known as BpS, represents the vegetation system that may have been dominant on the landscape prior to European colonization and is based on both the current biophysical environment and an approximation of the historical disturbance regime. LANDFIRE uses BpS to depict reference conditions of vegetation across landscapes.</p>
+<p>As of 2016, BpS now includes information on the historical fire regime, such as fire return intervals, percent of fire severities, and fire regime groups. Since LANDFIRE’s fire regime information is based on the historic context, we include it with BpS to provide a better picture of the pre-colonization landscape to the best of our knowledge.</p>
+<style>
+div.grey {background-color:#c9c9c9; border-radius: 5px; padding: 20px;}
+</style>
+<div class="grey">
+<p>The Biophysical Settings attributes correspond with the information in the Biophysical Settings Descriptions discussed in the <a href="https://rswaty.github.io/landfire_book_simple/bps-description.html">BpS Description</a> section of this website. We suggest that you review this information for a more complete understanding of the Biophysical Settings attributes.</p>
+</div>
+<p><strong>Key BpS Attributes include:</strong></p>
+<ul>
+<li><p>BPS_CODE: The unique code LANDFIRE uses for each Biophysical Setting</p></li>
+<li><p>Zone: The NLCD map zone(s) the Bps is located in or relates to</p></li>
+<li><p>BPS_MODEL: The unique BpS Model code. Ths combines the BpS code with the zone(s) the model is located in. In some cases, a BpS with the same name and BpS Code may be split among map zones because the vegetation or disturbance regimes vary enough that the descriptions differ. An example of this is the ‘Laurentian-Acadian Northern Hardwoods forest’ BpS (13020), which has four different BpS Models, although it is mapped as one BpS type. (See the screenshot below.)</p></li>
+<li><p>BPS_NAME: The name of the Biophysical Setting. The name is matched to the BpS Code, not the BpS model number.</p></li>
+<li><p>GROUPVEG: Coarse vegetation type groupings highlighting the high-level dominant vegetation within that BpS. Note that if a BpS is listed as ‘Hardwood’ it may actually be a mix of hardwood, herbaceous, savannah, and more, but LANDFIRE’s mapping identified hardwoods as dominating most of the landscape.</p></li>
+<li><p>Fire Regime Attributes</p>
+<ul>
+<li><p>FRI_REPLAC: Average historic replacement-severity fire frequency for the BpS</p></li>
+<li><p>FRI_MIXED: Average historic mixed-severity fire frequency for the BpS</p></li>
+<li><p>FRI_SURFAC: Average historic surface-severity fire frequency for the BpS</p></li>
+<li><p>FRI_ALLFIR: Average historic fire frequency for all fires within the BpS</p></li>
+<li><p>PRC_REPLAC: Percent of historic fires with replacement severity for the BpS</p></li>
+<li><p>PRC_MIXED: Percent of historic fires with mixed serverity for the BpS</p></li>
+<li><p>PRC_SURFAC: Percent of historic fires with surface severity for the BpS</p></li>
+<li><p>FRG_NEW: The fire regime group this BpS is found in. Fire regime groups are based on a combination of fire return interval and fire severity. The current Fire Regime Groups were updated in 2016, and have been modified from a previous classification. You can find the new breakdown of fire regime groups in the <a href="https://landfire.gov/DataDictionary/LF2020/LF20_BPSADD_220.pdf">Attribute Data Dictionary</a> for the BpS spatial data.</p>
+<ul>
+<li>Fire Regime Groups are assigned as follows:
+<ul>
+<li>I-A (1A): Percent replacement fire less than 66.7%, fire return interval 0-5 years</li>
+<li>I-B (1B): Percent replacement fire less than 66.7%, fire return interval 6-15 years</li>
+<li>I-C (1C): Percent replacement fire less than 66.7%, fire return interval 16-35 years</li>
+<li>II-A (2A): Percent replacement fire greater than 66.7%, fire return interval 0-5 years</li>
+<li>II-B (2B): Percent replacement fire greater than 66.7%, fire return interval 6-15 years</li>
+<li>II-C (2C): Percent replacement fire greater than 66.7%, fire return interval 16-35 years</li>
+<li>III-A (3A): Percent replacement fire less than 80%, fire return interval 36-100 years</li>
+<li>III-B (3B): Percent replacement fire less than 66.7%, fire return interval 101-200 years</li>
+<li>IV-A (4A): Percent replacement fire greater than 80%, fire return interval 36-100 years</li>
+<li>IV-B (4B): Percent replacement fire greater than 66.7%, fire return interval 101-200 years</li>
+<li>V-A (5A): Any severity, fire return interval 201-500 years</li>
+<li>V-B (5B): Any severity, fire return interval 501 or more years</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<section id="screenshots-of-bps-key-attributes-and-the-landfire-fire-regime-groups" class="level4" data-number="5.4.1.1">
+<h4 data-number="5.4.1.1" class="anchored" data-anchor-id="screenshots-of-bps-key-attributes-and-the-landfire-fire-regime-groups"><span class="header-section-number">5.4.1.1</span> Screenshots of BpS key attributes and the LANDFIRE Fire Regime Groups</h4>
+<hr>
+<p><em>Key Attributes of BpS Data</em></p>
+<p><img src="images/gis_explore/BpS_Attributes.png" class="img-fluid" alt="&quot;A screenshot showing a table of the key BpS attributes as described above."></p>
+<hr>
+<p><em>Fire Regime Group Definitions</em></p>
+<p><img src="images/gis_explore/FRG_Definitions.png" class="img-fluid" alt="&quot;A screenshot showing a table of the fire regime group definitions as described above."></p>
+<hr>
+</section>
+</section>
+<section id="existing-vegetation-type" class="level3" data-number="5.4.2">
+<h3 data-number="5.4.2" class="anchored" data-anchor-id="existing-vegetation-type"><span class="header-section-number">5.4.2</span> Existing Vegetation Type</h3>
+<p>LANDFIRE’s Existing Vegetation Type data, also known as EVT, shows the current distribution (through 2016) of the terrestrial ecological systems classification, developed by NatureServe for the western hemisphere. A terrestrial ecological system is a group of plant community types that are often found together in similar landscapes with similar environmental conditions.</p>
+<p>EVT also includes ruderal or semi-natural vegetation types within the U.S. National Vegetation Classification. The <a href="https://landfire.gov/documents/LANDFIRE_Ruderal_NVC_Groups_Descriptions_CONUS.pdf">LANDFIRE Ruderal NVC Groups Descriptions for CONUS</a> provides info for each ruderal NVC Group, including species, distribution, and classification details.</p>
+<p><strong>Key BpS Attributes include:</strong></p>
+<ul>
+<li><p>EVT_Name: Ecological Systems names</p></li>
+<li><p>EVT_Fuel: The Ecological Systems code used for LANDFIRE fuels product development</p></li>
+<li><p>EVT_Fuel_N: The Ecological Systems class name used for fuel product development</p></li>
+<li><p>EVT_LF: Major vegetation lifeform (e.g., tree, shrub, herb, sparse) for the ecological system. Note that if an EVT Lifeform is listed as ‘tree’ it may actually be a mix of tree, herb, savanna, and more, but the ecological system and LANDFIRE identified trees as dominating most of the landscape.</p></li>
+<li><p>EVT_GP_N: The vegetation type name (e.g.&nbsp;grassland and steppe, longleaf pine, yellow birch-sugar maple forest). This is more specific than the lifeform, but less specific than the ecological system (EVT Name).</p></li>
+<li><p>EVT_PHYS: Vegetation physiognomy of the ecological system (e.g.&nbsp;Grassland, Riparian, Herbaceous, Sparsely Vegetated)</p></li>
+<li><p>SAF_SRM: Society of American Foresters/Society for Range Management cover types</p></li>
+<li><p>EVT_ORDER: FGDC Vegetation physiognomic order (highest level/most general classification - e.g.&nbsp;Tree Dominated)</p></li>
+<li><p>EVT_CLASS: FGDC Vegetation class (mid level/more specific - e.g.&nbsp;Closed tree canopy)</p></li>
+<li><p>EVT_SBCLS: FGDC Vegetation subclass (lowest level/most specific - e.g.&nbsp;Deciduous closed tree canopy)</p></li>
+</ul>
+<section id="screenshot-of-evt-key-attributes" class="level4" data-number="5.4.2.1">
+<h4 data-number="5.4.2.1" class="anchored" data-anchor-id="screenshot-of-evt-key-attributes"><span class="header-section-number">5.4.2.1</span> Screenshot of EVT key attributes</h4>
+<hr>
+<p><em>Key Attributes of EVT Data</em></p>
+<p><img src="images/gis_explore/EVT_Attributes.png" class="img-fluid" alt="&quot;A screenshot showing a table of the key EVT attributes as described above."></p>
+<hr>
+</section>
+</section>
+<section id="existing-vegetation-cover" class="level3" data-number="5.4.3">
+<h3 data-number="5.4.3" class="anchored" data-anchor-id="existing-vegetation-cover"><span class="header-section-number">5.4.3</span> Existing Vegetation Cover</h3>
+<p>LANDFIRE’s Existing Vegetation Cover dataset, also known as EVC, works in tandem with the Existing Vegetation Class dataset to give a more detailed picture of the current vegetation on a landscape. EVC represents the percent cover of the live canopy layer for a 30-m cell.</p>
+<p>EVC is generated separately for tree, shrub, and herbaceous cover lifeforms using training data and other geospatial layers. Percentage tree, shrub, and herbaceous canopy cover training data are generated using plot-level ground-based visual assessments and lidar observations.</p>
+<p><strong>Key EVC Attributes include:</strong></p>
+<ul>
+<li><p>CLASSNAMES: The main attribute of EVC. This combines the EVT lifeform with the percent canopy cover of each lifeform. Key lifeforms are described below. As with all LANDFIRE layers, you can get more detailed information about the individual attributes from the <a href="https://landfire.gov/DataDictionary/LF2022/LF22_EVCADD_230.pdf">EVC Attribute Data Dictionary</a>.</p>
+<ul>
+<li><p>Tree Cover: percent tree cover</p></li>
+<li><p>Shrub Cover: percent shrub cover</p></li>
+<li><p>Herb Cover: percent herbaceous/grassland cover</p></li>
+<li><p>Developed-Upland Forest Shrub: Five classes of developed upland vegetation</p></li>
+<li><p>Developed: Three classes of developed landscapes</p></li>
+<li><p>Developed-Roads: Pixels identified as roads</p></li>
+<li><p>NASS Crops: Six classes of National Agricultural Statistics Service defined cropland</p></li>
+</ul></li>
+</ul>
+<section id="screenshot-of-evc-key-attributes" class="level4" data-number="5.4.3.1">
+<h4 data-number="5.4.3.1" class="anchored" data-anchor-id="screenshot-of-evc-key-attributes"><span class="header-section-number">5.4.3.1</span> Screenshot of EVC key attributes</h4>
+<hr>
+<p><em>Key Attributes of EVT Data</em></p>
+<p><img src="images/gis_explore/EVC_Attributes.png" class="img-fluid" alt="&quot;A screenshot showing a table of the key EVC attributes as described above."></p>
+<hr>
+</section>
+</section>
+<section id="succession-classes" class="level3" data-number="5.4.4">
+<h3 data-number="5.4.4" class="anchored" data-anchor-id="succession-classes"><span class="header-section-number">5.4.4</span> Succession Classes</h3>
+<p>The LANDFIRE Succession Class (SClass) product describes the current condition of vegetation in terms of species composition (leaf-form and life-form), percent cover, and the range of heights of each successional state in a Biophysical Setting. SClass can also show uncharacteristic vegetation such as non-native plants, tree plantations, and canopy cover. These additional components are not part of the usual variation in the types and structures of plants in a BpS. The Succession classes don’t directly measure the fuel characteristics of the current vegetation, but they represent specific stages in plant development or how often fires and other disturbances occur.</p>
+<p>To produce SClass, mapping rules defined by local and regional experts during the original development and subsequent review of each BpS are applied to the relevant current vegetation layers. SClass mapping rules for all natural BpS are available for <a href="https://landfire.gov/zip/LANDFIRE_SClass_Mapping_Rules_July_2022.zip">download in spreadsheet format</a>.</p>
+<style>
+div.grey {background-color:#c9c9c9; border-radius: 5px; padding: 20px;}
+</style>
+<div class="grey">
+<p>It is important to understand that the Succession Class dataset alone isn’t incredibly useful. It needs to be combined with the Biophysical Settings Models and Descriptions (see part 1 of this workbook) and the Biophysical Settings spatial data and/or Existing Vegetaion data (see part 5 of this workbook) in order to be meaningful. Without a deeper understanding of the underlying Biophysical Setting and its related successional states and a bigger picture of the current vegetation type, cover, and height, all succession class gives us is a letter without a lot of meaning. All these LANDFIRE datasets are mapped consistently and are meant to be used together to generate the best picture of your landscape condition in the past and present, helping you make a plan for where you want to go in the future.</p>
+</div>
+<p><strong>Key Succession Class attributes include</strong></p>
+<ul>
+<li>Description: LANDFIRE’s Succession Classes categorized into up to five succession classes, with each succession class defined in the corresponding Biophysical Settings model. There are two additional classes – UN for uncharacteristic native vegetation type, cover, or height; and UE for uncharacteristic species (invasive or exotic vegetation types).</li>
 </ul>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
