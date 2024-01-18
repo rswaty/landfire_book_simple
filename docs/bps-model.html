@@ -154,7 +154,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#biophysical-settings-models" id="toc-biophysical-settings-models" class="nav-link active" data-scroll-target="#biophysical-settings-models"><span class="header-section-number">3</span> Biophysical Settings Models</a></li>
+  <li><a href="#what-you-will-learn-here" id="toc-what-you-will-learn-here" class="nav-link active" data-scroll-target="#what-you-will-learn-here"><span class="header-section-number">2.1</span> What you will learn here</a></li>
+  <li><a href="#download-and-install-syncrosim" id="toc-download-and-install-syncrosim" class="nav-link" data-scroll-target="#download-and-install-syncrosim"><span class="header-section-number">2.2</span> Download and install SyncroSim</a></li>
+  <li><a href="#load-all-landfire-bps-models-using-the-landfire-package" id="toc-load-all-landfire-bps-models-using-the-landfire-package" class="nav-link" data-scroll-target="#load-all-landfire-bps-models-using-the-landfire-package"><span class="header-section-number">2.3</span> Load all LANDFIRE BpS models using the LANDFIRE Package</a></li>
+  <li><a href="#isolate-a-subset-of-bps-models" id="toc-isolate-a-subset-of-bps-models" class="nav-link" data-scroll-target="#isolate-a-subset-of-bps-models"><span class="header-section-number">2.4</span> Isolate a subset of BpS models</a></li>
+  <li><a href="#explore-the-models-you-are-interested-in" id="toc-explore-the-models-you-are-interested-in" class="nav-link" data-scroll-target="#explore-the-models-you-are-interested-in"><span class="header-section-number">2.5</span> Explore the models you are interested in</a></li>
+  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources"><span class="header-section-number">2.6</span> Additional Resources</a></li>
   </ul>
 </nav>
     </div>
@@ -190,14 +195,160 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="biophysical-settings-models" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Biophysical Settings Models</h1>
-<p><strong>Randy’s thoughts</strong></p>
-<p>Set people up to use SyncroSim:</p>
+<section id="what-you-will-learn-here" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="what-you-will-learn-here"><span class="header-section-number">2.1</span> What you will learn here</h2>
+<p>For each Biophysical Setting (BpS, pre-European colonization ecosystem), LANDFIRE wanted to accomplish several things including:</p>
 <ul>
-<li>link to veg modeling site</li>
-<li>show how to use LF package</li>
-<li>quick tour of how model connects to description</li>
+<li>Document historical disturbances and their effects</li>
+<li>Describe and estimate the historical amounts of up to 5 succession classes per BpS</li>
+<li>Build a platform for understanding our ecosystems historically, and for gaming out how they might change under future conditions and management</li>
+</ul>
+<p>To do so we worked with hundreds of experts to build state-and-transition models in modeling software. We now use SyncorSim, which will be the focus of this page.</p>
+<p>On this page you will find guidance on how to:</p>
+<ul>
+<li>Download and install SyncroSim</li>
+<li>Load all LANDFIRE BpS models using the LANDFIRE Package</li>
+<li>Isolate a subset of BpS models</li>
+<li>Explore the models you are interested in</li>
+</ul>
+<p><em>Note, there are many resources for these steps on the internet, so this page will cover the highlights, and point to those resources at the bottom,</em></p>
+</section>
+<section id="download-and-install-syncrosim" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="download-and-install-syncrosim"><span class="header-section-number">2.2</span> Download and install SyncroSim</h2>
+<p>Installing SyncroSim is similar to installing most software, i.e., you download the application, then click to start an installer, etc. A few points about this particular software:</p>
+<ul>
+<li>Find the software at https://syncrosim.com/</li>
+<li>We typically accept all defaults when installing</li>
+<li>Installing on a governmental machine will likely present challenges.</li>
+</ul>
+</section>
+<section id="load-all-landfire-bps-models-using-the-landfire-package" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="load-all-landfire-bps-models-using-the-landfire-package"><span class="header-section-number">2.3</span> Load all LANDFIRE BpS models using the LANDFIRE Package</h2>
+<p>While SyncroSim is powerful as downloaded, adding ‘packages’ will bring even more functionality. For our work you will need to add in the St-Sim and landfirevegmodels packages. In SyncroSim:</p>
+<ol type="1">
+<li>Go to File -&gt; Packages. Click the “Install” button. See “Packages Pane” screenshot below.</li>
+<li>From the list check the “St-Sim” and “landfirevegmodels” packages, when click “OK”. The install will happen automatically. See “Select packages” screenshot below.</li>
+<li>Close the “Packages” window.</li>
+</ol>
+<p>Once you have those packages installed, you are ready to bring in the LANDFIRE vegetation models. To do that will take a few steps:</p>
+<p><em>Note: you will need internet for this section.</em></p>
+<ol type="1">
+<li>Go to File -&gt; New… This will bring up a “New Library” window.</li>
+<li>In the New Library window highlight “landfirevegmodels” at the top of the window, <em>then</em> select “Reference Models” near the bottom. See “New Library Selections” screenshot below.</li>
+<li>Note where the “Reference Models” library will be saved. Change if needed. Hit “OK”, then grab a beverage as this will take a few minutes.</li>
+</ol>
+<p><em>Note: an “Update Library” window may open once the Reference Models library is downloaded. Click “Apply” at the bottom of that window to proceed.</em></p>
+<p>Once you complete these steps, SyncroSim will have downloaded and loaded the LANDFIRE BpS Reference Condition Models library into your “Library Explorer” window.</p>
+<section id="screenshots-of-loading-landfire-package-and-reference-conditions-library" class="level4" data-number="2.3.0.1">
+<h4 data-number="2.3.0.1" class="anchored" data-anchor-id="screenshots-of-loading-landfire-package-and-reference-conditions-library"><span class="header-section-number">2.3.0.1</span> Screenshots of loading LANDFIRE Package and Reference Conditions Library</h4>
+<p><br></p>
+<p><em>Packages Pane</em></p>
+<p><img src="images/bps_models/packages1.JPG" class="img-fluid" alt="&quot;Packages pane in SyncroSim"></p>
+<hr>
+<p><br></p>
+<p><em>Select packages</em></p>
+<p><img src="images/bps_models/packages3.JPG" class="img-fluid" alt="Select Packages Pane with landfirevegetationmodels and St-Sim packages checked and ready to install."></p>
+</section>
+</section>
+<section id="isolate-a-subset-of-bps-models" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="isolate-a-subset-of-bps-models"><span class="header-section-number">2.4</span> Isolate a subset of BpS models</h2>
+<p>We assume you will not want to explore all 900+ LANDFIRE models, so outline how to subset one or more individual models below.</p>
+<ol type="1">
+<li>For good luck close and re-open SyncroSim. Seriously, after installing packages and libraries some of the functions just work better if you do so.</li>
+<li>If it is not there, open the LANDFIRE BpS Reference Condition Models library by going to File -&gt; Open then navigating to the “Reference-Condition-Models.ssim” file, likely in your SyncroSim directory. You will then click “Open”.</li>
+<li>Once opened, the LANDFIRE BpS Reference Condition Models will be in the Library Explorer pane. You will also see, within the library, a “project” named “Definitions” and a “Scenaro” named “Reference Condition Models”.<br>
+</li>
+<li>Click the “Reference Condition Models” scenario once to highlight it. See “Select Scenario” screenshot below.</li>
+<li>Go to Edit -&gt; Export LFVM Strata to bring up the selection window. See “Export Strata” screenshot below.</li>
+<li>Once at the Export LFVM Strata window, you will check the BpSs of interest, give a file name for the new library and assign a folder that it will be saved to. See “Create new library with selected strata” screenshot below.</li>
+</ol>
+<p><em>Note: we do not suggest selecting many strata at once until you are familiar with the modeling process. Stick to 1-3 initially.</em></p>
+<section id="screenshots-of-isolating-a-model" class="level4" data-number="2.4.0.1">
+<h4 data-number="2.4.0.1" class="anchored" data-anchor-id="screenshots-of-isolating-a-model"><span class="header-section-number">2.4.0.1</span> Screenshots of Isolating a model</h4>
+<p><br></p>
+<p><em>Select scenario</em></p>
+<p><img src="images/bps_models/highlight_strata.jpg" class="img-fluid" alt="&quot;Highlighting a scenario in SyncroSim in the Library Explorer pane"></p>
+<hr>
+<p><br></p>
+<p><em>Export Strata</em></p>
+<p><img src="images/bps_models/new_library_window.JPG" class="img-fluid" alt="Export strata tool."></p>
+<hr>
+<p><br></p>
+<p><em>Create new library with selected strata</em></p>
+<p><img src="images/bps_models/make_new_library_strata.JPG" class="img-fluid" alt="Export strata tool with specific strata selected, a new library name and a location for the new library. "></p>
+<p><br></p>
+<hr>
+</section>
+</section>
+<section id="explore-the-models-you-are-interested-in" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="explore-the-models-you-are-interested-in"><span class="header-section-number">2.5</span> Explore the models you are interested in</h2>
+<p>OK you are doing a great job. Now you have a library with a subset of strata (i.e., BpSs in this case) that you care about. Now what?</p>
+<p>By exploring the BpS models you can learn how the modeling experts parameterized them, and more interactively see how the disturbances and states all fit together.</p>
+<p>Start exploring:</p>
+<ol type="1">
+<li>Double click on “Reference Condition Models” then the Transition Pathways tab.<br>
+</li>
+<li>To make viewing easier go to Window -&gt; Arrange All.</li>
+<li>At the bottom will be tabs of all of the BpSs that are in this library. Click any one. See “Transitions Pane”.</li>
+<li>Click on any box to see the pathways associated with that state (i.e., succession class).</li>
+<li>If you want to run the scenario:
+<ul>
+<li>Go to “Output Options” tab within the scenario, make sure that the “State classes every” box is set to 100 (i.e., not “1”). See “State Class Outputs” screenshot below.</li>
+<li>Go to “Run Control tab” and set the ‘Total iterations’ to 2.</li>
+<li>In the “Initial Conditions” tab, insure that the “Total Acres”and “Number of Simulation cells” boxes both have “1,000” For exploring we recommend these three steps as it will speed up your runs.</li>
+<li>In the Library Explorer highlight the scenario, then click the small green triangle at the top of the screen. See “Run your model” screenshot below.</li>
+</ul></li>
+<li>Make a chart by clicking the “New” icon in the “Charts” pane, then name it appropriately. See “Start new chart” screenshot below. You will change some settings to get your first chart:
+<ul>
+<li>Change Line Chart to Column Chart (top left of window)</li>
+<li>Under “State Classes” select “Proportion”</li>
+<li>Under “Disaggregate by” check the “State Class” box</li>
+<li>Under “Include Data For”, click “State Class” then select the appropriate state classes</li>
+<li><em>Note: if you have multiple BpSs, you will also want to go to and select one “Model” under the “Include Data For” dropdown</em></li>
+<li>Click “Apply”</li>
+</ul></li>
+</ol>
+<p>See “Set up your column chart” screenshot below.</p>
+<p>“State Class Outputs” “Run your model” “Set up your column chart”</p>
+<section id="screenshots-of-running-a-model-and-making-a-chart" class="level4" data-number="2.5.0.1">
+<h4 data-number="2.5.0.1" class="anchored" data-anchor-id="screenshots-of-running-a-model-and-making-a-chart"><span class="header-section-number">2.5.0.1</span> Screenshots of Running a Model and Making a Chart</h4>
+<p><br></p>
+<p><em>State Class Outputs</em></p>
+<p><img src="images/bps_models/state_class_outputs.JPG" class="img-fluid" alt="Setting up state class outputs "></p>
+<hr>
+<p><br></p>
+<p><em>Run your model</em></p>
+<p><img src="images/bps_models/select_scenario.JPG" class="img-fluid" alt="Highlighting the run button in SyncroSim"></p>
+<table class="table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><br></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>Set up your column chart</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><img src="images/bps_models/set_up_chart.JPG" class="img-fluid" alt="Setting up new chart"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><br></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="additional-resources" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="additional-resources"><span class="header-section-number">2.6</span> Additional Resources</h2>
+<ul>
+<li>https://thenatureconservancy.github.io/landfiremodels/</li>
 </ul>
 
 
