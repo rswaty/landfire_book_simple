@@ -1,16 +1,139 @@
 ---
 title: "Explore the spatial data"
-author: "Randy Swaty"
-date: "2024-01-03"
+author: "Randy Swaty, Sarah Hagen"
+date: "2024-01-18"
 output: html_document
 ---
 
+# Explore LANDFIRE spatial data
 
-# Explore LF spatial data with ArcGIS Pro
+LANDFIRE, which stands for Landscape Fire and Resource Management Planning Tools, offers a wealth of spatial data tailored to enhance our understanding of ecosystems, land cover, and fire regimes. LANDFIRE data are a comprehensive resource that provide invaluable insights into the landscape and ecological characteristics of various regions.
 
+The robust suite of LANDFIRE data encompasses a wide range of information, including vegetation types, fuel conditions, and fire behavior characteristics. Whether you are a land manager, researcher, or environmental enthusiast, LANDFIRE spatial data serves as a powerful tool for assessing and managing landscapes, informing resource management strategies, and fostering a deeper comprehension of ecological dynamics.
+
+LANDFIRE products are designed to be used at a landscape-scale in support of strategic vegetation, fire, and fuels management planning to evaluate management alternatives across boundaries and facilitate national- and regional-level strategic planning and reporting of wildland fire management activities. LANDFIRE delivers geospatial data products for the entire nation. Methods are based on peer-reviewed science from multiple fields. LANDFIRE products are consistent, comprehensive, and standardized, resulting in multiple applications to fire, fuel, and natural resources.
+
+## Why do I need to explore the attributes of LANDFIRE data?
+
+Exploring the attributes of any dataset is a fundamental step in the data analysis process. It lays the foundation for accurate analyses, informed decision-making, and successful outcomes in various fields, from scientific research to business intelligence.
+
+Although there are many reasons to explore the attributes of your data, we want to highlight three main reasons to understand the attributes of LANDFIRE data before any analysis in GIS or R:
+
+1.  **Data Familiarity**: Exploring attributes provides a deep understanding of the dataset's structure, format, and content. This familiarity is essential for making informed decisions about data manipulation, analysis, and visualization.
+
+2.  **Understanding Data Quality**: Examining data attributes helps assess the quality and reliability of the dataset. Identifying missing or inaccurate information early on can prevent errors in analyses and decision-making processes.
+
+3.  **Effective Data Visualization**: Exploring attributes aids in creating effective data visualizations. Understanding the range and distribution of variables helps you choose appropriate visualization techniques that convey the intended message and insights.
+
+## What you will learn here
+
+1.  How to explore the attribute tables of LANDFIRE datasets
+    -   From the LANDFIRE Program website
+    -   In the .csv files for each layer
+    -   With ArcGIS Pro
+2.  Key attributes of four datasets:
+    -   Biophysical Settings (BpS)
+    -   Existing Vegetation Type (EVT)
+    -   Existing Vegetation Cover (EVC)
+    -   Succession Class (SClass)
+3.  The differences and similarities of BpS and EVT
+4.  The limitations of Succession Class data
+
+## How to explore the attributes of LANDFIRE datasets
+
+There are a few ways you can view the attribute tables of any LANDFIRE dataset
+
+### From the [LANDFIRE Program website](https://www.landfire.gov)
+
+The LANDFIRE program website is the most comprehensive resource for exploring and understanding the suite of LANDFIRE data. The website can be hard to navigate for some people, so we wanted to walk you through where to find the datasets we'll be using in this exercise and how you can get more information about each of them.
+
+1.  Navigate to the [LANDFIRE Program website - www.landfire.gov](https://www.landfire.gov)
+
+2.  You will find yourself on the main page, where you'll see several icons across the top, as well as a sidebar of links to the right.
+
+    -   One useful link for exploring the attributes of each dataset is the [LANDFIRE Data Dictionary](https://landfire.gov/documents/LF_Data_Dictionary.pdf), which you can find midway down the left sidebar. The data dictionary is a comprehensive look at LANDFIRE data and serves as a guide to direct users to information about products, attributes, and metadata. - Within the data dictionary table of contents, you can click the layer you're interested in and jump to the section of the document that shows the attributes and descriptions of that layer
+
+    -   Another way to explore datasets and their attributes is to navigate to the layer via the circular icons across the top of the page. Where the datasets are located within the broad categories is not always straightforward, however. Most of our datasets can be found underneath the Vegetation category, although Succession Class is under the Fire Regime Category. 1. Click the Vegetation icon 2. Below, you can click links for Existing Vegetation Cover, Existing Vegetation Type, Biophysical Settings, and others. 3. Click on the Biophysical Settings link to navigate to the [Biophysical Settings description page](https://landfire.gov/bps.php). - This page gives you an overview of the Biophysical Settings data, as well as a link to the BpS Attribute Data Dictionary and an image of key attributes in the BpS spatial data layer
+
+**Explore the data attributes and description pages on your own for Existing Vegetation Type, Existing Vegetation Cover, and Succession Class**
+
+```{=html}
+<style>
+div.blue {background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+```
+::: grey
+```         
+Remember that Succession Class is under the Fire Regime icon at the top of the page
+```
+:::
+
+### With the .csv file for each layer
+
+Whenever you download a LANDFIRE dataset, it will be packaged in a .zip file that includes not only the spatial data in .tif format, but also general metadata, spatial metadata, and a .csv data file. .csv stands for 'Comma Separated Values' and is a convenient way to display and work with the attributes of a spatial data layer in a non-spatial way (R, Excel, etc.). This allows you to examine your data and understand trends on your landscape without even opening GIS software. It also helps you understand the attributes you may want to map and explore spatially.
+
+**Exploring the .csv files of a LANDFIRE spatial layer**
+
+1.  Navigate to the folder where your spatial dataset is stored.
+
+```{=html}
+<style>
+div.blue {background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+```
+::: grey
+NOTE: Your data may be stored as a .zip file. You'll need to unzip the files and store them in a meaningful location so you can find and access them throughout this tutorial
+:::
+
+2.  Within the dataset folder or zip file, you should have a folder titled 'CSV_Data'. Click on this folder to access the .csv file.
+
+3.  Double click on the Microsoft Excel Comma Separated Values File to open it in Microsoft Excel.
+
+```{=html}
+<style>
+div.blue {background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+```
+::: grey
+Note: If you don't use Microsoft Excel or you aren't working in a Microsoft Windows environment, this file may not default to opening in Excel. In that case, right click, navigate to 'open with', and choose the spreadsheet program of your choice to view the file.
+:::
+
+4.  Here you can explore the attributes and values of the datasets. We recommend using the metadata and/or data dictionary as a guide to better understand what each of the field names means and what data are being reported under that field.
+
+### Within ArcGIS Pro
+
+You can also use ArcGIS Pro to view the attribute tables of each dataset in tandem with the spatial data. This may provide additional benefit, as you can select attributes of interest (a particular vegetation type, for example) and ArcGIS Pro will highlight where that attribute appears in the landscape. You can also use ArcGIS Pro's built-in tools to generate some basic summary statistics that will allow you to explore the data on a high level.
+
+**Exploring attribute tables in ArcGIS Pro** 1. Right click on the layer name in the table of contents to open the layer properties menu, then browse to 'Attribute Table'. This option can be found near the top of the menu.
+
+2.  This will open the attribute table for the layer. Here you can examine and edit the attributes of the layer.
+
+3.  To explore where a particular attribute value occurs on the landscape, click on the corresponding row number in the attribute table and ArcGIS Pro will highlight those pixels in the map display.
+
+```{=html}
+<style>
+div.blue {background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+```
+::: grey
+Note: Be sure to use the selection tools in the Map section at the top of the ribbon bar to unselect any rows before doing any data processing. By default, ArcGIS Pro will run all tools on only the selected data and you may end up needing to re-run tools or processes because they were only run on a subset of your full area of interest.
+:::
+
+4.  To generate basic summary statistics and charts for your data, right click on the field you're interested in, then navigate to 'Statistics' in the dropdown menu.
+    -   This will open a sidebar dialogue with more options. These will change depending on the field type (text versus numeric), but will allow you to view basic summary statistics for numeric fields and format simple charts for all data types.
+    -   ArcGIS Pro will also generate a default bar chart for your data. For a text field, this will examine data types by pixel count. For a numeric field, it will show a histogram of values. You can explore the chart options in the sidebar to set the data, the data series, the axes properties, and the format of the chart. These charts can be exported or added to the final map layout.
+5.  **Bonus Action**: Generate a table of summary statistics within ArcGIS Pro
+    -   Right click on your layer of interest (in the example below we use BPS_NAME) and select 'Summarize' from the dropdown list
+    -   In the Summary Statistics dialogue box, the Input Table should be set to the attribute table you're currently exploring. You should set the Output Table to a name and location that is meaningful to you.
+    -   Examine the Statistics Fields properties
+        -   The 'Field' will be the field you want to summarize. Use the dropdown arrow to select the field of interest from your table. Here, the question I'm trying to answer is "What is the total count of each BpS (regardless of map zone) in my landscape", so I have selected COUNT, as I want to examine the total count per Bps Name.
+        -   You will then set the statistics type you are interested in. Since I want to know the total count of each BpS, I have selected SUM
+        -   The Case Field is the field or fields in the input that will be used to calculate statistics separately for each unique attribute value. In this case, we're selecting BPS_NAME, as we want to understand the count of each BpS type on the landscape. Essentially, sum the count by BpS Name.
+    -   The tool will run and generate a table that will appear at the bottom of your table of contents. ArcGIS doesn't give you any information about where that table is, so you'll need to scroll to the bottom of the Table of Contents to the 'Standalone Tables' section in order to find it.
+    -   Right click (don't double click) on the table to open it and explore the summary statistics you just generated. In our case, we have each BpS Name, a frequency value for how often it occurs (my example crosses two Map Zones, so we can see whether a BpS occurs within just one of the Map Zones or both), and a Sum of the count field. This will allow us to easily see which BpS types are most and least prevalent on our landscape.
 
 **Randy's thoughts**
 
-* explore attribute tables of each dataset
-* discuss different attributes of EVT and BpS 
-* limitations of sclass data 
+-   explore attribute tables of each dataset
+-   discuss different attributes of EVT and BpS
+-   limitations of sclass data

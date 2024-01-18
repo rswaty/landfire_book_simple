@@ -26,7 +26,7 @@ The LANDFIRE team is still in the early stages of implementing Universal Design.
 1.  How to bring data into ArcGIS Pro
 2.  How to change the layer symbology
 3.  How to export an attribute table
-4.  *Bonus Action* How to combine two raster datasets
+4.  *Bonus Action*: How to combine two raster datasets
 
 ### Adding data in ArcGIS Pro
 
@@ -45,27 +45,38 @@ If you've been following along, you've already used the LANDFIRE Map Viewer to d
 
 #### Screenshots for adding data to ArcGIS Pro
 
+
 ------------------------------------------------------------------------
+
 
 *Where to click to add data.*
 
 ![](images/gis_map/1_AddData.png){fig-alt="\"A screenshot demonstrating the process of adding data in ArcGIS Pro. The cursor is positioned over the 'Add Data' button, located on the top ribbon toolbar near the left side of the page. The button is outlined with a square."}
 
+
 ------------------------------------------------------------------------
+
 
 *Browsing to your data. Note: You will use your own file path to wherever your data are saved*
 
+
 ![](images/gis_map/2_SelectLayer.png){fig-alt="\"A screenshot illustrating the steps to browse for data in ArcGIS Pro's 'Add Data' dialog box. The dialog box is open, displaying file directories. The cursor is shown navigating through folders to locate and select the desired data file for addition to the ArcGIS Pro project."}
 
+
 ------------------------------------------------------------------------
+
 
 *Build Pyramids options*
 
+
 ![](images/gis_map/3_BuildPyramids.png){fig-alt="\" A screenshot featuring the 'Build Pyramids' dialog box in ArcGIS Pro. The dialog box displays options related to pyramid building. A rectangular highlight surrounds the 'No' button, indicating the user's choice. The 'No' button is the selected option within the dialogue box."}
+
 
 ------------------------------------------------------------------------
 
+
 ### Change the layer symbology
+
 
 When you add the LANDFIRE data to ArcGIS Pro, it often adds with either a greyscale color scheme or some other 'Stretch' color ramp that isn't useful for understanding or visualizing the data. In most cases, we will want to view our data by looking at the 'Unique Values' of a particular field within the attribute table. For this example, we'll be looking at the Existing Vegetation Type layer, choosing to symbolize on the EVT_Name field. The process is the same for any layer and any field, but the specific field may be different depending on what attributes you're interested in.
 
@@ -79,33 +90,48 @@ When you add the LANDFIRE data to ArcGIS Pro, it often adds with either a greysc
 
 4.  When you're done, you can choose to leave the symbology pane open, hide it using the pin icon found next to the x in the top right corner of the pane, or use the x to close it entirely. Remember that if you want to change the symbology, you'll need to start from step 1 to open the pane again.
 
+
 #### Screenshots for symbolizing EVT with Unique Values
 
+
 ------------------------------------------------------------------------
+
 
 *Where to click to open the symbology pane.*
 
+
 ![](images/gis_map/4_NavigateToSymbology.png){fig-alt="\"A screenshot demonstrating the process of opening the symbology pane in ArcGIS Pro. The cursor is positioned over the 'Symbology' tab in the layer properties dialogue panel. You can open this panel by right clicking on the layer name in the table of contents on the left. The tab is highlighted, ready to be clicked, revealing the symbology options for map layer customization."}
 
+
 ------------------------------------------------------------------------
+
 
 *Selecting Unique Values as the Primary Symbology*
 
+
 ![](images/gis_map/5_SelectUniqueValues.png){fig-alt="\"A screenshot illustrating the steps to change primary symbology from 'Stretch' to 'Unique Values' in ArcGIS Pro. The cursor is positioned over the symbology settings menu, displaying the options. A highlight surrounds the 'Unique Values' option, indicating the user's selection for modifying the primary symbology of the map layer."}
 
+
 ------------------------------------------------------------------------
+
 
 *EVT layer displayed with Unique values. Note: This is using the LANDFIRE default color ramp and does not follow Universal Design best practices. Users with non-standard color vision may not be able to see the data patterns in this map*
 
+
 ![](images/gis_map/6_UniqueValues.png){fig-alt="\"A screenshot of the ArcGIS Pro window. The Symbology is set to Unique Values with the Field set to EVT_Name. The map window shows the default EVT_Name color ramp for our chosen layer."}
+
 
 ------------------------------------------------------------------------
 
+
 *BONUS ACTION: Closing or pinning the Symbology pane*
+
 
 ![](images/gis_map/7_SymbologyPane.png){fig-alt="\"A screenshot showing a close up of the Symbology pane. In the top right corner there are three icons. An arrow, a pin, and an X. The pin will pin the pane to the sidebar of the map. The x will close the pane. The screenshot includes a drawn on box showing the location of the tools and a hand-drawn arrow showing where the pane will minimize to if the pin is selected."}
 
+
 --
+
 
 ## Export data tables
 
@@ -122,6 +148,11 @@ Before you move on to making charts with attribute data, you will need to know h
 -   Input Table: Select the attribute table you want to export using either the dropdown or the file folder
 -   Output Table: Browse to the folder where you want to save the table. Name the table something meaningful, then **add the .csv file extension at the end**.
 
+```{=html}
+<style>
+div.blue {background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+```
 ::: yellow
 If you don't add the file extension, ArcGIS Pro will save the table as either a geodatabase table or a .dbf, both of which are much more difficult to work with outside the ArcGIS environment.
 :::
@@ -131,25 +162,35 @@ If you don't add the file extension, ArcGIS Pro will save the table as either a 
 
 #### Screenshots for exporting an attribute table as a .csv
 
+
 ------------------------------------------------------------------------
+
 
 *Where to click to open the attribute table.*
 
+
 ![](images/gis_map/8_OpenAttributeTable.png){fig-alt="\"A screenshot demonstrating the process of opening the attribute table in ArcGIS Pro. The cursor is positioned over the 'Attribute Table' tab in the layer properties dialogue panel. You can open this panel by right clicking on the layer name in the table of contents on the left. The tab is highlighted, ready to be clicked, revealing the Attribute Table for the map layer."}
 
+
 ------------------------------------------------------------------------
+
 
 *Exporting the Attribute Table*
 
+
 ![](images/gis_map/9_ExportTable.png){fig-alt="\"A screenshot showing where to click to open the menu to export a table. There is a black box around the hamburger menu, showing all the options for the attribute table with Export at the very bottom of the menu."}
 
+
 ------------------------------------------------------------------------
+
 
 *Export table options*
 
 ![](images/gis_map/10_ExportTableParams.png){fig-alt="\"A screenshot showing how to set the output table in the Export Table window. Using the folder icon will open a new window that will allow you to set the file path and file name with .csv extension. An arrow between output table and the Name field illustrates this choice point."}
 
+
 --
+
 
 ## BONUS ACTION: Combining two raster data layers
 
@@ -168,62 +209,90 @@ In this tutorial, we will look at how to combine LANDFIRE BpS with LANDFIRE Succ
 3.  In the Combine tool, use the dropdowns or the folder icons to set the Input Rasters as all the rasters you want to combine. In this case, we will select BpS and SClass. Then set the Output Raster to something meaningful. Don't forget to make sure the file path is to a location you will remember.
 
 4. In addition, you will want to click on the Environments tab and set the following parameters. This is best practice for any and all raster data processing, as you want to be sure you're saving everything with the correct coordinate systems and snapping your rasters to the same extent:
--   Output Coordinate System: Set this to be your preferred coordinate system OR use the dropdown to select one of the layers in your combine to ensure that the output layer has the same coordinate system as the input layers. In the case of LANDFIRE data, this should be NAD_1983_Contiguous_USA_Albers.
--   Cell size: Use the dropdown to set this to be the same as one of your input layers. This should be the same by default if your data all have 30 meter pixels, but I like to set it to be sure.
--   Mask: It's not usually necessary, but I like to set this to be the extent of our shapefile or area of interest just to be sure that we're only processing the pixels we need
--   Snap Raster: **This is important to pay attention to** Generally, I set this to either the initial LANDFIRE dataset I'm using as my primary data (in this case, LANDFIRE BpS) or to one of the layers I'm using in the combine. It's important that you set the snap raster to be the same raster dataset for every single raster you want to use in an analysis to ensure that the pixels will line up.
+
+  -   Output Coordinate System: Set this to be your preferred coordinate system OR use the dropdown to select one of the layers in your combine to ensure that the output layer has the same coordinate system as the input layers. In the case of LANDFIRE data, this should be NAD_1983_Contiguous_USA_Albers.
+
+  -   Cell size: Use the dropdown to set this to be the same as one of your input layers. This should be the same by default if your data all have 30 meter pixels, but I like to set it to be sure.
+
+  -   Mask: It's not usually necessary, but I like to set this to be the extent of our shapefile or area of interest just to be sure that we're only processing the pixels we need
+
+  -   Snap Raster: **This is important to pay attention to** Generally, I set this to either the initial LANDFIRE dataset I'm using as my primary data (in this case, LANDFIRE BpS) or to one of the layers I'm using in the combine. It's important that you set the snap raster to be the same raster dataset for every single raster you want to use in an analysis to ensure that the pixels will line up.
 
 5.  When you have set the input and output values and the environment settings, click run. This may take some time depending on the size of your area of interest. If you want to check progress, you can click 'View Details' at the very bottom of the Geoprocessing panel where the tool is running.
 
 6. Once you have combined the datasets, you then need to add in the fields of interest from the individual rasters, as the combine will only show you the value fields from each raster you combined. Here's the process for that:
 
--   Use the Join Field tool in the Geoprocessing toolbox (you can search for it). This tool permanently joins the contents of one table to another based on a common attribute field (in this case, the value field of the raster). You can select which fields from the join table will be added to the input table.
+  -   Use the Join Field tool in the Geoprocessing toolbox (you can search for it). This tool permanently joins the contents of one table to another based on a common attribute field (in this case, the value field of the raster). You can select which fields from the join table will be added to the input table.
 
--   To join in the BpS Attributes, set the input table to your combine table (in this example it's called BpS_SClass_ADK), then set the Input Join Field to the BpS Value field (in this example, BpS_ADK -- the name of my BpS layer). Set the join table as your BpS layer (here, BpS_ADK), and the Join Table Field to 'Value'. This will match the value field from your BpS layer to the correct values in the correct field in your combine.
+  -   To join in the BpS Attributes, set the input table to your combine table (in this example it's called BpS_SClass_ADK), then set the Input Join Field to the BpS Value field (in this example, BpS_ADK -- the name of my BpS layer). Set the join table as your BpS layer (here, BpS_ADK), and the Join Table Field to 'Value'. This will match the value field from your BpS layer to the correct values in the correct field in your combine.
 
+```{=html}
+<style>
+div.blue {background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+```
 :::grey:::
 Before you hit run, it's important to select which fields you want to join. You can do this either by Field Mapping or by Selecting Transfer Fields. This is set in the Transfer Method dropdown. In this example, I have chosen to use field mapping. With field mapping, you see a list of all the fields in the Join table (BpS) and have the option to click an x next to any field you don't want to join. In our case, we want to join all the fields except the value field (which we already have).
 :::
 
--   To join in the SClass attributes, you follow the same procedure as above, but set the input Join field to the SClass value field (SClass_ADK) and the Join table to your SClass layer (SClass_ADK). I also took out most of the fields in the field mapping, because I am only interested in the label and description fields.
+  -   To join in the SClass attributes, you follow the same procedure as above, but set the input Join field to the SClass value field (SClass_ADK) and the Join table to your SClass layer (SClass_ADK). I also took out most of the fields in the field mapping, because I am only interested in the label and description fields.
 
--   When you are done, your combined layer should have an attribute table that includes all the attributes from your BpS layer as well as the label and description fields from your SClass layer. This will allow you to understand what proportion of each BpS is in a given succession class, as mapped by LANDFIRE.
+  -   When you are done, your combined layer should have an attribute table that includes all the attributes from your BpS layer as well as the label and description fields from your SClass layer. This will allow you to understand what proportion of each BpS is in a given succession class, as mapped by LANDFIRE.
+
 
 #### Screenshots for combining two rasters
 
+
 ------------------------------------------------------------------------
+
 
 *Where to click to open the Geoprocessing tools.*
 
+
 ![](images/gis_map/11_GeoprocessingPanel.png){fig-alt="\"A screenshot showing the location of the Geoprocessing tools. You can find it in the top ribbon bar under view then Geoprocessing. The red toolbox icon is highlighted in blue here showing that the button has been pressed."}
 
+
 ------------------------------------------------------------------------
+
 
 *Open the Combine tool*
 
-![](images/gis_map/12_SearchCombine.png){fig-alt="\"A screenshot showing how to search for the Combine tool by typing the word "combine" into the search box in the Geoprocessing tools panel. The combine tool is the first option in the list below the box."}
+
+![](images/gis_map/12_SearchCombine.png){fig-alt="\"A screenshot showing how to search for the Combine tool by typing the word combine into the search box in the Geoprocessing tools panel. The combine tool is the first option in the list below the box."}
+
 
 ------------------------------------------------------------------------
+
 
 *Set the parameters*
 
+
 ![](images/gis_map/13_CombineParams.png){fig-alt="\"A screenshot showing the input rasters for the combine as BpS and SClass and the output raster as BpS_SClass."}
 
+
 ------------------------------------------------------------------------
+
 
 *Set the environments*
 
+
 ![](images/gis_map/14_CombineEnvirons.png){fig-alt="\"A screenshot showing the environment settings. Output Coordinate system is NAD_1983_Contiguous_Albers. Cell size is the same as BpS. The mask is our shapefile boundary. The Snap Raster is BpS."}
 
+
 ------------------------------------------------------------------------
+
 
 *Join Field Settings*
 
+
 ![](images/gis_map/15_JoinFields.png){fig-alt="\"A screenshot showing the parameters for both join field runs as described in the text above. Input table for both is BpS_SClass. The Join fields are the respective layer fields (BpS, SClass) and the join tables are BpS and SClass, respectively. The Join Table field for both is Value.}
+
 
 ------------------------------------------------------------------------
 
+
 *Your final attribute table should have all the BpS Values and the relevant SClass values*
+
 
 ![](images/gis_map/16_CombinedAttributes.png){fig-alt="\"A screenshot showing attribute table for the combined layer with all the BpS attributes as well as Label and Description from the Succession Class layer.}
 

@@ -219,7 +219,7 @@ ul.task-list li input[type="checkbox"] {
 <li>How to bring data into ArcGIS Pro</li>
 <li>How to change the layer symbology</li>
 <li>How to export an attribute table</li>
-<li><em>Bonus Action</em> How to combine two raster datasets</li>
+<li><em>Bonus Action</em>: How to combine two raster datasets</li>
 </ol>
 </section>
 <section id="adding-data-in-arcgis-pro" class="level3" data-number="6.2.2">
@@ -292,6 +292,9 @@ ul.task-list li input[type="checkbox"] {
 <li>Input Table: Select the attribute table you want to export using either the dropdown or the file folder</li>
 <li>Output Table: Browse to the folder where you want to save the table. Name the table something meaningful, then <strong>add the .csv file extension at the end</strong>.</li>
 </ul>
+<style>
+div.blue {background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
 <div class="yellow">
 <p>If you don’t add the file extension, ArcGIS Pro will save the table as either a geodatabase table or a .dbf, both of which are much more difficult to work with outside the ArcGIS environment.</p>
 </div>
@@ -325,10 +328,10 @@ ul.task-list li input[type="checkbox"] {
 <li><p>In addition, you will want to click on the Environments tab and set the following parameters. This is best practice for any and all raster data processing, as you want to be sure you’re saving everything with the correct coordinate systems and snapping your rasters to the same extent:</p></li>
 </ol>
 <ul>
-<li>Output Coordinate System: Set this to be your preferred coordinate system OR use the dropdown to select one of the layers in your combine to ensure that the output layer has the same coordinate system as the input layers. In the case of LANDFIRE data, this should be NAD_1983_Contiguous_USA_Albers.</li>
-<li>Cell size: Use the dropdown to set this to be the same as one of your input layers. This should be the same by default if your data all have 30 meter pixels, but I like to set it to be sure.</li>
-<li>Mask: It’s not usually necessary, but I like to set this to be the extent of our shapefile or area of interest just to be sure that we’re only processing the pixels we need</li>
-<li>Snap Raster: <strong>This is important to pay attention to</strong> Generally, I set this to either the initial LANDFIRE dataset I’m using as my primary data (in this case, LANDFIRE BpS) or to one of the layers I’m using in the combine. It’s important that you set the snap raster to be the same raster dataset for every single raster you want to use in an analysis to ensure that the pixels will line up.</li>
+<li><p>Output Coordinate System: Set this to be your preferred coordinate system OR use the dropdown to select one of the layers in your combine to ensure that the output layer has the same coordinate system as the input layers. In the case of LANDFIRE data, this should be NAD_1983_Contiguous_USA_Albers.</p></li>
+<li><p>Cell size: Use the dropdown to set this to be the same as one of your input layers. This should be the same by default if your data all have 30 meter pixels, but I like to set it to be sure.</p></li>
+<li><p>Mask: It’s not usually necessary, but I like to set this to be the extent of our shapefile or area of interest just to be sure that we’re only processing the pixels we need</p></li>
+<li><p>Snap Raster: <strong>This is important to pay attention to</strong> Generally, I set this to either the initial LANDFIRE dataset I’m using as my primary data (in this case, LANDFIRE BpS) or to one of the layers I’m using in the combine. It’s important that you set the snap raster to be the same raster dataset for every single raster you want to use in an analysis to ensure that the pixels will line up.</p></li>
 </ul>
 <ol start="5" type="1">
 <li><p>When you have set the input and output values and the environment settings, click run. This may take some time depending on the size of your area of interest. If you want to check progress, you can click ‘View Details’ at the very bottom of the Geoprocessing panel where the tool is running.</p></li>
@@ -338,6 +341,9 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Use the Join Field tool in the Geoprocessing toolbox (you can search for it). This tool permanently joins the contents of one table to another based on a common attribute field (in this case, the value field of the raster). You can select which fields from the join table will be added to the input table.</p></li>
 <li><p>To join in the BpS Attributes, set the input table to your combine table (in this example it’s called BpS_SClass_ADK), then set the Input Join Field to the BpS Value field (in this example, BpS_ADK – the name of my BpS layer). Set the join table as your BpS layer (here, BpS_ADK), and the Join Table Field to ‘Value’. This will match the value field from your BpS layer to the correct values in the correct field in your combine.</p></li>
 </ul>
+<style>
+div.blue {background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
 <div class="grey:::">
 <p>Before you hit run, it’s important to select which fields you want to join. You can do this either by Field Mapping or by Selecting Transfer Fields. This is set in the Transfer Method dropdown. In this example, I have chosen to use field mapping. With field mapping, you see a list of all the fields in the Join table (BpS) and have the option to click an x next to any field you don’t want to join. In our case, we want to join all the fields except the value field (which we already have).</p>
 </div>
@@ -352,7 +358,7 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/gis_map/11_GeoprocessingPanel.png" class="img-fluid" alt="&quot;A screenshot showing the location of the Geoprocessing tools. You can find it in the top ribbon bar under view then Geoprocessing. The red toolbox icon is highlighted in blue here showing that the button has been pressed."></p>
 <hr>
 <p><em>Open the Combine tool</em></p>
-<p><img src="images/gis_map/12_SearchCombine.png" class="img-fluid">{fig-alt=“"A screenshot showing how to search for the Combine tool by typing the word”combine” into the search box in the Geoprocessing tools panel. The combine tool is the first option in the list below the box.”}</p>
+<p><img src="images/gis_map/12_SearchCombine.png" class="img-fluid" alt="&quot;A screenshot showing how to search for the Combine tool by typing the word combine into the search box in the Geoprocessing tools panel. The combine tool is the first option in the list below the box."></p>
 <hr>
 <p><em>Set the parameters</em></p>
 <p><img src="images/gis_map/13_CombineParams.png" class="img-fluid" alt="&quot;A screenshot showing the input rasters for the combine as BpS and SClass and the output raster as BpS_SClass."></p>
