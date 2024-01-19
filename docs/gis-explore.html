@@ -256,6 +256,13 @@ div.grey {background-color:#c9c9c9; border-radius: 5px; padding: 20px;}
 <div class="grey">
 <p>Remember that Succession Class is under the Fire Regime icon at the top of the page</p>
 </div>
+<section id="screenshot-for-where-to-find-attributes-on-the-landfire-website" class="level4" data-number="5.3.1.1">
+<h4 data-number="5.3.1.1" class="anchored" data-anchor-id="screenshot-for-where-to-find-attributes-on-the-landfire-website"><span class="header-section-number">5.3.1.1</span> Screenshot for where to find attributes on the LANDFIRE website</h4>
+<hr>
+<p><em>Two options for where to find the data dictionary and key attributes</em></p>
+<p><img src="images/gis_explore/1_LFWebsite_DataDict.png" class="img-fluid" alt="&quot;A screenshot showing a where to find the LANDFIRE data dictionary and the individual layer pages. A blue rectangle surrounds the words LF Dictionary about two thirds of the way down the left sidebar. Two yellow rectangles surround the vegetation and fuel icons in the top ribbon bar."></p>
+<hr>
+</section>
 </section>
 <section id="with-the-.csv-file-for-each-layer" class="level3" data-number="5.3.2">
 <h3 data-number="5.3.2" class="anchored" data-anchor-id="with-the-.csv-file-for-each-layer"><span class="header-section-number">5.3.2</span> With the .csv file for each layer</h3>
@@ -283,6 +290,16 @@ div.grey {background-color:#c9c9c9; border-radius: 5px; padding: 20px;}
 <ol start="4" type="1">
 <li>Here you can explore the attributes and values of the datasets. We recommend using the metadata and/or data dictionary as a guide to better understand what each of the field names means and what data are being reported under that field.</li>
 </ol>
+<section id="screenshots-for-where-to-find-the-.csv-file" class="level4" data-number="5.3.2.1">
+<h4 data-number="5.3.2.1" class="anchored" data-anchor-id="screenshots-for-where-to-find-the-.csv-file"><span class="header-section-number">5.3.2.1</span> Screenshots for where to find the .csv file</h4>
+<hr>
+<p><em>Location of the CSV_Data folder inside the EVT download folder</em></p>
+<p><img src="images/gis_explore/2_CSV_Data_Folder.png" class="img-fluid" alt="&quot;A screenshot showing a where to find the CSV Data folder in a Windows file explorer environment. The file path shows where the LF2020 EVT 220 CONUS folder is and then highlights the CSV Data folder within it."></p>
+<hr>
+<p><em>Location of the .csv file within the CSV_Data folder</em></p>
+<p><img src="images/gis_explore/3_csv_file.png" class="img-fluid" alt="&quot;A screenshot showing a where to find the csv file in a Windows file explorer environment. The file path is to the CSV Data folder with the LF20 EVT 220 csv file highlighted."></p>
+<hr>
+</section>
 </section>
 <section id="within-arcgis-pro" class="level3" data-number="5.3.3">
 <h3 data-number="5.3.3" class="anchored" data-anchor-id="within-arcgis-pro"><span class="header-section-number">5.3.3</span> Within ArcGIS Pro</h3>
@@ -319,6 +336,30 @@ div.grey {background-color:#c9c9c9; border-radius: 5px; padding: 20px;}
 <li><p>Right click (don’t double click) on the table to open it and explore the summary statistics you just generated. In our case, we have each BpS Name, a frequency value for how often it occurs (my example crosses two Map Zones, so we can see whether a BpS occurs within just one of the Map Zones or both), and a Sum of the count field. This will allow us to easily see which BpS types are most and least prevalent on our landscape.</p></li>
 </ul></li>
 </ol>
+<section id="screenshots-for-finding-and-working-with-the-attribute-tables-in-arcgis-pro" class="level4" data-number="5.3.3.1">
+<h4 data-number="5.3.3.1" class="anchored" data-anchor-id="screenshots-for-finding-and-working-with-the-attribute-tables-in-arcgis-pro"><span class="header-section-number">5.3.3.1</span> Screenshots for finding and working with the attribute tables in ArcGIS Pro</h4>
+<hr>
+<p><em>How to open the attribute table of a layer</em></p>
+<p><img src="images/gis_map/8_OpenAttributeTable.png" class="img-fluid" alt="&quot;A screenshot demonstrating the process of opening the attribute table in ArcGIS Pro. The cursor is positioned over the 'Attribute Table' tab in the layer properties dialogue panel. You can open this panel by right clicking on the layer name in the table of contents on the left. The tab is highlighted, ready to be clicked, revealing the Attribute Table for the map layer."></p>
+<hr>
+<p><em>Highlighting a BpS in the attribute table and the map</em></p>
+<p><img src="images/gis_explore/4_HighlightAttribute.png" class="img-fluid" alt="&quot;A screenshot showing a where to click to highlight an attribute and what the map looks like afterward. Row 22 of the table is highlighted teal as is much of the map. An arrow points to the far left column of the table to the row numbers on the side to indicate where to click."></p>
+<hr>
+<p><em>Unselecting attributes</em></p>
+<p><img src="images/gis_explore/5_UnselectAttribute.png" class="img-fluid" alt="&quot;A screenshot showing a where to click to unselect an attribute. The cursor is highlighting the Clear button in the top ribbon bar under the selection tools. The selection tools can be found to the right of the Add Data button."></p>
+<hr>
+<p><em>Generating summary statistics</em></p>
+<p><img src="images/gis_explore/6_SummaryStats_Quick.png" class="img-fluid" alt="&quot;A screenshot showing a where to click to generate quick summary statistics. The cursor is highlighting the Statistics option in the attribute table field menu. You can access this menu by right clicking on the field of interest. The Statistics option is about halfway down the menu."></p>
+<hr>
+<p><em>Summary Statistics Chart with some basic options selected</em></p>
+<p>Set the aggregation to Sum and select count as the numeric field to replicate this chart. You can then use the Chart Properties box to customize the display further.</p>
+<p><img src="images/gis_explore/7_SummaryStats_Chart.png" class="img-fluid" alt="&quot;A screenshot showing the resulting chart and some options set in the variables to show a bar chart of BpS Counts. Category is set to Bps Name, Aggregation is set to Sum, and the numeric field is set to count."></p>
+<p>NOTE: If you have your right sidebar pinned, the chart properties box may not pop out as in the picture. You can find it in a tab on the sidebar. Re-click the pin to leave it open as you work.</p>
+<hr>
+<p><em>BONUS ACTION: Generate a Summary Table</em></p>
+<p><img src="images/gis_explore/8_SummaryStats_Table.png" class="img-fluid" alt="&quot;A screenshot showing where to click to generate a summary table along with the details of the summary statistics parameters. To generate a table, right click on the field name then select summarize, which is right below statistics in the pop up. This is highlighted in the screenshot. This opens a Summary Statistics dialogue box. We have the following parameters: Input table is BpS, Output table is Bps Statistics, Statistics field is count, statistics type is sum, the case field is BpS name. An arrow points to the bottom of the table of contents where you can find the generated table at the bottom under Standalone Tables."></p>
+<hr>
+</section>
 </section>
 </section>
 <section id="key-attributes-of-four-landfire-datasets" class="level2" data-number="5.4">
@@ -336,36 +377,36 @@ div.grey {background-color:#c9c9c9; border-radius: 5px; padding: 20px;}
 </div>
 <p><strong>Key BpS Attributes include:</strong></p>
 <ul>
-<li><p>BPS_CODE: The unique code LANDFIRE uses for each Biophysical Setting</p></li>
-<li><p>Zone: The NLCD map zone(s) the Bps is located in or relates to</p></li>
-<li><p>BPS_MODEL: The unique BpS Model code. Ths combines the BpS code with the zone(s) the model is located in. In some cases, a BpS with the same name and BpS Code may be split among map zones because the vegetation or disturbance regimes vary enough that the descriptions differ. An example of this is the ‘Laurentian-Acadian Northern Hardwoods forest’ BpS (13020), which has four different BpS Models, although it is mapped as one BpS type. (See the screenshot below.)</p></li>
-<li><p>BPS_NAME: The name of the Biophysical Setting. The name is matched to the BpS Code, not the BpS model number.</p></li>
-<li><p>GROUPVEG: Coarse vegetation type groupings highlighting the high-level dominant vegetation within that BpS. Note that if a BpS is listed as ‘Hardwood’ it may actually be a mix of hardwood, herbaceous, savannah, and more, but LANDFIRE’s mapping identified hardwoods as dominating most of the landscape.</p></li>
+<li><p><em>BPS_CODE</em>: The unique code LANDFIRE uses for each Biophysical Setting</p></li>
+<li><p><em>Zone</em>: The NLCD map zone(s) the Bps is located in or relates to</p></li>
+<li><p><em>BPS_MODEL</em>: The unique BpS Model code. Ths combines the BpS code with the zone(s) the model is located in. In some cases, a BpS with the same name and BpS Code may be split among map zones because the vegetation or disturbance regimes vary enough that the descriptions differ. An example of this is the ‘Laurentian-Acadian Northern Hardwoods forest’ BpS (13020), which has four different BpS Models, although it is mapped as one BpS type. (See the screenshot below.)</p></li>
+<li><p><em>BPS_NAME</em>: The name of the Biophysical Setting. The name is matched to the BpS Code, not the BpS model number.</p></li>
+<li><p><em>GROUPVEG</em>: Coarse vegetation type groupings highlighting the high-level dominant vegetation within that BpS. Note that if a BpS is listed as ‘Hardwood’ it may actually be a mix of hardwood, herbaceous, savannah, and more, but LANDFIRE’s mapping identified hardwoods as dominating most of the landscape.</p></li>
 <li><p>Fire Regime Attributes</p>
 <ul>
-<li><p>FRI_REPLAC: Average historic replacement-severity fire frequency for the BpS</p></li>
-<li><p>FRI_MIXED: Average historic mixed-severity fire frequency for the BpS</p></li>
-<li><p>FRI_SURFAC: Average historic surface-severity fire frequency for the BpS</p></li>
-<li><p>FRI_ALLFIR: Average historic fire frequency for all fires within the BpS</p></li>
-<li><p>PRC_REPLAC: Percent of historic fires with replacement severity for the BpS</p></li>
-<li><p>PRC_MIXED: Percent of historic fires with mixed serverity for the BpS</p></li>
-<li><p>PRC_SURFAC: Percent of historic fires with surface severity for the BpS</p></li>
-<li><p>FRG_NEW: The fire regime group this BpS is found in. Fire regime groups are based on a combination of fire return interval and fire severity. The current Fire Regime Groups were updated in 2016, and have been modified from a previous classification. You can find the new breakdown of fire regime groups in the <a href="https://landfire.gov/DataDictionary/LF2020/LF20_BPSADD_220.pdf">Attribute Data Dictionary</a> for the BpS spatial data.</p>
+<li><p><em>FRI_REPLAC</em>: Average historic replacement-severity fire frequency for the BpS</p></li>
+<li><p><em>FRI_MIXED</em>: Average historic mixed-severity fire frequency for the BpS</p></li>
+<li><p><em>FRI_SURFAC</em>: Average historic surface-severity fire frequency for the BpS</p></li>
+<li><p><em>FRI_ALLFIR</em>: Average historic fire frequency for all fires within the BpS</p></li>
+<li><p><em>PRC_REPLAC</em>: Percent of historic fires with replacement severity for the BpS</p></li>
+<li><p><em>PRC_MIXED</em>: Percent of historic fires with mixed serverity for the BpS</p></li>
+<li><p><em>PRC_SURFAC</em>: Percent of historic fires with surface severity for the BpS</p></li>
+<li><p><em>FRG_NEW</em>: The fire regime group this BpS is found in. Fire regime groups are based on a combination of fire return interval and fire severity. The current Fire Regime Groups were updated in 2016, and have been modified from a previous classification. You can find the new breakdown of fire regime groups in the <a href="https://landfire.gov/DataDictionary/LF2020/LF20_BPSADD_220.pdf">Attribute Data Dictionary</a> for the BpS spatial data.</p>
 <ul>
 <li>Fire Regime Groups are assigned as follows:
 <ul>
-<li>I-A (1A): Percent replacement fire less than 66.7%, fire return interval 0-5 years</li>
-<li>I-B (1B): Percent replacement fire less than 66.7%, fire return interval 6-15 years</li>
-<li>I-C (1C): Percent replacement fire less than 66.7%, fire return interval 16-35 years</li>
-<li>II-A (2A): Percent replacement fire greater than 66.7%, fire return interval 0-5 years</li>
-<li>II-B (2B): Percent replacement fire greater than 66.7%, fire return interval 6-15 years</li>
-<li>II-C (2C): Percent replacement fire greater than 66.7%, fire return interval 16-35 years</li>
-<li>III-A (3A): Percent replacement fire less than 80%, fire return interval 36-100 years</li>
-<li>III-B (3B): Percent replacement fire less than 66.7%, fire return interval 101-200 years</li>
-<li>IV-A (4A): Percent replacement fire greater than 80%, fire return interval 36-100 years</li>
-<li>IV-B (4B): Percent replacement fire greater than 66.7%, fire return interval 101-200 years</li>
-<li>V-A (5A): Any severity, fire return interval 201-500 years</li>
-<li>V-B (5B): Any severity, fire return interval 501 or more years</li>
+<li><em>I-A (1A)</em>: Percent replacement fire less than 66.7%, fire return interval 0-5 years</li>
+<li><em>I-B (1B)</em>: Percent replacement fire less than 66.7%, fire return interval 6-15 years</li>
+<li><em>I-C (1C)</em>: Percent replacement fire less than 66.7%, fire return interval 16-35 years</li>
+<li><em>II-A (2A)</em>: Percent replacement fire greater than 66.7%, fire return interval 0-5 years</li>
+<li><em>II-B (2B)</em>: Percent replacement fire greater than 66.7%, fire return interval 6-15 years</li>
+<li><em>II-C (2C)</em>: Percent replacement fire greater than 66.7%, fire return interval 16-35 years</li>
+<li><em>III-A (3A)</em>: Percent replacement fire less than 80%, fire return interval 36-100 years</li>
+<li><em>III-B (3B)</em>: Percent replacement fire less than 66.7%, fire return interval 101-200 years</li>
+<li><em>IV-A (4A)</em>: Percent replacement fire greater than 80%, fire return interval 36-100 years</li>
+<li><em>IV-B (4B)</em>: Percent replacement fire greater than 66.7%, fire return interval 101-200 years</li>
+<li><em>V-A (5A)</em>: Any severity, fire return interval 201-500 years</li>
+<li><em>V-B (5B)</em>: Any severity, fire return interval 501 or more years</li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -387,16 +428,16 @@ div.grey {background-color:#c9c9c9; border-radius: 5px; padding: 20px;}
 <p>EVT also includes ruderal or semi-natural vegetation types within the U.S. National Vegetation Classification. The <a href="https://landfire.gov/documents/LANDFIRE_Ruderal_NVC_Groups_Descriptions_CONUS.pdf">LANDFIRE Ruderal NVC Groups Descriptions for CONUS</a> provides info for each ruderal NVC Group, including species, distribution, and classification details.</p>
 <p><strong>Key BpS Attributes include:</strong></p>
 <ul>
-<li><p>EVT_Name: Ecological Systems names</p></li>
-<li><p>EVT_Fuel: The Ecological Systems code used for LANDFIRE fuels product development</p></li>
-<li><p>EVT_Fuel_N: The Ecological Systems class name used for fuel product development</p></li>
-<li><p>EVT_LF: Major vegetation lifeform (e.g., tree, shrub, herb, sparse) for the ecological system. Note that if an EVT Lifeform is listed as ‘tree’ it may actually be a mix of tree, herb, savanna, and more, but the ecological system and LANDFIRE identified trees as dominating most of the landscape.</p></li>
-<li><p>EVT_GP_N: The vegetation type name (e.g.&nbsp;grassland and steppe, longleaf pine, yellow birch-sugar maple forest). This is more specific than the lifeform, but less specific than the ecological system (EVT Name).</p></li>
-<li><p>EVT_PHYS: Vegetation physiognomy of the ecological system (e.g.&nbsp;Grassland, Riparian, Herbaceous, Sparsely Vegetated)</p></li>
-<li><p>SAF_SRM: Society of American Foresters/Society for Range Management cover types</p></li>
-<li><p>EVT_ORDER: FGDC Vegetation physiognomic order (highest level/most general classification - e.g.&nbsp;Tree Dominated)</p></li>
-<li><p>EVT_CLASS: FGDC Vegetation class (mid level/more specific - e.g.&nbsp;Closed tree canopy)</p></li>
-<li><p>EVT_SBCLS: FGDC Vegetation subclass (lowest level/most specific - e.g.&nbsp;Deciduous closed tree canopy)</p></li>
+<li><p><em>EVT_Name</em>: Ecological Systems names</p></li>
+<li><p><em>EVT_Fuel</em>: The Ecological Systems code used for LANDFIRE fuels product development</p></li>
+<li><p><em>EVT_Fuel_N</em>: The Ecological Systems class name used for fuel product development</p></li>
+<li><p><em>EVT_LF</em>: Major vegetation lifeform (e.g., tree, shrub, herb, sparse) for the ecological system. Note that if an EVT Lifeform is listed as ‘tree’ it may actually be a mix of tree, herb, savanna, and more, but the ecological system and LANDFIRE identified trees as dominating most of the landscape.</p></li>
+<li><p><em>EVT_GP_N</em>: The vegetation type name (e.g.&nbsp;grassland and steppe, longleaf pine, yellow birch-sugar maple forest). This is more specific than the lifeform, but less specific than the ecological system (EVT Name).</p></li>
+<li><p><em>EVT_PHYS</em>: Vegetation physiognomy of the ecological system (e.g.&nbsp;Grassland, Riparian, Herbaceous, Sparsely Vegetated)</p></li>
+<li><p><em>SAF_SRM</em>: Society of American Foresters/Society for Range Management cover types</p></li>
+<li><p><em>EVT_ORDER</em>: FGDC Vegetation physiognomic order (highest level/most general classification, e.g.&nbsp;Tree Dominated)</p></li>
+<li><p><em>EVT_CLASS</em>: FGDC Vegetation class (mid level/more specific, e.g.&nbsp;Closed tree canopy)</p></li>
+<li><p><em>EVT_SBCLS</em>: FGDC Vegetation subclass (lowest level/most specific, e.g.&nbsp;Deciduous closed tree canopy)</p></li>
 </ul>
 <section id="screenshot-of-evt-key-attributes" class="level4" data-number="5.4.2.1">
 <h4 data-number="5.4.2.1" class="anchored" data-anchor-id="screenshot-of-evt-key-attributes"><span class="header-section-number">5.4.2.1</span> Screenshot of EVT key attributes</h4>
@@ -412,15 +453,15 @@ div.grey {background-color:#c9c9c9; border-radius: 5px; padding: 20px;}
 <p>EVC is generated separately for tree, shrub, and herbaceous cover lifeforms using training data and other geospatial layers. Percentage tree, shrub, and herbaceous canopy cover training data are generated using plot-level ground-based visual assessments and lidar observations.</p>
 <p><strong>Key EVC Attributes include:</strong></p>
 <ul>
-<li><p>CLASSNAMES: The main attribute of EVC. This combines the EVT lifeform with the percent canopy cover of each lifeform. Key lifeforms are described below. As with all LANDFIRE layers, you can get more detailed information about the individual attributes from the <a href="https://landfire.gov/DataDictionary/LF2022/LF22_EVCADD_230.pdf">EVC Attribute Data Dictionary</a>.</p>
+<li><p><em>CLASSNAMES</em>: The main attribute of EVC. This combines the EVT lifeform with the percent canopy cover of each lifeform. Key lifeforms are described below. As with all LANDFIRE layers, you can get more detailed information about the individual attributes from the <a href="https://landfire.gov/DataDictionary/LF2022/LF22_EVCADD_230.pdf">EVC Attribute Data Dictionary</a>.</p>
 <ul>
-<li><p>Tree Cover: percent tree cover</p></li>
-<li><p>Shrub Cover: percent shrub cover</p></li>
-<li><p>Herb Cover: percent herbaceous/grassland cover</p></li>
-<li><p>Developed-Upland Forest Shrub: Five classes of developed upland vegetation</p></li>
-<li><p>Developed: Three classes of developed landscapes</p></li>
-<li><p>Developed-Roads: Pixels identified as roads</p></li>
-<li><p>NASS Crops: Six classes of National Agricultural Statistics Service defined cropland</p></li>
+<li><p><em>Tree Cover</em>: percent tree cover</p></li>
+<li><p><em>Shrub Cover</em>: percent shrub cover</p></li>
+<li><p><em>Herb Cover</em>: percent herbaceous/grassland cover</p></li>
+<li><p><em>Developed-Upland Forest Shrub</em>: Five classes of developed upland vegetation</p></li>
+<li><p><em>Developed</em>: Three classes of developed landscapes</p></li>
+<li><p><em>Developed-Roads</em>: Pixels identified as roads</p></li>
+<li><p><em>NASS Crops</em>: Six classes of National Agricultural Statistics Service defined cropland</p></li>
 </ul></li>
 </ul>
 <section id="screenshot-of-evc-key-attributes" class="level4" data-number="5.4.3.1">
@@ -443,7 +484,7 @@ div.grey {background-color:#c9c9c9; border-radius: 5px; padding: 20px;}
 </div>
 <p><strong>Key Succession Class attributes include</strong></p>
 <ul>
-<li>Description: LANDFIRE’s Succession Classes categorized into up to five succession classes, with each succession class defined in the corresponding Biophysical Settings model. There are two additional classes – UN for uncharacteristic native vegetation type, cover, or height; and UE for uncharacteristic species (invasive or exotic vegetation types).</li>
+<li><em>Description</em>: LANDFIRE’s Succession Classes categorized into up to five succession classes, with each succession class defined in the corresponding Biophysical Settings model. There are two additional classes – UN for uncharacteristic native vegetation type, cover, or height; and UE for uncharacteristic species (invasive or exotic vegetation types).</li>
 </ul>
 
 
