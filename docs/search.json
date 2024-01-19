@@ -98,18 +98,39 @@
     "text": "2.6 Additional Resources\n\nhttps://thenatureconservancy.github.io/landfiremodels/"
   },
   {
-    "objectID": "get-data.html#getting-landfire-data-from-the-landfire-map-viewer-lfmv",
-    "href": "get-data.html#getting-landfire-data-from-the-landfire-map-viewer-lfmv",
+    "objectID": "get-data.html#what-you-will-learn-here",
+    "href": "get-data.html#what-you-will-learn-here",
     "title": "3  Get LANDFIRE data",
-    "section": "3.1 Getting LANDFIRE Data from the LANDFIRE Map Viewer (LFMV)",
-    "text": "3.1 Getting LANDFIRE Data from the LANDFIRE Map Viewer (LFMV)\nMEGAN does this page."
+    "section": "3.1 What you will learn here",
+    "text": "3.1 What you will learn here\nGetting data is a key first step in landscape analysis. While LANDFIRE offers many key datasets, and has multiple ways to access the data finding it and getting it downloaded can be confusing. Here we:\n\nbriefly describe the different ways to get LANDFIRE data\nshowcase getting data with the LANDFIRE Map Viewer\nexplore the structure of the files you get from LANDFIRE"
   },
   {
-    "objectID": "get-data.html#randys-ideas",
-    "href": "get-data.html#randys-ideas",
+    "objectID": "get-data.html#four-ways-to-get-landfire-data",
+    "href": "get-data.html#four-ways-to-get-landfire-data",
     "title": "3  Get LANDFIRE data",
-    "section": "3.2 Randy’s ideas",
-    "text": "3.2 Randy’s ideas\n\nOutline that there are multiple ways (LFMV, streaming, CONUS tifs, rlandfire package), and that this page will focus on the LFMV\nShare Jim’s videos, noting that things are changing and may look a bit different than in the video\nHave directions and screenshots\n\nturning off the EVT data on the initial opening page so it’s easier to navigate\ndrawing a rectangle\nhow to select multiple datasets (with links to version description page)\nreminding users to type in email, then to wait (I sometimes forget this)\netc."
+    "section": "3.2 Four ways to get LANDFIRE data",
+    "text": "3.2 Four ways to get LANDFIRE data\nThere are four ways to get LANDFIRE data (that we know of-there may be more!):\n\nLANDFIRE Map Viewer (LFMV). This site allows you to explore LANDFIRE datasets online, and to download them based on a rectangle you draw, a polygon you draw, a template (e.g., a state, from a dropdown) or a GeoJSON. We will highlight obtaining data from the LFMV below. This method is most useful if you need several datasets and/or focus on one area and/or have data storage limitations.\nDownload Mosaics for CONUS, HI or AK or the U.S. Insular Areas. Obtaining these mosaiced datasets are best for users who have several landscapes of interest and/or have plenty of storage space.\n\nStream data with the LANDFIRE Product Service or by webservice. These options are good for users who do not want to store data locally. To learn more about these options check out the “How to use LANDFIRE’s Streaming Options to access LANDFIRE data video.\nThe rlandfire R package, by Mark Buckner who is currently (as of January 2024) a PhD candidate at Cornell University. This package allows you to import LANDFIRE data directly into your R environment."
+  },
+  {
+    "objectID": "get-data.html#the-landfire-map-viewer",
+    "href": "get-data.html#the-landfire-map-viewer",
+    "title": "3  Get LANDFIRE data",
+    "section": "3.3 The LANDFIRE Map Viewer",
+    "text": "3.3 The LANDFIRE Map Viewer\nFor many users the LFMV will be the best way to get LANDFIRE data. Once you get the knack of it, obtaining data will be quick and easy. We highlight a few tips below.\n\nFirst you will go to https://www.landfire.gov/viewer/.\n\nWe like to turn off the display of LANDFIRE’s Existing Vegetation Type data so that we can see the basemap. To do this uncheck the box on the left hand banner as highlighted below in the “LFMV initial screen” screenshot below.\nYou will need to select an area to limit the data download. On the right banner there is a Method dropdown, with multiple options. Here we will draw a rectangle. Once your method is complete (e.g., drawing a rectangle) you will be presented with options for Projection and versions. Because we will be selecting data from multiple versions, and are happy with the default projection we will not change these options. See “Drawing rectangle” screenshot below.\nAfter you select your area, available datasets will be listed below, nested by version and category. In the “Select datasets” screenshot we demonstrate this.\n*Note: all datasets are not available with every version. Go here to begin learning about versions.\nOnce all desired datasets are selected, scroll down to enter your e-mail address. Soon after doing that and clicking the “Download” button you will receive an email announcing that your data is ready for download. Follow the instructions in that email.\n\n\n\n\n3.3.0.1 Screenshots for using the LFMV\nLFMV initial screen\n\n\nDrawing rectangle\n\n\nSelecting Datasets"
+  },
+  {
+    "objectID": "get-data.html#after-download-happens",
+    "href": "get-data.html#after-download-happens",
+    "title": "3  Get LANDFIRE data",
+    "section": "3.4 After download happens",
+    "text": "3.4 After download happens\nAs noted above after you click the ‘Download” button on the LFMV you will eventually receive an email with instructions. The zipped data will likely land in your ’Downloads’ directory. Then what?\nEssentially you will extract the data to a useful location, then hop to the “Explore the spatial data” and “Make a map with LANDFIRE data” pages on this site."
+  },
+  {
+    "objectID": "get-data.html#additional-resources",
+    "href": "get-data.html#additional-resources",
+    "title": "3  Get LANDFIRE data",
+    "section": "3.5 Additional resources",
+    "text": "3.5 Additional resources\n\nVideo tutorial about using the LANDFIRE Map Viewer, Part 1\nVideo tutorial about using the LANDFIRE Map Viewer, Part 2\nVideo tutorial about using LANDFIRE Streaming Services"
   },
   {
     "objectID": "gis-explore.html",
@@ -173,26 +194,5 @@
     "title": "5  Make a map with LANDFIRE data",
     "section": "6.3 BONUS ACTION: Combining two raster data layers",
     "text": "6.3 BONUS ACTION: Combining two raster data layers\nIn many cases, it may be useful to combine attributes from two rasters into one data table. This is best accomplished with the ‘Combine’ tool in ArcGIS Pro. the ‘Combine’ tool is part of the Spatial Analyst tools, and it is used to overlay multiple raster datasets to create a new raster output. The tool combines the input raster datasets based on their pixel values. The resulting output raster will have a new attribute table that includes information from all the input rasters.\nThe Combine tool is particularly useful when you want to identify unique combinations of attributes present in different raster datasets. It assigns a unique value to each combination, making it easier to analyze and interpret the spatial relationships.\nIn this tutorial, we will look at how to combine LANDFIRE BpS with LANDFIRE Succession Class Data, which is one of the steps you might take to better understand your landscape.\nCombining two rasters\n\nTo get started with any tool in ArcGIS Pro, you will want to open the Geoprocessing pane. This can be found by navigating to the ‘View’ menu across the top, then selecting ‘Geoprocessing’ from the ribbon menu. The ‘Geoprocessing’ icon looks like a big red toolbox. Click it to open a new Geoprocessing pane in the right sidebar.\nFrom here, you can either navigate to the Combine tool by clicking Toolboxes -&gt; Spatial Analyst Tools -&gt; Local -&gt; Combine OR you can simply search for the tool by typing “combine” into the search box.\nIn the Combine tool, use the dropdowns or the folder icons to set the Input Rasters as all the rasters you want to combine. In this case, we will select BpS and SClass. Then set the Output Raster to something meaningful. Don’t forget to make sure the file path is to a location you will remember.\nIn addition, you will want to click on the Environments tab and set the following parameters. This is best practice for any and all raster data processing, as you want to be sure you’re saving everything with the correct coordinate systems and snapping your rasters to the same extent:\n\nOutput Coordinate System: Set this to be your preferred coordinate system OR use the dropdown to select one of the layers in your combine to ensure that the output layer has the same coordinate system as the input layers. In the case of LANDFIRE data, this should be NAD_1983_Contiguous_USA_Albers.\nCell size: Use the dropdown to set this to be the same as one of your input layers. This should be the same by default if your data all have 30 meter pixels, but I like to set it to be sure.\nMask: It’s not usually necessary, but I like to set this to be the extent of our shapefile or area of interest just to be sure that we’re only processing the pixels we need\nSnap Raster: This is important to pay attention to. Generally, I set this to either the initial LANDFIRE dataset I’m using as my primary data (in this case, LANDFIRE BpS) or to one of the layers I’m using in the combine. It’s important that you set the snap raster to be the same raster dataset for every single raster you want to use in an analysis to ensure that the pixels will line up.\n\nWhen you have set the input and output values and the environment settings, click run. This may take some time depending on the size of your area of interest. If you want to check progress, you can click ‘View Details’ at the very bottom of the Geoprocessing panel where the tool is running.\nOnce you have combined the datasets, you then need to add in the fields of interest from the individual rasters, as the combine will only show you the value fields from each raster you combined. Here’s the process for that:\n\nUse the Join Field tool in the Geoprocessing toolbox (you can search for it). This tool permanently joins the contents of one table to another based on a common attribute field (in this case, the value field of the raster). You can select which fields from the join table will be added to the input table.\nTo join in the BpS Attributes, set the input table to your combine table (in this example it’s called BpS_SClass_ADK), then set the Input Join Field to the BpS Value field (in this example, BpS_ADK – the name of my BpS layer). Set the join table as your BpS layer (here, BpS_ADK), and the Join Table Field to ‘Value’. This will match the value field from your BpS layer to the correct values in the correct field in your combine.\n\n\n\n\nBefore you hit run, it’s important to select which fields you want to join. You can do this either by Field Mapping or by Selecting Transfer Fields. This is set in the Transfer Method dropdown. In this example, I have chosen to use field mapping. With field mapping, you see a list of all the fields in the Join table (BpS) and have the option to click an x next to any field you don’t want to join. In our case, we want to join all the fields except the value field (which we already have).\n\n\nTo join in the SClass attributes, you follow the same procedure as above, but set the input Join field to the SClass value field (SClass_ADK) and the Join table to your SClass layer (SClass_ADK). I also took out most of the fields in the field mapping, because I am only interested in the label and description fields.\nWhen you are done, your combined layer should have an attribute table that includes all the attributes from your BpS layer as well as the label and description fields from your SClass layer. This will allow you to understand what proportion of each BpS is in a given succession class, as mapped by LANDFIRE.\n\n\n6.3.0.1 Screenshots for combining two rasters\n\nWhere to click to open the Geoprocessing tools.\n\n\nOpen the Combine tool\n\n\nSet the parameters\n\n\nSet the environments\n\n\nJoin Field Settings\n\n\nYour final attribute table should have all the BpS Values and the relevant SClass values"
-  },
-  {
-    "objectID": "make-charts.html#need-and-approach",
-    "href": "make-charts.html#need-and-approach",
-    "title": "6  Make charts with attribute data",
-    "section": "6.1 Need and approach",
-    "text": "6.1 Need and approach\nIn addition to the beautiful and useful maps we can make with spatial data such as delivered by LANDFIRE, it is also useful to summarize the data. One way to do that is with charts.\nBelow we will take two approaches: 1) making charts with Datawrapper.de as it may be new to people, is free and makes nice charts and 2) with R as it too is free, is easy to replicate and can make nice charts."
-  },
-  {
-    "objectID": "make-charts.html#using-datawrapper.de",
-    "href": "make-charts.html#using-datawrapper.de",
-    "title": "6  Make charts with attribute data",
-    "section": "6.2 Using Datawrapper.de",
-    "text": "6.2 Using Datawrapper.de"
-  },
-  {
-    "objectID": "make-charts.html#in-r",
-    "href": "make-charts.html#in-r",
-    "title": "6  Make charts with attribute data",
-    "section": "6.3 In R",
-    "text": "6.3 In R\n\n6.3.1 simple bar chart of BpS/EVT\n\n\n6.3.2 bar chart of EVC with custom colors (though may not match with Sarah’s)\n\n\n6.3.3 Grouped bar of succession classes\n\n\n6.3.4 Late Succession"
   }
 ]

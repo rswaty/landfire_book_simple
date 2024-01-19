@@ -136,12 +136,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Make a map with LANDFIRE data</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./make-charts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Make charts with attribute data</span></span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -152,8 +146,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#getting-landfire-data-from-the-landfire-map-viewer-lfmv" id="toc-getting-landfire-data-from-the-landfire-map-viewer-lfmv" class="nav-link active" data-scroll-target="#getting-landfire-data-from-the-landfire-map-viewer-lfmv"><span class="header-section-number">3.1</span> Getting LANDFIRE Data from the LANDFIRE Map Viewer (LFMV)</a></li>
-  <li><a href="#randys-ideas" id="toc-randys-ideas" class="nav-link" data-scroll-target="#randys-ideas"><span class="header-section-number">3.2</span> Randy’s ideas</a></li>
+  <li><a href="#what-you-will-learn-here" id="toc-what-you-will-learn-here" class="nav-link active" data-scroll-target="#what-you-will-learn-here"><span class="header-section-number">3.1</span> What you will learn here</a></li>
+  <li><a href="#four-ways-to-get-landfire-data" id="toc-four-ways-to-get-landfire-data" class="nav-link" data-scroll-target="#four-ways-to-get-landfire-data"><span class="header-section-number">3.2</span> Four ways to get LANDFIRE data</a></li>
+  <li><a href="#the-landfire-map-viewer" id="toc-the-landfire-map-viewer" class="nav-link" data-scroll-target="#the-landfire-map-viewer"><span class="header-section-number">3.3</span> The LANDFIRE Map Viewer</a></li>
+  <li><a href="#after-download-happens" id="toc-after-download-happens" class="nav-link" data-scroll-target="#after-download-happens"><span class="header-section-number">3.4</span> After download happens</a></li>
+  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources"><span class="header-section-number">3.5</span> Additional resources</a></li>
   </ul>
 </nav>
     </div>
@@ -177,23 +174,63 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="getting-landfire-data-from-the-landfire-map-viewer-lfmv" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="getting-landfire-data-from-the-landfire-map-viewer-lfmv"><span class="header-section-number">3.1</span> Getting LANDFIRE Data from the LANDFIRE Map Viewer (LFMV)</h2>
-<p>MEGAN does this page.</p>
+<section id="what-you-will-learn-here" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="what-you-will-learn-here"><span class="header-section-number">3.1</span> What you will learn here</h2>
+<p>Getting data is a key first step in landscape analysis. While LANDFIRE offers many key datasets, and has multiple ways to access the data finding it and getting it downloaded can be confusing. Here we:</p>
+<ul>
+<li>briefly describe the different ways to get LANDFIRE data</li>
+<li>showcase getting data with the LANDFIRE Map Viewer</li>
+<li>explore the structure of the files you get from LANDFIRE</li>
+</ul>
 </section>
-<section id="randys-ideas" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="randys-ideas"><span class="header-section-number">3.2</span> Randy’s ideas</h2>
+<section id="four-ways-to-get-landfire-data" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="four-ways-to-get-landfire-data"><span class="header-section-number">3.2</span> Four ways to get LANDFIRE data</h2>
+<p>There are four ways to get LANDFIRE data (that we know of-there may be more!):</p>
+<ol type="1">
+<li><a href="https://www.landfire.gov/viewer/" target="blank">LANDFIRE Map Viewer (LFMV)</a>. This site allows you to explore LANDFIRE datasets online, and to download them based on a rectangle you draw, a polygon you draw, a template (e.g., a state, from a dropdown) or a GeoJSON. We will highlight obtaining data from the LFMV below. This method is most useful if you need several datasets and/or focus on one area and/or have data storage limitations.</li>
+<li>Download Mosaics for <a href="https://landfire.gov/version_download.php" target="blank">CONUS, HI or AK</a> or the <a href="https://landfire.gov/insular_areas.php" target="blank">U.S. Insular Areas</a>. Obtaining these mosaiced datasets are best for users who have several landscapes of interest and/or have plenty of storage space.<br>
+</li>
+<li>Stream data with the <a href="https://lfps.usgs.gov/arcgis/rest/services/LandfireProductService/GPServer" target="blank">LANDFIRE Product Service</a> or by <a href="https://landfire.gov/data_access.php" target="blank">webservice</a>. These options are good for users who do not want to store data locally. To learn more about these options check out the <a href="https://youtu.be/1PMzNI73A9Y?feature=shared" target="blank">“How to use LANDFIRE’s Streaming Options to access LANDFIRE data</a> video.</li>
+<li>The <a href="https://github.com/bcknr/rlandfire" target="blank">rlandfire</a> R package, by <a href="https://github.com/bcknr/rlandfire" target="blank">Mark Buckner</a> who is currently (as of January 2024) a PhD candidate at Cornell University. This package allows you to import LANDFIRE data directly into your R environment.</li>
+</ol>
+</section>
+<section id="the-landfire-map-viewer" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="the-landfire-map-viewer"><span class="header-section-number">3.3</span> The LANDFIRE Map Viewer</h2>
+<p>For many users the LFMV will be the best way to get LANDFIRE data. Once you get the knack of it, obtaining data will be quick and easy. We highlight a few tips below.</p>
+<ol type="1">
+<li>First you will go to https://www.landfire.gov/viewer/.<br>
+</li>
+<li>We like to turn off the display of LANDFIRE’s Existing Vegetation Type data so that we can see the basemap. To do this uncheck the box on the left hand banner as highlighted below in the “LFMV initial screen” screenshot below.</li>
+<li>You will need to select an area to limit the data download. On the right banner there is a Method dropdown, with multiple options. Here we will draw a rectangle. Once your method is complete (e.g., drawing a rectangle) you will be presented with options for Projection and versions. Because we will be selecting data from multiple versions, and are happy with the default projection we will not change these options. See “Drawing rectangle” screenshot below.</li>
+<li>After you select your area, available datasets will be listed below, nested by version and category. In the “Select datasets” screenshot we demonstrate this.<br>
+*Note: all datasets are not available with every version. Go <a href="https://landfire.gov/lf_schedule.php" target="blank">here</a> to begin learning about versions.</li>
+<li>Once all desired datasets are selected, scroll down to enter your e-mail address. Soon after doing that and clicking the “Download” button you will receive an email announcing that your data is ready for download. Follow the instructions in that email.</li>
+</ol>
+<p><br></p>
+<hr>
+<section id="screenshots-for-using-the-lfmv" class="level4" data-number="3.3.0.1">
+<h4 data-number="3.3.0.1" class="anchored" data-anchor-id="screenshots-for-using-the-lfmv"><span class="header-section-number">3.3.0.1</span> Screenshots for using the LFMV</h4>
+<p><em>LFMV initial screen</em></p>
+<p><img src="images/downloading/uncheck_evt_1.png" class="img-fluid" alt="&quot;Initial screen in the LANDFIRE Map Viewer with blue arrow pointing to where to turn off the Existing Vegetatation Type dataset in the top left section of the viewer."></p>
+<hr>
+<p><em>Drawing rectangle</em></p>
+<p><img src="images/downloading/start_tool_2.png" class="img-fluid" alt="LANDFIRE Map Viewer highlighting how to start the download tool in the top left, how to set up for drawing a rectangle on the right banner, and an example rectangle. "></p>
+<hr>
+<p><em>Selecting Datasets</em></p>
+<p><img src="images/downloading/select_datasets.png" class="img-fluid" alt="LANDFIRE Map Viewer highlighting with various datasets selected for download in the right banner. "></p>
+</section>
+</section>
+<section id="after-download-happens" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="after-download-happens"><span class="header-section-number">3.4</span> After download happens</h2>
+<p>As noted above after you click the ‘Download” button on the LFMV you will eventually receive an email with instructions. The zipped data will likely land in your ’Downloads’ directory. Then what?</p>
+<p>Essentially you will extract the data to a useful location, then hop to the “Explore the spatial data” and “Make a map with LANDFIRE data” pages on this site.</p>
+</section>
+<section id="additional-resources" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="additional-resources"><span class="header-section-number">3.5</span> Additional resources</h2>
 <ul>
-<li>Outline that there are multiple ways (LFMV, streaming, CONUS tifs, rlandfire package), and that this page will focus on the LFMV</li>
-<li>Share Jim’s videos, noting that things are changing and may look a bit different than in the video</li>
-<li>Have directions and screenshots
-<ul>
-<li>turning off the EVT data on the initial opening page so it’s easier to navigate</li>
-<li>drawing a rectangle</li>
-<li>how to select multiple datasets (with links to version description page)</li>
-<li>reminding users to type in email, then to wait (I sometimes forget this)</li>
-<li>etc.</li>
-</ul></li>
+<li><a href="https://youtu.be/z59ctfywFtw?feature=shared" target="blank">Video tutorial about using the LANDFIRE Map Viewer, Part 1</a></li>
+<li><a href="https://youtu.be/o2U7NZims2E?feature=shared" target="blank">Video tutorial about using the LANDFIRE Map Viewer, Part 2</a></li>
+<li><a href="https://youtu.be/1PMzNI73A9Y?feature=shared" target="blank">Video tutorial about using LANDFIRE Streaming Services</a></li>
 </ul>
 
 

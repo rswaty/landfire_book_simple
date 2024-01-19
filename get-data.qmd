@@ -2,17 +2,70 @@
 title: "Get LANDFIRE data"
 ---
 
-## Getting LANDFIRE Data from the LANDFIRE Map Viewer (LFMV)
+## What you will learn here
 
-MEGAN does this page.
+Getting data is a key first step in landscape analysis. While LANDFIRE offers many key datasets, and has multiple ways to access the data finding it and getting it downloaded can be confusing.  Here we:
 
-## Randy's ideas
+* briefly describe the different ways to get LANDFIRE data
+* showcase getting data with the LANDFIRE Map Viewer
+* explore the structure of the files you get from LANDFIRE
 
-* Outline that there are multiple ways (LFMV, streaming, CONUS tifs, rlandfire package), and that this page will focus on the LFMV
-* Share Jim's videos, noting that things are changing and may look a bit different than in the video
-* Have directions and screenshots
-    * turning off the EVT data on the initial opening page so it's easier to navigate
-    * drawing a rectangle
-    * how to select multiple datasets (with links to version description page)
-    * reminding users to type in email, then to wait (I sometimes forget this)
-    * etc. 
+## Four ways to get LANDFIRE data
+
+There are four ways to get LANDFIRE data (that we know of-there may be more!):
+
+1. [LANDFIRE Map Viewer (LFMV)](https://www.landfire.gov/viewer/){target="blank"}.  This site allows you to explore LANDFIRE datasets online, and to download them based on a rectangle you draw, a polygon you draw, a template (e.g., a state, from a dropdown) or a GeoJSON.  We will highlight obtaining data from the LFMV below. This method is most useful if you need several datasets and/or focus on one area and/or have data storage limitations.
+2. Download Mosaics for [CONUS, HI or AK](https://landfire.gov/version_download.php){target="blank"} or the [U.S. Insular Areas](https://landfire.gov/insular_areas.php){target="blank"}.  Obtaining these mosaiced datasets are best for users who have several landscapes of interest and/or have plenty of storage space.  
+3. Stream data with the [LANDFIRE Product Service](https://lfps.usgs.gov/arcgis/rest/services/LandfireProductService/GPServer){target="blank"} or by [webservice](https://landfire.gov/data_access.php){target="blank"}.  These options are good for users who do not want to store data locally.  To learn more about these options check out the ["How to use LANDFIRE's Streaming Options to access LANDFIRE data](https://youtu.be/1PMzNI73A9Y?feature=shared){target="blank"} video.
+4. The [rlandfire](https://github.com/bcknr/rlandfire){target="blank"} R package, by [Mark Buckner](https://github.com/bcknr/rlandfire){target="blank"} who is currently (as of January 2024) a PhD candidate at Cornell University.  This package allows you to import LANDFIRE data directly into your R environment.
+
+## The LANDFIRE Map Viewer
+
+For many users the LFMV will be the best way to get LANDFIRE data.  Once you get the knack of it, obtaining data will be quick and easy.  We highlight a few tips below.
+
+1. First you will go to https://www.landfire.gov/viewer/.  
+2. We like to turn off the display of LANDFIRE's Existing Vegetation Type data so that we can see the basemap. To do this uncheck the box on the left hand banner as highlighted below in the "LFMV initial screen" screenshot below.
+3. You will need to select an area to limit the data download.  On the right banner there is a Method dropdown, with multiple options.  Here we will draw a rectangle. Once your method is complete (e.g., drawing a rectangle) you will be presented with options for Projection and versions.  Because we will be selecting data from multiple versions, and are happy with the default projection we will not change these options.  See "Drawing rectangle" screenshot below.
+4. After you select your area, available datasets will be listed below, nested by version and category.  In the "Select datasets" screenshot we demonstrate this.  
+*Note: all datasets are not available with every version.  Go [here](https://landfire.gov/lf_schedule.php){target="blank"} to begin learning about versions. 
+5. Once all desired datasets are selected, scroll down to enter your e-mail address.  Soon after doing that and clicking the "Download" button you will receive an email announcing that your data is ready for download.  Follow the instructions in that email.
+
+<br>
+
+***
+
+#### Screenshots for using the LFMV
+
+*LFMV initial screen*
+
+
+![](images/downloading/uncheck_evt_1.png){fig-alt="\"Initial screen in the LANDFIRE Map Viewer with blue arrow pointing to where to turn off the Existing Vegetatation Type dataset in the top left section of the viewer."}
+
+------------------------------------------------------------------------
+
+*Drawing rectangle*
+
+
+![](images/downloading/start_tool_2.png){fig-alt="LANDFIRE Map Viewer highlighting how to start the download tool in the top left, how to set up for drawing a rectangle on the right banner, and an example rectangle. "}
+
+
+------------------------------------------------------------------------
+
+*Selecting Datasets*
+
+
+![](images/downloading/select_datasets.png){fig-alt="LANDFIRE Map Viewer highlighting with various datasets selected for download in the right banner. "}
+
+
+
+## After download happens
+
+As noted above after you click the 'Download" button on the LFMV you will eventually receive an email with instructions.  The zipped data will likely land in your 'Downloads' directory.  Then what?
+
+Essentially you will extract the data to a useful location, then hop to the "Explore the spatial data" and "Make a map with LANDFIRE data" pages on this site.
+
+## Additional resources
+
+* [Video tutorial about using the LANDFIRE Map Viewer, Part 1](https://youtu.be/z59ctfywFtw?feature=shared){target="blank"}
+* [Video tutorial about using the LANDFIRE Map Viewer, Part 2](https://youtu.be/o2U7NZims2E?feature=shared){target="blank"}
+* [Video tutorial about using LANDFIRE Streaming Services](https://youtu.be/1PMzNI73A9Y?feature=shared){target="blank"}
